@@ -3,7 +3,8 @@
   background-image: url("../images/services/webp/background.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  margin-top: -150px;
 }
 
 .services_c_image {
@@ -85,6 +86,9 @@
 
 /* MEDIA QUERYS */
 @media (max-width: 1199.98px) {
+  .services_background {
+    background-size: cover;
+  }
   .speed_lead_up_card_parent {
     right: 0%;
   }
@@ -172,5 +176,15 @@
   }
   .miss_call_card_parent .services_text_parent {
     max-width: unset;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .services_icon_background {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .services_icon {
+    max-width: 20px;
   }
 }
