@@ -3,38 +3,45 @@ function shownav() {
   document.getElementById("showul").classList.toggle("nav_visible");
 }
 
-// SLIDER SOME OF OUR CALLS 
-// $(".Slider").slick({
-//   dots: true,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 2,
-//   slidesToScroll: 1,
-//   autoplay: true,
-//   autoplaySpeed: 3000,
-//   responsive: [
-//     {
-//       breakpoint: 992,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1,
-//       },
-//     },
-//     {
-//       breakpoint: 500,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//       },
-//     },
-//   ],
-// }); 
+// SLIDER SOME OF OUR CALLS
+$(".Slider").slick({
+  dots: false,
+  infinite: true,
+  arrows: false,
+  speed: 300,
+  centerMode: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  nextArrow: ".slider_arrow_right",
+  prevArrow: ".slider_arrow_left",
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: false,
+      },
+    },
+  ],
+});
 // function hidenav() {
 //   document.getElementById("showul").classList.add("start-0");
 // }
 
-// YEAR SCRIPT 
-  document.getElementById('copyright').innerHTML = 'copyright&copy;' + new Date().getFullYear() + ' ClearTalk.ai - All Rights Reserved';
+// YEAR SCRIPT
+document.getElementById("copyright").innerHTML =
+  "copyright&copy;" +
+  new Date().getFullYear() +
+  " ClearTalk.ai - All Rights Reserved";
 
 // BACK TO TOP
 var mybutton = document.getElementById("back-to-top");
