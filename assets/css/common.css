@@ -1,6 +1,9 @@
 .opacity_07 {
   opacity: 0.7;
 }
+.leading_130 {
+  line-height: 130%;
+}
 @media (min-width: 1200px) {
   .custom_container {
     max-width: 1164px !important;
