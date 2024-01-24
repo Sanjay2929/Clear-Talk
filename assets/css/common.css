@@ -4,6 +4,9 @@
 .leading_130 {
   line-height: 130%;
 }
+.cursior_pointer {
+  cursor: pointer;
+}
 @media (min-width: 1200px) {
   .custom_container {
     max-width: 1164px !important;
