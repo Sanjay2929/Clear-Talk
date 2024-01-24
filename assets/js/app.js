@@ -2,6 +2,7 @@
 function shownav() {
   document.getElementById("showul").classList.toggle("nav_visible");
 }
+<<<<<<< HEAD
 
 // SLIDER SOME OF OUR CALLS 
 $(".Slider").slick({
@@ -29,3 +30,11 @@ $(".Slider").slick({
     },
   ],
 }); 
+=======
+// function hidenav() {
+//   document.getElementById("showul").classList.add("start-0");
+// }
+
+// YEAR SCRIPT 
+  document.getElementById('copyright').innerHTML = 'copyright&copy;' + new Date().getFullYear() + ' ClearTalk.ai - All Rights Reserved';
+>>>>>>> 320f91d10f9beb9f841c6303a2f2426e4869e737
