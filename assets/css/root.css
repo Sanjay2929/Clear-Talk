@@ -43,6 +43,6 @@ body {
   font-size: var(--fs-2xl);
 }
 /* COLORS  */
-.clr_blue {
+.clr_primary {
   color: var(--primary);
 }
