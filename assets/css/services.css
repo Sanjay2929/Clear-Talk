@@ -43,6 +43,7 @@
 .communication_card_parent .services_text_parent {
   max-width: 282px;
 }
+
 .user_role_card_parent {
   bottom: 4%;
   left: 46%;
@@ -50,6 +51,15 @@
 .user_role_card_parent .services_text_parent {
   max-width: 329px;
 }
+
+.userSetting_card_parent {
+  bottom: 20%;
+  left: 7%;
+}
+.userSetting_card_parent .services_text_parent {
+  max-width: 329px;
+}
+
 .services_card_parent:hover .services_icon_background {
   background: linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%);
   backdrop-filter: blur(5.5px);
