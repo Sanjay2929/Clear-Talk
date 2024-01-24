@@ -81,3 +81,14 @@
   backdrop-filter: blur(5.5px);
 }
 /* SERVICES CSS END */
+
+/*  */
+@media (max-width: 991.98px) {
+  .services_icon_background {
+    width: 70px;
+    height: 70px;
+  }
+  .services_icon {
+    width: 30px;
+  }
+}
