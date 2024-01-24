@@ -2,13 +2,13 @@
   background-image: url("../images/started/webp/background.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 .featured_bg {
   background-image: url("../images/featured/webp/featured_bg.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 .get_started_description {
   max-width: 512px;
@@ -156,14 +156,8 @@
 }
 /* MEDIA SCREEN  */
 @media (max-width: 1024.98px) {
-  .started_bg {
-    background-size: cover;
-  }
   .featured_box {
     padding: 30px;
-  }
-  .featured_bg {
-    background-size: cover;
   }
 }
 @media (max-width: 767.98px) {
@@ -193,6 +187,6 @@
 }
 @media (max-width: 575px) {
   .featured_box {
-    padding: 20px;
+    padding: 20px 10px;
   }
 }
