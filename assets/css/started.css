@@ -26,9 +26,6 @@
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
-.started_cards_title {
-  line-height: 112.5%;
-}
 .started_card_description {
   line-height: 150%;
   padding-top: 10px;
@@ -173,16 +170,16 @@
   .started_top_gradient_layer {
     height: 75px;
   }
-  .featured_bottom_gradient_layer{
+  .featured_bottom_gradient_layer {
     height: 60px;
   }
-  .featured_top_gradient_layer{
+  .featured_top_gradient_layer {
     height: 60px;
   }
-  .started_bottom_gradient_layer{
+  .started_bottom_gradient_layer {
     height: 60px;
   }
-  .featured_icons{
+  .featured_icons {
     width: 40px !important;
     height: 40px !important;
   }
@@ -191,8 +188,8 @@
     height: 30px;
   }
   .started_icons_bg_circle {
-  padding: 8px;
-}
+    padding: 8px;
+  }
 }
 @media (max-width: 575px) {
   .featured_box {
