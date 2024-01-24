@@ -66,12 +66,17 @@ body {
 .bg_secondary{
   background-color: var(--secondary);
 }
-@media (max-width: 991.9px) {
+
+@media (max-width: 1199.98px) {
   :root {
     --fs-sm: 14px;
     --fs-md: 18px;
-    --fs-lg: 32px;
-    --fs-xl: 48px;
+    --fs-2xl: 56px;
+  }
+}
+@media (max-width: 991.9px) {
+  :root {
+    --fs-md: 18px;
     --fs-2xl: 46px;
   }
 }
