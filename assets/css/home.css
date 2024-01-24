@@ -115,6 +115,74 @@
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1; /* Set color of the track */
 }
+
+/* SOME OF OUR CALL SECTION  */
+.slick-track {
+  margin-left: -25% !important;
+}
+.slick-slide {
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+}
+.slick-current {
+  transform: scale(1) !important;
+}
+.video_slide {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 117, 214, 0.05);
+  -webkit-backdrop-filter: blur(7.131249904632568px);
+  backdrop-filter: blur(7.131249904632568px);
+}
+.slider_arrow {
+  width: 50px;
+  height: 50px;
+  z-index: 20;
+  box-shadow: 0px 0px 23.799999237060547px 0px #0189e14d;
+  border: 0;
+}
+.slider_arrow_right {
+  transform: rotate(180deg);
+  right: 70px;
+}
+.slider_arrow_left {
+  left: 70px;
+}
+.left_slide_shodow {
+  background: linear-gradient(90deg, #00003c 46.6%, rgba(0, 0, 60, 0) 100%);
+  transform: translateY(-50%);
+  z-index: 10;
+  height: 81%;
+  width: 25%;
+}
+.right_slide_shodow {
+  background: linear-gradient(270deg, #00003c 46.6%, rgba(0, 0, 60, 0) 100%);
+  transform: translateY(-50%);
+  z-index: 10;
+  height: 81%;
+  width: 25%;
+}
+
+/* Driving Growth, Amplifying Impact  */
+.microphone {
+  max-width: 230px;
+  transform: translate(-50%, -50%);
+}
+.microphone_circle {
+  max-width: 529px;
+  animation: circle_rotate 3000s ease infinite;
+}
+@keyframes circle_rotate {
+  100% {
+    transform: rotate(360000deg);
+  }
+}
+.video_play_button {
+  width: 47px;
+  height: 47px;
+  box-shadow: 0px 0px 17px 0px #0189e14d;
+}
 @media (max-width: 991.9px) {
   .mobile_nab {
     position: fixed;
@@ -133,9 +201,44 @@
   .hero_discription {
     max-width: 450px;
   }
+  .slick-track {
+    margin-left: -17% !important;
+  }
+  .slick-slide {
+    transform: scale(0.9);
+  }
+  .left_slide_shodow {
+    height: 90%;
+    width: 10%;
+  }
+  .right_slide_shodow {
+    height: 90%;
+    width: 10%;
+  }
+}
+@media (max-width: 640px) {
+  .slick-track {
+    margin-left: 0 !important;
+  }
+  .slick-slide {
+    transform: scale(1);
+  }
+  .left_slide_shodow {
+    height: 0;
+    width: 0;
+  }
+  .right_slide_shodow {
+    height: 0;
+    width: 0;
+  }
 }
 @media (max-width: 575.9px) {
   .nav_logo {
     max-width: 170px;
+  }
+}
+@media (min-width: 640px) {
+  .position_sm_absolute {
+    position: absolute;
   }
 }
