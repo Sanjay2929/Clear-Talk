@@ -37,6 +37,7 @@ body {
   --fs-xl: 48px;
   --fs-2xl: 60px;
   --primary: #00bbfc;
+  --secondary: #0075d6;
 }
 
 /* FONT SIZES  */
@@ -58,6 +59,10 @@ body {
 /* COLORS  */
 .clr_primary {
   color: var(--primary);
+}
+/* BACKGROUND  */
+.bg_secondary{
+  background-color: var(--secondary);
 }
 @media (max-width: 991.9px) {
   :root {
