@@ -14,17 +14,43 @@
 
 <body>
     <header>
-        <nav>
-            <div class="container custom_container mx-auto d-flex justify-content-between align-items-center">
+        <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg">
+            <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
                 <a href="#"><img src="./assets/icons/navbar/clear-talk.svg" alt="clear-talk"></a>
-                <ul class="mb-0">
-                    <li class="d-flex gap-5 align-items-center">
-                        <a href="#">Software</a>
-                        <a href="#">Industries</a>
+                <ul
+                    class="mb-0 d-flex align-items-center lg:gap-5 gap-4 mobile_nab flex-lg-row flex-column justify-content-center">
+                    <li class="d-flex lg:gap-5 gap-3 align-items-center flex-lg-row flex-column">
+                        <a class="fw-normal fs_sm text-white opacity_07 ff_outfit" href="#">Software</a>
+                        <a class="fw-normal fs_sm text-white opacity_07 ff_outfit" href="#">Industries</a>
+                    </li>
+                    <li class="d-flex align-items-center gap_10">
+                        <a class="d-flex justify-content-center align-items-center social_links blue_linear_gradient rounded-pill"
+                            href="#"><img src="/assets/icons/navbar/instagram.svg" alt="instagram"></a>
+                        <a class="d-flex justify-content-center align-items-center social_links blue_linear_gradient rounded-pill"
+                            href="#"><img src="/assets/icons/navbar/discord.svg" alt="discord"></a>
+                        <a class="d-flex justify-content-center align-items-center social_links blue_linear_gradient rounded-pill"
+                            href="#"><img src="/assets/icons/navbar/twitter.svg" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <button
+                            class="blue_linear_gradient nav_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Schedule
+                            a call</button>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="min-vh-100 hero_bg d-flex justify-content-between align-items-center">
+            <div class="container custom_container ">
+                <h1 class="ff_outfit fw-bold fs_2xl text-white hero_heading pb-3">Leverage The Power Of <span
+                        class="clr_primary">Conversational Voice
+                        A.I.</span> With
+                    ClearTalk</h1>
+                <p class="ff_outfit fw-normal fs_sm text-white opacity_07 hero_discription">Check out a live demo and
+                    click the button below to see how you can automate communication for your business with A.I.</p>
+                <button class="blue_linear_gradient nav_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Get a
+                    live call</button>
+            </div>
+        </div>
     </header>
 
     <!-- BOOTSTRAP  -->
