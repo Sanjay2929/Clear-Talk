@@ -17,10 +17,13 @@
 }
 .started_card_boxes {
   border-radius: 7.924px;
+  position: relative;
+  z-index: 1;
   border: 1px solid var(--Blue, #0075d6);
   background: rgba(0, 117, 214, 0.05);
   backdrop-filter: blur(7.131249904632568px);
   padding: 20px 17px 58px 20px;
+  overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
 .started_cards_title {
@@ -42,8 +45,22 @@
 }
 
 /* HOVER  */
+.started_card_boxes:hover::after {
+  opacity: 1;
+}
 .started_card_boxes:hover {
   border: 1px solid var(--Sky, #00bbfc);
+}
+.started_card_boxes::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
   background: var(--Liner, linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%));
 }
 .started_card_boxes:hover .started_cards_number {
