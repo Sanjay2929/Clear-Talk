@@ -5,6 +5,11 @@
 }
 .blue_linear_gradient {
   background: linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%);
+  transition: all 300ms ease-in-out;
+}
+.blue_linear_gradient:hover {
+  background: linear-gradient(0deg, #00bbfc 0%, #0075d6 89.48%);
+  transition: all 300ms ease-in-out;
 }
 .nav_bg {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -26,15 +31,16 @@
   padding: 8.5px 12.5px;
 }
 .common_button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% + 13px);
-    height: calc(100% + 13px);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% + 13px);
+  height: calc(100% + 13px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .nav_button::after {
   background-image: url("/assets/icons/common/button_border.svg");
