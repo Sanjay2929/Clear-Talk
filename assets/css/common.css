@@ -4,8 +4,10 @@
 .leading_130 {
   line-height: 130%;
 }
-
-.cursior_pointer {
+.leading_140 {
+  line-height: 140%;
+}
+.cursor_pointer {
   cursor: pointer;
 }
 @media (min-width: 992px) {
@@ -14,7 +16,12 @@
     position: absolute;
   }
 }
-
+.leading_112 {
+  line-height: 112.5%;
+}
+.leading_150 {
+  line-height: 150%;
+}
 @media (min-width: 1200px) {
   .custom_container {
     max-width: 1164px !important;
