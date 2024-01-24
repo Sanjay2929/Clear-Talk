@@ -64,15 +64,12 @@ body {
     --fs-lg: 32px;
     --fs-xl: 48px;
     --fs-2xl: 46px;
-    --primary: #00bbfc;
   }
 }
 @media (max-width: 767.9px) {
   :root {
     --fs-lg: 32px;
     --fs-xl: 32px;
-    --fs-2xl: 48px;
-    --primary: #00bbfc;
   }
 }
 @media (max-width: 575.9px) {
@@ -80,6 +77,5 @@ body {
     --fs-lg: 32px;
     --fs-xl: 32px;
     --fs-2xl: 36px;
-    --primary: #00bbfc;
   }
 }
