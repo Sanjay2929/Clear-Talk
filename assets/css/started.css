@@ -10,9 +10,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.footer_bg{
+.footer_bg {
   background-image: url("../images/footer/png/footer_bg.png");
-    background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -120,7 +120,7 @@
   left: 0;
   top: 0;
   width: 100%;
-   pointer-events: none;
+  pointer-events: none;
 }
 .started_bottom_gradient_layer {
   background: linear-gradient(
@@ -134,7 +134,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-   pointer-events: none;
+  pointer-events: none;
 }
 .featured_top_gradient_layer {
   background: linear-gradient(
@@ -148,7 +148,7 @@
   position: absolute;
   left: 0;
   top: -1px;
-   pointer-events: none;
+  pointer-events: none;
 }
 .featured_bottom_gradient_layer {
   background: linear-gradient(
@@ -200,7 +200,13 @@
     padding: 20px;
   }
   #back-to-top {
-  width: 30px;
-  height: 30px;
-}
+    width: 30px;
+    height: 30px;
+  }
+  .our_client_card_img {
+    height: 398px !important;
+  }
+  .bg_linear {
+    height: 398px !important;
+  }
 }
