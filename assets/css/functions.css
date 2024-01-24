@@ -1,0 +1,61 @@
+.functions_card_parent,
+.virtual_card_parent {
+  padding: 30px;
+  border-radius: 7.92px;
+  transform: translateX(-28%);
+  min-width: 493px;
+}
+
+.virtual_card_parent {
+  transform: translateX(28%) !important;
+}
+
+.finctions_icon {
+  width: 60px;
+  height: 60px;
+}
+
+.finctions_icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.audio_wave {
+  max-width: 372px;
+}
+
+@media (max-width: 1199.98px) {
+  .finctions_icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .finctions_icon img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .functions_card_parent,
+  .virtual_card_parent {
+    min-width: 400px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .functions_card_parent,
+  .virtual_card_parent {
+    transform: translateX(0) !important;
+    margin-top: -15%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .functions_card_parent,
+  .virtual_card_parent {
+    min-width: auto;
+    transform: translateX(0) !important;
+    margin-top: 24px;
+    /* transform: translateY(0) !important; */
+  }
+}

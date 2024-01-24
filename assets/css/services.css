@@ -84,8 +84,15 @@
 
 /* SERVICES CSS END */
 
-/* MEDIA QUERYS */
+/* MEDIA QUEYS */
 @media (max-width: 1199.98px) {
+  .services_icon_background {
+    max-width: 90px;
+    max-height: 90px;
+  }
+  .services_icon {
+    max-width: 40px;
+  }
   .services_background {
     background-size: cover;
   }
