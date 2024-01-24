@@ -36,29 +36,33 @@
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
-                <a class="nav_logo" href="#"><img class="w-100" src="./assets/icons/navbar/clear-talk.svg"
+                <a class="nav_logo" href="/"><img class="w-100" src="./assets/icons/navbar/clear-talk.svg"
                         alt="clear-talk"></a>
                 <ul id="showul"
                     class="mb-0 d-flex align-items-center gap-lg-5 gap-4 mobile_nab flex-lg-row flex-column justify-content-center duration_300">
                     <li class="d-flex gap-lg-5 gap-3 align-items-center flex-lg-row flex-column">
-                        <a class="fw-normal fs_sm text-white opacity_07 ff_outfit" href="#">Software</a>
-                        <a class="fw-normal fs_sm text-white opacity_07 ff_outfit" href="#">Industries</a>
+                        <a class="fw-normal fs_sm text-white opacity_07 ff_outfit nav_links duration_300"
+                            href="#">Software</a>
+                        <a class="fw-normal fs_sm text-white opacity_07 ff_outfit nav_links duration_300"
+                            href="#">Industries</a>
                     </li>
                     <li class="d-flex align-items-center gap_10">
-                        <a class="d-flex justify-content-center align-items-center social_links blue_linear_gradient rounded-pill"
-                            href="#"><img src="/assets/icons/navbar/instagram.svg" alt="instagram"></a>
-                        <a class="d-flex justify-content-center align-items-center social_links blue_linear_gradient rounded-pill"
-                            href="#"><img src="/assets/icons/navbar/discord.svg" alt="discord"></a>
-                        <a class="d-flex justify-content-center align-items-center social_links blue_linear_gradient rounded-pill"
-                            href="#"><img src="/assets/icons/navbar/twitter.svg" alt="twitter"></a>
+                        <a class="d-flex justify-content-center align-items-center social_links duration_300 blue_linear_gradient rounded-pill"
+                            href="https://www.instagram.com/"><img src="/assets/icons/navbar/instagram.svg"
+                                alt="instagram"></a>
+                        <a class="d-flex justify-content-center align-items-center social_links duration_300 blue_linear_gradient rounded-pill"
+                            href="https://discord.com/"><img src="/assets/icons/navbar/discord.svg" alt="discord"></a>
+                        <a class="d-flex justify-content-center align-items-center social_links duration_300 blue_linear_gradient rounded-pill"
+                            href="https://twitter.com/?lang=en"><img src="/assets/icons/navbar/twitter.svg"
+                                alt="twitter"></a>
                     </li>
                     <li>
                         <button
-                            class="blue_linear_gradient nav_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Schedule
+                            class="blue_linear_gradient nav_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Schedule
                             a call</button>
                     </li>
                 </ul>
-                <span class="menuicon d-lg-none cursior_pointer" id="shownav" onclick="shownav()">
+                <span class="menuicon d-lg-none cursor_pointer" id="shownav" onclick="shownav()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -66,14 +70,18 @@
             </div>
         </nav>
         <div class="min-vh-100 hero_bg d-flex justify-content-between align-items-center">
-            <div class="container custom_container ">
-                <h1 class="ff_outfit fw-bold fs_2xl text-white hero_heading pb-3">Leverage The Power Of <span
-                        class="clr_primary">Conversational Voice
+            <div
+                class="container custom_container d-flex justify-content-center align-items-center align-items-sm-start flex-column">
+                <h1 class="ff_outfit fw-bold fs_2xl text-white hero_heading pb-3 text-sm-start text-center">Leverage The
+                    Power Of <span class="clr_primary">Conversational Voice
                         A.I.</span> With
                     ClearTalk</h1>
-                <p class="ff_outfit fw-normal fs_sm text-white opacity_07 hero_discription">Check out a live demo and
+                <p class="ff_outfit fw-normal fs_sm text-white opacity_07 hero_discription text-sm-start text-center">
+                    Check out a live demo and
                     click the button below to see how you can automate communication for your business with A.I.</p>
-                <button class="blue_linear_gradient nav_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Get a
+                <button
+                    class="blue_linear_gradient hero_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Get
+                    a
                     live call</button>
             </div>
         </div>
@@ -374,6 +382,8 @@
         <div class="featured_top_gradient_layer"></div>
         <div class="featured_bottom_gradient_layer"></div>
     </div>
+    <!-- JS LINK -->
+    <script src="/assets/js/app.js"></script>
     <!-- BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
