@@ -2,16 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap");
 /* HOME CSS IMPORT */
 @import url("/assets/css/home.css");
+/* SERVICES CSS IMPORT */
+@import url("/assets/css/services.css");
 /* STARTED CSS IMPORT  */
 @import url("/assets/css/started.css");
-/* COMMOM CSS IMPORT  */
+/* COMMON CSS IMPORT  */
 @import url("/assets/css/common.css");
 /* UNIVERSAL  */
 * {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  text-decoration: none;
+  list-style-type: none !important;
+  text-decoration: none !important;
   box-sizing: border-box;
 }
 body {
