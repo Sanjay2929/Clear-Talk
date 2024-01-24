@@ -4,14 +4,21 @@
 .leading_130 {
   line-height: 130%;
 }
+.cursor_pointer {
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  /* CUSTOM ABSOLUTE */
+  .position_lg_absolute {
+    position: absolute;
+  }
+}
+
 .leading_112 {
   line-height: 112.5%;
 }
 .leading_150 {
   line-height: 150%;
-}
-.cursor_pointer {
-  cursor: pointer;
 }
 @media (min-width: 1200px) {
   .custom_container {
