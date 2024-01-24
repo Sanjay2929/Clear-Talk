@@ -28,12 +28,16 @@
     <link rel="shortcut icon" href="/assets/icons/common/favicon.svg" type="image/x-icon" />
     <!-- CSS  -->
     <link rel="stylesheet" href="/assets/css/root.css" />
+    <!-- wavesurfer.js styles CSS LINK -->
+    <link rel="stylesheet" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css" />
     <!-- BOOTSTRAP LATEST  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" class="bg-white"><img src="./assets/icons/common/top_arrow.svg" alt="top arrow"></button>
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
@@ -102,10 +106,12 @@
             <div class="py-5 mt-md-5">
                 <div
                     class="custom_container container d-flex flex-wrap justify-content-between gap-4 gap-lg-0 align-items-lg-center justify-content-lg-center position-relative mt-5">
+                    <!-- services c image  -->
                     <img class="services_c_image w-100 d-none d-lg-block"
                         src="./assets/images/services/webp/c_image.webp" alt="c-logo" />
                     <div class="position_lg_absolute services_card_parent following_up_card_parent">
                         <div class="d-flex align-items-lg-center">
+                            <!--  clock icon -->
                             <div class="services_icon_background d-flex align-items-center justify-content-center">
                                 <img class="services_icon" src="./assets/icons/services/clock.svg" alt="clock" />
                             </div>
@@ -113,7 +119,7 @@
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md">
                                     Keep Following Up
                                 </p>
-                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm">
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm leading_140">
                                     Pauru pharetra justo ultrices dictum.
                                 </p>
                             </div>
@@ -129,7 +135,7 @@
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md">
                                     Speed to Lead
                                 </p>
-                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm">
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm leading_140">
                                     Amet consectet In fames and mauris integer nec oarci
                                     consectetur elit.
                                 </p>
@@ -146,7 +152,7 @@
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md">
                                     Automate All Communication
                                 </p>
-                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm">
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm leading_140">
                                     Dui malesuada amet idmi enim volutpat Interdum pellentesque
                                     sed cursus pulvinar feugiat cursus neque.
                                 </p>
@@ -163,7 +169,7 @@
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md">
                                     Unlimited Agents and Roles
                                 </p>
-                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm">
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm leading_140">
                                     Dui malesuada amet idmi enim volutpat Interdum pellentesque
                                     sed cursus pulvinar.
                                 </p>
@@ -176,7 +182,7 @@
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
                                     More Production. Less Stress
                                 </p>
-                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end">
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end leading_140">
                                     Elementum auctor duis mauri est adipiscing morbi vitae
                                     maecenas augue parturient ultrices quis rutrum aliquet.
                                 </p>
@@ -193,7 +199,7 @@
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
                                     100% Accurate Information
                                 </p>
-                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end">
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end leading_140">
                                     Nulla pharetra id egestas maecenas mauris magna gravida
                                     ignissim sapien amet viverra orci sed massa lectus.
                                 </p>
@@ -209,7 +215,7 @@
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
                                     Never Miss A Call. Never Miss A Customer
                                 </p>
-                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end">
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end leading_140">
                                     Pharetra odio mattis in mauris adipiscing velut consectetu.
                                 </p>
                             </div>
@@ -252,10 +258,12 @@
                                 covered.
                             </p>
                             <div class="d-flex gap-2 gap-lg-3 align-items-center">
-                                <img src="./assets/icons/roles/play.svg" alt="play" />
-                                <span class="audio_wave">
-                                    <img class="w-100" src="./assets/icons/roles/audioWave.svg" alt="audioWave" />
-                                </span>
+                                <div id="audioControls" class="cursor_pointer">
+                                    <span id="playPauseButton" class="border-0 bg-transparent cursor_pointer">
+                                        <img src="./assets/icons/roles/play.svg" alt="play" />
+                                    </span>
+                                </div>
+                                <div id="waveformContainer"></div>
                             </div>
                         </div>
                     </div>
@@ -276,10 +284,12 @@
                                 Need 24/7 answering so you capture every lead? Easy.
                             </p>
                             <div class="d-flex gap-2 gap-lg-3 align-items-center">
-                                <img src="./assets/icons/roles/play.svg" alt="play" />
-                                <span class="audio_wave">
-                                    <img class="w-100" src="./assets/icons/roles/audioWave.svg" alt="audioWave" />
-                                </span>
+                                <div id="audioControls" class="cursor_pointer">
+                                    <span id="playPauseButton" class="border-0 bg-transparent cursor_pointer">
+                                        <img src="./assets/icons/roles/play.svg" alt="play" />
+                                    </span>
+                                </div>
+                                <div id="waveformContainer"></div>
                             </div>
                         </div>
                     </div>
@@ -577,7 +587,7 @@
         <div class="container custom_container py-4">
             <div class="row flex-wrap justify-content-between align-items-xl-center py-2">
                 <div class="col-lg-3">
-                    <a href="#"><img src="./assets/icons/common/clear-talk.svg" alt=" page logo"></a>
+                    <a href="/"><img src="./assets/icons/common/clear-talk.svg" alt=" page logo"></a>
                     <p class="text-white ff_outfit fs_sm fw-semibold leading_112 mb-0 pt-3">Innovative Solutions, Real
                         Results</p>
                     <p class="pt-4 mt-sm-3 mb-0 text-white fs_md fw-semibold ff_outfit leading_112">Follow us:</p>
@@ -605,7 +615,7 @@
                                 <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Home</a>
                             </li>
                             <li class="pt-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Services</a>
+                                <a href="#services" class="text-white fs_sm fw-normal hover_footer_li leading_140">Services</a>
                             </li>
                             <li class="pt-3">
                                 <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Blogs</a>
@@ -638,19 +648,19 @@
                                 </a>
                             </li>
                             <li class="pt-3 ">
-                                <a href="#" class="d-flex align-items-start"><img src="./assets/icons/footer/email.svg"
-                                        alt="email icon">
+                                <a href="mailto:Example@email.com" class="d-flex align-items-start"><img
+                                        src="./assets/icons/footer/email.svg" alt="email icon">
                                     <p
                                         class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
                                         Example@email.com</p>
                                 </a>
                             </li>
                             <li class="pt-3 ">
-                                <a href="#" class="d-flex align-items-start"><img
+                                <a href="tel:(207)555-0129" class="d-flex align-items-start"><img
                                         src="./assets/icons/footer/telephone.svg" alt="telephone icon">
-                                    <p
+                                    <span
                                         class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
-                                        (207) 555-0129</p>
+                                        (207) 555-0129</span>
                                 </a>
                             </li>
 
@@ -670,6 +680,10 @@
     </div>
     <!-- JS LINK -->
     <script src="/assets/js/app.js"></script>
+    <!-- AUDIO WAVE JS LINK -->
+    <script src="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.js"></script>
+    <script src="/assets/js/audioWave.js">
+    </script>
     <!-- BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
