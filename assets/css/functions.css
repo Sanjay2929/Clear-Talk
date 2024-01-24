@@ -43,6 +43,16 @@
 .companies_description {
   max-width: 642px;
 }
+.companies_logos_parent {
+  width: 1270px;
+}
+.common_company_image {
+  max-width: 142px;
+}
+.solar_bootcamp_company {
+  max-width: 217px;
+}
+
 /* COMPANIES CSS END  */
 
 /* WAVE SURFER */
@@ -87,6 +97,12 @@ wave {
     transform: translateX(0) !important;
     margin-top: -15%;
   }
+  .common_company_image {
+    max-width: 120px;
+  }
+  .solar_bootcamp_company {
+    max-width: 170px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -96,5 +112,11 @@ wave {
     transform: translateX(0) !important;
     margin-top: 24px;
     /* transform: translateY(0) !important; */
+  }
+  .common_company_image {
+    max-width: 100px;
+  }
+  .solar_bootcamp_company {
+    max-width: 150px;
   }
 }
