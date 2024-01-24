@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap");
 /* HOME CSS IMPORT */
 @import url("/assets/css/home.css");
+/* STARTED CSS IMPORT  */
+@import url("/assets/css/started.css");
 /* UNIVERSAL  */
 * {
   margin: 0;
@@ -44,6 +46,6 @@ body {
   font-size: var(--fs-2xl);
 }
 /* COLORS  */
-.clr_blue {
+.clr_primary {
   color: var(--primary);
 }
