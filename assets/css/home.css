@@ -97,6 +97,24 @@
   background-image: url("/assets/icons/hero/hero-button-border.svg");
 }
 
+/* SCROLL BAR MODIFY  */
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* Set width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    225deg,
+    #00bbfc 0%,
+    #0075d6 89.48%
+  ) !important; /* Set color of the thumb */
+  border-radius: 6px; /* Round corners of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set color of the track */
+}
 @media (max-width: 991.9px) {
   .mobile_nab {
     position: fixed;
