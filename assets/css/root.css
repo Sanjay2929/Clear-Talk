@@ -1,6 +1,19 @@
 /* FONT FAMILY LINK  */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap");
+/* HOME CSS IMPORT */
 @import url("/assets/css/home.css");
+/* UNIVERSAL  */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  background-color: #00003c !important;
+}
+
 /* FONT FAMILY  */
 .ff_outfit {
   font-family: "Outfit", sans-serif;
@@ -11,10 +24,10 @@
 /* ROOT  */
 :root {
   --fs-sm: 16px;
-  --fs-md: 16px;
-  --fs-xl: 16px;
-  --fs-2xl: 16px;
-  --blue: #00bbfc;
+  --fs-md: 20px;
+  --fs-xl: 48px;
+  --fs-2xl: 60px;
+  --primary: #00bbfc;
 }
 
 /* FONT SIZES  */
@@ -32,5 +45,5 @@
 }
 /* COLORS  */
 .clr_blue {
-  color: var(--blue);
+  color: var(--primary);
 }
