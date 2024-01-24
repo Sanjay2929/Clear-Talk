@@ -1,0 +1,8 @@
+/* SERVICES CSS START */
+.services_background {
+  background-image: url("../images/services/webp/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* SERVICES CSS END */
