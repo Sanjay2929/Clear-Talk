@@ -10,6 +10,12 @@
 .cursor_pointer {
   cursor: pointer;
 }
+.text_primary_gradient {
+  background: linear-gradient(215deg, #00bbfc 15.2%, #0075d6 66.98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media (min-width: 992px) {
   /* CUSTOM ABSOLUTE */
   .position_lg_absolute {

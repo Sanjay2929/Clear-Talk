@@ -39,6 +39,11 @@
   );
   height: 248px;
 }
+/* COMPANIES CSS START  */
+.companies_description {
+  max-width: 642px;
+}
+/* COMPANIES CSS END  */
 
 @media (max-width: 1199.98px) {
   .finctions_icon {
