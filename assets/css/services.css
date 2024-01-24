@@ -52,12 +52,28 @@
   max-width: 329px;
 }
 
-.userSetting_card_parent {
-  bottom: 20%;
-  left: 7%;
+.user_setting_card_parent {
+  bottom: 22%;
+  left: 10.5%;
 }
-.userSetting_card_parent .services_text_parent {
-  max-width: 329px;
+.user_setting_card_parent .services_text_parent {
+  max-width: 356px;
+}
+
+.user_info_card_parent {
+  bottom: 45%;
+  left: 11.5%;
+}
+.user_info_card_parent .services_text_parent {
+  max-width: 290px;
+}
+
+.miss_call_card_parent {
+  top: 18%;
+  left: 16%;
+}
+.miss_call_card_parent .services_text_parent {
+  max-width: 290px;
 }
 
 .services_card_parent:hover .services_icon_background {
