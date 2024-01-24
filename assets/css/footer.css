@@ -86,8 +86,54 @@
   padding-top: 259px;
   padding-bottom: 20px;
 }
+/* NEXT STEP SECTION  */
+.next_steps_cards_box {
+  border-radius: 7.924px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(29.399999618530273px);
+  padding: 20px;
+}
+.pt_10 {
+  padding-top: 10px;
+}
+.custom_margin {
+  margin-top: 80px;
+}
+.dotted_lines {
+  position: relative;
+}
+.dotted_lines::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 144px;
+  width: 295px;
+  height: 508px;
+  background-image: url("../images/next_steps/png/dotted_lines.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (max-width: 1199.98px) {
   .custom_padding_clients_cards {
     padding-top: 159px;
+  }
+  .dotted_lines::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 94px;
+    width: 295px;
+    height: 508px;
+    background-image: url("../images/next_steps/png/dotted_lines.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 575.98px) {
+  .custom_margin {
+    margin-top: 24px;
   }
 }
