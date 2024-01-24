@@ -1,3 +1,12 @@
+.hero_bottom_blur {
+  background: linear-gradient(
+    0deg,
+    #00003c 3.82%,
+    rgba(0, 0, 60, 0.78) 44.47%,
+    rgba(0, 0, 60, 0) 100%
+  );
+  height: 100px;
+}
 .social_links {
   width: 30px;
   height: 30px;
@@ -82,7 +91,7 @@
   background-image: url(/assets/images/home/webp/hero-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 60% 100%;
+  background-position: top;
 }
 .hero_heading {
   max-width: 649px;
@@ -183,6 +192,9 @@
   height: 47px;
   box-shadow: 0px 0px 17px 0px #0189e14d;
 }
+.w_half{
+  width: 50%;
+}
 @media (max-width: 991.9px) {
   .mobile_nab {
     position: fixed;
@@ -214,6 +226,9 @@
   .right_slide_shodow {
     height: 90%;
     width: 10%;
+  }
+  .width_lg_100{
+    width: 100% !important;
   }
 }
 @media (max-width: 640px) {

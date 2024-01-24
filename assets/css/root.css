@@ -8,6 +8,10 @@
 @import url("/assets/css/started.css");
 /* COMMON CSS IMPORT  */
 @import url("/assets/css/common.css");
+/* FOOTER CSS IMPORT  */
+@import url("/assets/css/footer.css");
+/* FUNCTIONS CSS IMPORT  */
+@import url("/assets/css/functions.css");
 /* UNIVERSAL  */
 * {
   margin: 0;
@@ -35,6 +39,7 @@ body {
   --fs-xl: 48px;
   --fs-2xl: 60px;
   --primary: #00bbfc;
+  --secondary: #0075d6;
 }
 
 /* FONT SIZES  */
@@ -57,22 +62,28 @@ body {
 .clr_primary {
   color: var(--primary);
 }
-@media (max-width: 991.9px) {
+/* BACKGROUND  */
+.bg_secondary{
+  background-color: var(--secondary);
+}
+
+@media (max-width: 1199.98px) {
   :root {
     --fs-sm: 14px;
     --fs-md: 18px;
-    --fs-lg: 32px;
-    --fs-xl: 48px;
+    --fs-2xl: 56px;
+  }
+}
+@media (max-width: 991.9px) {
+  :root {
+    --fs-md: 18px;
     --fs-2xl: 46px;
-    --primary: #00bbfc;
   }
 }
 @media (max-width: 767.9px) {
   :root {
     --fs-lg: 32px;
     --fs-xl: 32px;
-    --fs-2xl: 48px;
-    --primary: #00bbfc;
   }
 }
 @media (max-width: 575.9px) {
@@ -80,6 +91,5 @@ body {
     --fs-lg: 32px;
     --fs-xl: 32px;
     --fs-2xl: 36px;
-    --primary: #00bbfc;
   }
 }

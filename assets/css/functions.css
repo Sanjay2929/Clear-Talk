@@ -1,0 +1,95 @@
+.functions_bg {
+  background-image: url("../images/roles/webp/background.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -150px;
+}
+.functions_card_parent,
+.virtual_card_parent {
+  padding: 30px;
+  border-radius: 7.92px;
+  transform: translateX(-28%);
+  min-width: 493px;
+}
+
+.virtual_card_parent {
+  transform: translateX(28%) !important;
+}
+
+.finctions_icon {
+  width: 60px;
+  height: 60px;
+}
+
+.finctions_icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.audio_wave {
+  max-width: 372px;
+}
+.roles_bottom_layer {
+  background: linear-gradient(
+    0deg,
+    #00003c 3.82%,
+    rgba(0, 0, 60, 0.78) 44.47%,
+    rgba(0, 0, 60, 0) 100%
+  );
+  height: 248px;
+}
+
+/* WAVE SURFER */
+#waveformContainer {
+  max-width: 100%;
+  width: 100%;
+  height: 49px;
+}
+
+#audioControls {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+wave {
+  height: 49px !important;
+}
+
+@media (max-width: 1199.98px) {
+  .finctions_icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .finctions_icon img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .functions_card_parent,
+  .virtual_card_parent {
+    min-width: 400px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .functions_card_parent,
+  .virtual_card_parent {
+    transform: translateX(0) !important;
+    margin-top: -15%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .functions_card_parent,
+  .virtual_card_parent {
+    min-width: auto;
+    transform: translateX(0) !important;
+    margin-top: 24px;
+    /* transform: translateY(0) !important; */
+  }
+}

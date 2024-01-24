@@ -51,7 +51,7 @@
 }
 
 .user_role_card_parent {
-  bottom: 5.5%;
+  bottom: 4.5%;
   left: 46%;
 }
 .user_role_card_parent .services_text_parent {
@@ -84,19 +84,32 @@
 
 /* SERVICES CSS END */
 
-/* MEDIA QUERYS */
+/* MEDIA QUEYS */
 @media (max-width: 1199.98px) {
+  .services_icon_background {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .services_icon {
+    max-width: 35px;
+  }
   .services_background {
     background-size: cover;
   }
   .speed_lead_up_card_parent {
-    right: 0%;
+    right: 5%;
+    top:25%;
   }
+  .following_up_card_parent {
+    top: 12%;
+    left: 48%;
+}
   .speed_lead_up_card_parent .services_text_parent {
-    max-width: 240px;
+    max-width: 257px;
   }
   .communication_card_parent {
-    right: -0%;
+    right: 1%;
+    bottom: 27%;
   }
   .communication_card_parent .services_text_parent {
     max-width: 270px;
@@ -113,13 +126,18 @@
   }
 
   .miss_call_card_parent {
-    left: 0%;
+    left: 2%;
+    top: 18%;
   }
+  .user_role_card_parent {
+    bottom: 11%;
+}
   .miss_call_card_parent .services_text_parent {
     max-width: 290px;
   }
   .services_c_image {
     max-width: 650px;
+    transform: scale(0.8);
   }
 }
 @media (max-width: 991.98px) {
