@@ -5,6 +5,9 @@
   line-height: 130%;
 }
 
+.cursior_pointer {
+  cursor: pointer;
+}
 @media (min-width: 992px) {
   /* CUSTOM ABSOLUTE */
   .position_lg_absolute {
