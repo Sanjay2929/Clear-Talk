@@ -4,8 +4,11 @@
 .leading_130 {
   line-height: 130%;
 }
-.leading_112{
+.leading_112 {
   line-height: 112.5%;
+}
+.leading_150 {
+  line-height: 150%;
 }
 @media (min-width: 1200px) {
   .custom_container {
