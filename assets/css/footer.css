@@ -36,6 +36,7 @@
   animation: backtotop 2s linear infinite;
   box-shadow: 0px 0px 23.8px 0px #000;
 }
+
 @keyframes backtotop {
   0% {
     transform: scale(1);
@@ -45,5 +46,102 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* OUR CLIENT SECTION  */
+.our_client_bg{
+  background-image: url("../images/clients/png/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.our_client_card_box {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 6.9px 0px rgba(220, 226, 253, 0.8);
+  padding: 10px;
+}
+.our_client_card_box:hover {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(225deg, #00bbfc 0%, #0075d6 100%);
+  box-shadow: 0px 2px 16px 0px rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  padding: 10px;
+}
+.our_client_card_img {
+  height: 498px;
+  width: 100%;
+  border-radius: 6px;
+  position: relative;
+}
+.bg_linear {
+  background-image: url("../images/clients/png/gradient_layer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 498px;
+  width: 100%;
+}
+.custom_padding_clients_cards {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 259px;
+  padding-bottom: 20px;
+}
+/* NEXT STEP SECTION  */
+.next_steps_cards_box {
+  border-radius: 7.924px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(29.399999618530273px);
+  padding: 20px;
+}
+.pt_10 {
+  padding-top: 10px;
+}
+.custom_margin {
+  margin-top: 80px;
+}
+.dotted_lines {
+  position: relative;
+}
+.dotted_lines::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 144px;
+  width: 295px;
+  height: 508px;
+  background-image: url("../images/next_steps/png/dotted_lines.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1199.98px) {
+  .custom_padding_clients_cards {
+    padding-top: 159px;
+  }
+  .dotted_lines::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 94px;
+    width: 295px;
+    height: 508px;
+    background-image: url("../images/next_steps/png/dotted_lines.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 575.98px) {
+  .custom_margin {
+    margin-top: 24px;
   }
 }
