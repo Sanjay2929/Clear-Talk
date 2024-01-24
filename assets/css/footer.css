@@ -49,6 +49,12 @@
 }
 
 /* OUR CLIENT SECTION  */
+.our_client_bg{
+  background-image: url("../images/clients/png/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .our_client_card_box {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
@@ -115,6 +121,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 @media (max-width: 1199.98px) {
   .custom_padding_clients_cards {
     padding-top: 159px;
