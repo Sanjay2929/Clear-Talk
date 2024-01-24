@@ -114,6 +114,7 @@
   left: 0;
   top: 0;
   width: 100%;
+   pointer-events: none;
 }
 .started_bottom_gradient_layer {
   background: linear-gradient(
@@ -127,6 +128,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
+   pointer-events: none;
 }
 .featured_top_gradient_layer {
   background: linear-gradient(
@@ -140,6 +142,7 @@
   position: absolute;
   left: 0;
   top: -1px;
+   pointer-events: none;
 }
 .featured_bottom_gradient_layer {
   background: linear-gradient(
@@ -153,6 +156,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  pointer-events: none;
 }
 /* MEDIA SCREEN  */
 @media (max-width: 1024.98px) {
@@ -187,6 +191,6 @@
 }
 @media (max-width: 575px) {
   .featured_box {
-    padding: 20px 10px;
+    padding: 20px;
   }
 }
