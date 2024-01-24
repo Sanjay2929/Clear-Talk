@@ -17,6 +17,11 @@
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
 }
+.services_card_parent:hover .services_icon_background {
+  background: linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%);
+  border: 1px solid transparent;
+  backdrop-filter: blur(5.5px);
+}
 .services_icon {
   width: 50px;
 }
@@ -26,26 +31,26 @@
   left: 48%;
 }
 .following_up_card_parent .services_text_parent {
-  max-width: 282px;
+  max-width: 256px;
 }
 
 .speed_lead_up_card_parent {
   top: 20%;
-  left: 59%;
+  right: 5%;
 }
 .speed_lead_up_card_parent .services_text_parent {
   max-width: 282px;
 }
 .communication_card_parent {
   bottom: 20%;
-  left: 58%;
+  right: 5%;
 }
 .communication_card_parent .services_text_parent {
   max-width: 282px;
 }
 
 .user_role_card_parent {
-  bottom: 4%;
+  bottom: 5.5%;
   left: 46%;
 }
 .user_role_card_parent .services_text_parent {
@@ -54,7 +59,7 @@
 
 .user_setting_card_parent {
   bottom: 22%;
-  left: 10.5%;
+  left: 0%;
 }
 .user_setting_card_parent .services_text_parent {
   max-width: 356px;
@@ -62,22 +67,104 @@
 
 .user_info_card_parent {
   bottom: 45%;
-  left: 11.5%;
+  left: 0.7%;
 }
 .user_info_card_parent .services_text_parent {
   max-width: 290px;
 }
 
 .miss_call_card_parent {
-  top: 18%;
-  left: 16%;
+  top: 16%;
+  left: 8%;
 }
 .miss_call_card_parent .services_text_parent {
   max-width: 290px;
 }
 
-.services_card_parent:hover .services_icon_background {
-  background: linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%);
-  backdrop-filter: blur(5.5px);
-}
 /* SERVICES CSS END */
+
+/* MEDIA QUERYS */
+@media (max-width: 1199.98px) {
+  .speed_lead_up_card_parent {
+    right: 0%;
+  }
+  .speed_lead_up_card_parent .services_text_parent {
+    max-width: 240px;
+  }
+  .communication_card_parent {
+    right: -0%;
+  }
+  .communication_card_parent .services_text_parent {
+    max-width: 270px;
+  }
+  .user_setting_card_parent .services_text_parent {
+    max-width: 300px;
+  }
+
+  .user_info_card_parent {
+    left: 0%;
+  }
+  .user_info_card_parent .services_text_parent {
+    max-width: 250px;
+  }
+
+  .miss_call_card_parent {
+    left: 0%;
+  }
+  .miss_call_card_parent .services_text_parent {
+    max-width: 290px;
+  }
+}
+@media (max-width: 991.98px) {
+  .services_icon_background {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .services_icon {
+    max-width: 30px;
+  }
+
+  .following_up_card_parent .services_text_parent {
+    max-width: 240px;
+  }
+
+  .speed_lead_up_card_parent .services_text_parent {
+    max-width: 240px;
+  }
+  .communication_card_parent .services_text_parent {
+    max-width: 240px;
+  }
+  .user_role_card_parent .services_text_parent {
+    max-width: 240px;
+  }
+  .user_setting_card_parent .services_text_parent {
+    max-width: 240px;
+  }
+  .user_info_card_parent .services_text_parent {
+    max-width: 240px;
+  }
+  .miss_call_card_parent .services_text_parent {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .following_up_card_parent .services_text_parent {
+    max-width: unset;
+  }
+  .speed_lead_up_card_parent .services_text_parent {
+    max-width: unset;
+  }
+  .communication_card_parent .services_text_parent {
+    max-width: unset;
+  }
+  .user_setting_card_parent .services_text_parent {
+    max-width: unset;
+  }
+  .user_info_card_parent .services_text_parent {
+    max-width: unset;
+  }
+  .miss_call_card_parent .services_text_parent {
+    max-width: unset;
+  }
+}
