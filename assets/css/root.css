@@ -4,6 +4,8 @@
 @import url("/assets/css/home.css");
 /* STARTED CSS IMPORT  */
 @import url("/assets/css/started.css");
+/* COMMOM CSS IMPORT  */
+@import url("/assets/css/common.css");
 /* UNIVERSAL  */
 * {
   margin: 0;
@@ -27,6 +29,7 @@ body {
 :root {
   --fs-sm: 16px;
   --fs-md: 20px;
+  --fs-lg: 32px;
   --fs-xl: 48px;
   --fs-2xl: 60px;
   --primary: #00bbfc;
@@ -38,6 +41,9 @@ body {
 }
 .fs_md {
   font-size: var(--fs-md);
+}
+.fs_lg {
+  font-size: var(--fs-lg);
 }
 .fs_xl {
   font-size: var(--fs-xl);
