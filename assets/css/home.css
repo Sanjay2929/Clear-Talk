@@ -22,6 +22,29 @@
 .gap_10 {
   gap: 10px;
 }
+.menuicon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 30px;
+  height: 25px;
+}
+
+.menuicon > span {
+  width: 100%;
+  height: 5px;
+  background: white;
+  z-index: 1;
+}
+.nav_visible {
+  left: 0 !important;
+}
+.z_50 {
+  z-index: 50;
+}
+.duration_300{
+    transition: all ease-in-out 300ms;
+}
 @media (max-width: 991.9px) {
   .mobile_nab {
     position: fixed;
