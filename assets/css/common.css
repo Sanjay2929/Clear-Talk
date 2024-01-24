@@ -1,8 +1,10 @@
 .opacity_07 {
   opacity: 0.7;
 }
-.custom_container {
-  max-width: 1164px;
-  margin: 0 auto;
-  padding: 0 12px;
+@media (min-width: 1200px) {
+  .custom_container {
+    max-width: 1164px !important;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
 }

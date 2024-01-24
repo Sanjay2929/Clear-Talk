@@ -4,12 +4,14 @@
 @import url("/assets/css/home.css");
 /* SERVICES CSS IMPORT */
 @import url("/assets/css/services.css");
+/* STARTED CSS IMPORT  */
+@import url("/assets/css/started.css");
 /* UNIVERSAL  */
 * {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  text-decoration: none;
+  list-style-type: none !important;
+  text-decoration: none !important;
   box-sizing: border-box;
 }
 body {
@@ -46,6 +48,6 @@ body {
   font-size: var(--fs-2xl);
 }
 /* COLORS  */
-.clr_blue {
+.clr_primary {
   color: var(--primary);
 }
