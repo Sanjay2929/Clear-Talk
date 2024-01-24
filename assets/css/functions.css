@@ -30,6 +30,15 @@
 .audio_wave {
   max-width: 372px;
 }
+.roles_bottom_layer {
+  background: linear-gradient(
+    0deg,
+    #00003c 3.82%,
+    rgba(0, 0, 60, 0.78) 44.47%,
+    rgba(0, 0, 60, 0) 100%
+  );
+  height: 248px;
+}
 
 @media (max-width: 1199.98px) {
   .finctions_icon {
