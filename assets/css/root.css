@@ -39,7 +39,7 @@ body {
   --fs-xl: 48px;
   --fs-2xl: 60px;
   --primary: #00bbfc;
-  --scienceBlue: #0075d6;
+  --secondary: #0075d6;
 }
 
 /* FONT SIZES  */
@@ -62,8 +62,9 @@ body {
 .clr_primary {
   color: var(--primary);
 }
-.bg_science_blue {
-  background-color: var(--scienceBlue);
+/* BACKGROUND  */
+.bg_secondary{
+  background-color: var(--secondary);
 }
 @media (max-width: 991.9px) {
   :root {
