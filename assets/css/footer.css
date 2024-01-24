@@ -3,16 +3,23 @@
   height: 50px;
   box-shadow: 0px 0px 19.116050720214844px 0px #0189e14d;
 }
-.footer_icons{
-    width: 30px;
-    height: 30px;
+.footer_icons {
+  width: 30px;
+  height: 30px;
 }
 .footer_social_links:hover {
   transform: scale(1.1);
 }
-.nowrap{
-    white-space: nowrap;
+.nowrap {
+  white-space: nowrap;
 }
-.footer_li_custom_max_w{
-    max-width: 210px;
+.footer_li_custom_max_w {
+  max-width: 210px;
+}
+.hover_footer_li {
+  opacity: 0.7;
+  transition: all 0.3s linear;
+}
+.hover_footer_li:hover {
+  opacity: 1;
 }
