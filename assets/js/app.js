@@ -2,6 +2,7 @@
 function shownav() {
   document.getElementById("showul").classList.toggle("nav_visible");
   document.getElementById("shownav").classList.toggle("crossmenu");
+  document.body.classList.toggle("overflow_lg_hidden");
 }
 
 // YEAR SCRIPT
