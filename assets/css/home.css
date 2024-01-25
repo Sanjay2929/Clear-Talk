@@ -251,6 +251,9 @@
   .slider_arrow_right {
     right: 30px;
   }
+  .overflow_lg_hidden {
+    overflow-y: hidden;
+  }
 }
 @media (max-width: 640px) {
   .slick-track {
