@@ -16,7 +16,6 @@
   </head>
 
   <body>
-    
     <!--  FUNCTIONS/ROLES SECTION START  -->
     <section>
       <div class="functions_bg py-5 mt-5">
@@ -379,24 +378,91 @@
     <!--  CONVERSATIONAL SECTION START  -->
     <section>
       <div class="container custom_container">
-        <div class="row align-items-center">
-          <div class="col-6">
-            <h2 class="ff_outfit text-white fs_xl fw-bold mb-2 pb-1">
+        <div
+          class="row align-items-center justify-content-between flex-column-reverse flex-lg-row"
+        >
+          <div class="conversational_text_parent col-sm-11 col-lg-6">
+            <h2
+              class="ff_outfit text-white fs_xl fw-bold mb-2 pb-1 text-center text-lg-start"
+            >
               Conversational A.I. and Automation Equals
               <span class="clr_primary">Appointments On Autopilot</span>
             </h2>
-            <img src="./assets/icons/common/clear-talk.svg" alt="clear-talk" />
-            <p class="pt-2 mt-2 text-white opacity_07">
+            <div class="text-center text-lg-start">
+              <img
+                class="conversational_clear_logo w-100"
+                src="./assets/icons/common/clear_talk.svg"
+                alt="clear-talk"
+              />
+            </div>
+            <p class="pt-2 mt-2 text-white opacity_07 mb-0 text-center">
               The partnership that created the solar industries first seamless
               system. We take your business from leads captured to appointments
               closed.
             </p>
-            <div class="d-flex align-items-center">
+            <div
+              class="d-flex justify-content-center justify-content-lg-start align-items-center mt-4 pt-3 gap-4"
+            >
               <button
                 class="blue_linear_gradient hero_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm"
               >
                 Get a Demo
               </button>
+              <div
+                class="d-flex align-items-center gap_10 cursor_pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div
+                  class="video_play_button blue_linear_gradient rounded-pill ms-1 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="/assets/icons/amplifying-impact/video_play.svg"
+                    alt="video"
+                  />
+                </div>
+                <h3 class="ff_outfit fw-semibold text-white fs_sm mb-0">
+                  See Video
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 position-relative">
+            <span class="position-absolute outer_ring_client_review"></span>
+            <div
+              class="successful_client_parent mx-auto rounded-circle text-center w-100 h-100"
+            >
+              <img
+                class="mb-3 client_review_avatar"
+                src="./assets/icons/conversational/avatar-first.svg"
+                alt="avatar"
+              />
+              <p class="text-white ff_outfit fs_sm mb-1 fw-bold">
+                Drew Sugarman
+              </p>
+              <p class="text-white opacity_07 fw-normal ff_outfit fs_sm mb-0">
+                Successful Client
+              </p>
+              <div class="successful_client_review mx-auto position-relative">
+                <img
+                  class="position-absolute client_review_top_quote"
+                  src="./assets/icons/common/white_quote.svg"
+                  alt="quote"
+                />
+                <img
+                  class="position-absolute client_review_bottom_quote"
+                  src="./assets/icons/common/white_quote.svg"
+                  alt="quote"
+                />
+                <p
+                  class="text-white fw-normal fs_sm ff_outfit opacity_07 leading_150"
+                >
+                  Aenean masum sociis natoque penatibus et magnis dis parturient
+                  montes nascetur ridiculus mus. Donec quam felis, ultricies
+                  nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                  quis enim.
+                </p>
+              </div>
             </div>
           </div>
         </div>
