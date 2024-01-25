@@ -2,26 +2,411 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear Talk</title>
+    <!-- meta-tags -->
+    <!-- Primary Meta Tags -->
+    <meta name="clear-talk" content="Leverage The Power Of Conversational Voice A.I. With ClearTalk" />
+    <meta name="description" content="Leverage The Power Of Conversational Voice A.I. With ClearTalk" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clear-talk-psi.vercel.app" />
+    <meta property="og:clear-talk" content="Leverage The Power Of Conversational Voice A.I. With ClearTalk" />
+    <meta property="og:description" content="Leverage The Power Of Conversational Voice A.I. With ClearTalk" />
+    <meta property="og:image" content="https://clear-talk-psi.vercel.app/assets/images/meta/meta.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://clear-talk-psi.vercel.app" />
+    <meta property="twitter:clear-talk" content="Leverage The Power Of Conversational Voice A.I. With ClearTalk" />
+    <meta property="twitter:description" content="Leverage The Power Of Conversational Voice A.I. With ClearTalk" />
+    <meta property="twitter:image" content="https://clear-talk-psi.vercel.app/assets/images/meta/meta.webp" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/assets/icons/common/favicon.svg" type="image/x-icon" />
     <!-- CSS  -->
-    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/root.css" />
+    <!-- wavesurfer.js styles CSS LINK -->
+    <link rel="stylesheet" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css" />
+    <!-- SLICK MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SLICK THEME MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- BOOTSTRAP LATEST  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" class="bg-white"><img src="./assets/icons/common/top_arrow.svg" alt="top arrow"></button>
+    <header>
+        <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
+            <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
+                <a class="nav_logo" href="/"><img class="w-100" src="./assets/icons/common/clear-talk.svg"
+                        alt="clear-talk" /></a>
+                <ul id="showul"
+                    class="mb-0 d-flex align-items-center gap-xl-5 gap-4 mobile_nab flex-lg-row flex-column justify-content-center duration_300">
+                    <li class="d-flex gap-xl-5 gap-3 align-items-center flex-lg-row flex-column">
+                        <a onclick="shownav()"
+                            class="fw-normal fs_sm text-white opacity_07 ff_outfit nav_links duration_300"
+                            href="#">Software</a>
+                        <a onclick="shownav()"
+                            class="fw-normal fs_sm text-white opacity_07 ff_outfit nav_links duration_300"
+                            href="#">Industries</a>
+                    </li>
+                    <li class="d-flex align-items-center gap_10">
+                        <a target="_blank" rel="noopener noreferrer"
+                            class="d-flex justify-content-center align-items-center social_links duration_300 blue_linear_gradient rounded-pill"
+                            href="https://www.instagram.com/"><img src="/assets/icons/common/instagram.svg"
+                                alt="instagram" /></a>
+                        <a target="_blank" rel="noopener noreferrer"
+                            class="d-flex justify-content-center align-items-center social_links duration_300 blue_linear_gradient rounded-pill"
+                            href="https://discord.com/"><img src="/assets/icons/common/discord.svg" alt="discord" /></a>
+                        <a target="_blank" rel="noopener noreferrer"
+                            class="d-flex justify-content-center align-items-center social_links duration_300 blue_linear_gradient rounded-pill"
+                            href="https://twitter.com/?lang=en"><img src="/assets/icons/common/twitter.svg"
+                                alt="twitter" /></a>
+                    </li>
+                    <li>
+                        <button onclick="shownav()"
+                            class="blue_linear_gradient nav_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">
+                            Schedule a call
+                        </button>
+                    </li>
+                </ul>
+                <span class="menuicon d-lg-none cursor_pointer" id="shownav" onclick="shownav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+        </nav>
+        <div class="min-vh-100 hero_bg d-flex justify-content-between align-items-center position-relative">
+            <span class="hero_bottom_blur position-absolute bottom-0 w-100 start-0"></span>
+            <div
+                class="container custom_container d-flex justify-content-center align-items-center align-items-sm-start flex-column">
+                <h1 class="ff_outfit fw-bold fs_2xl text-white hero_heading pb-3 text-sm-start text-center">
+                    Leverage The Power Of
+                    <span class="clr_primary">Conversational Voice A.I.</span> With
+                    ClearTalk
+                </h1>
+                <p class="ff_outfit fw-normal fs_sm text-white opacity_07 hero_discription text-sm-start text-center">
+                    Check out a live demo and click the button below to see how you can
+                    automate communication for your business with A.I.
+                </p>
+                <button
+                    class="blue_linear_gradient hero_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">
+                    Get a live call
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--  SERVICES START  -->
+    <section class="services_background pb-5 mb-5">
+        <div class="pt-5 mt-5">
+            <div class="py-5 mt-md-5">
+                <div
+                    class="custom_container container d-flex flex-wrap justify-content-between gap-4 gap-lg-0 align-items-lg-center justify-content-lg-center position-relative mt-5">
+                    <!-- services c image  -->
+                    <img class="services_c_image w-100 d-none d-lg-block"
+                        src="./assets/images/services/webp/c_image.webp" alt="c-logo" />
+                    <div class="position_lg_absolute services_card_parent following_up_card_parent">
+                        <div class="d-flex align-items-lg-center">
+                            <!--  clock icon -->
+                            <div>
+                                <div class="services_icon_background d-flex align-items-center justify-content-center">
+                                    <img class="services_icon" src="./assets/icons/services/clock.svg" alt="clock" />
+                                </div>
+                            </div>
+                            <div class="ms-3 services_text_parent w-100">
+                                <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md">
+                                    Keep Following Up
+                                </p>
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm leading_140">
+                                    Pauru pharetra justo ultrices dictum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position_lg_absolute services_card_parent speed_lead_up_card_parent">
+                        <div class="d-flex align-items-lg-center">
+                            <div class="services_icon_background d-flex align-items-center justify-content-center">
+                                <img class="services_icon" src="./assets/icons/services/speedLead.svg"
+                                    alt="speed-lead" />
+                            </div>
+                            <div class="ms-3 services_text_parent w-100">
+                                <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md">
+                                    Speed to Lead
+                                </p>
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm leading_140">
+                                    Amet consectet In fames and mauris integer nec oarci
+                                    consectetur elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position_lg_absolute services_card_parent communication_card_parent">
+                        <div class="d-flex align-items-lg-center">
+                            <div class="services_icon_background d-flex align-items-center justify-content-center">
+                                <img class="services_icon" src="./assets/icons/services/communicat.svg"
+                                    alt="communicat" />
+                            </div>
+                            <div class="ms-3 services_text_parent w-100">
+                                <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md">
+                                    Automate All Communication
+                                </p>
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm leading_140">
+                                    Dui malesuada amet idmi enim volutpat Interdum pellentesque
+                                    sed cursus pulvinar feugiat cursus neque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position_lg_absolute services_card_parent user_role_card_parent">
+                        <div class="d-flex align-items-lg-end">
+                            <div class="services_icon_background d-flex align-items-center justify-content-center">
+                                <img class="services_icon" src="./assets/icons/services/userRoles.svg"
+                                    alt="user-roles" />
+                            </div>
+                            <div class="ms-3 services_text_parent w-100">
+                                <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md">
+                                    Unlimited Agents and Roles
+                                </p>
+                                <p class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm leading_140">
+                                    Dui malesuada amet idmi enim volutpat Interdum pellentesque
+                                    sed cursus pulvinar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position_lg_absolute services_card_parent user_setting_card_parent">
+                        <div class="d-flex align-items-lg-end flex-row-reverse flex-lg-row">
+                            <div class="ms-3 ms-lg-0 me-lg-3 services_text_parent w-100">
+                                <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
+                                    More Production. Less Stress
+                                </p>
+                                <p
+                                    class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end leading_140">
+                                    Elementum auctor duis mauri est adipiscing morbi vitae
+                                    maecenas augue parturient ultrices quis rutrum aliquet.
+                                </p>
+                            </div>
+                            <div class="services_icon_background d-flex align-items-center justify-content-center">
+                                <img class="services_icon" src="./assets/icons/services/userSetting.svg"
+                                    alt="user-setting" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position_lg_absolute services_card_parent user_info_card_parent">
+                        <div class="d-flex align-items-lg-end flex-row-reverse flex-lg-row">
+                            <div class="ms-3 ms-lg-0 me-lg-3 services_text_parent w-100">
+                                <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
+                                    100% Accurate Information
+                                </p>
+                                <p
+                                    class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end leading_140">
+                                    Nulla pharetra id egestas maecenas mauris magna gravida
+                                    ignissim sapien amet viverra orci sed massa lectus.
+                                </p>
+                            </div>
+                            <div class="services_icon_background d-flex align-items-center justify-content-center">
+                                <img class="services_icon" src="./assets/icons/services/userInfo.svg" alt="user-info" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position_lg_absolute services_card_parent miss_call_card_parent">
+                        <div class="d-flex align-items-lg-end flex-row-reverse flex-lg-row">
+                            <div class="ms-3 ms-lg-0 me-lg-3 services_text_parent w-100">
+                                <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
+                                    Never Miss A Call. Never Miss A Customer
+                                </p>
+                                <p
+                                    class="fw-normal ff_outfit text-white opacity_07 mb-0 pt-1 fs_sm text-lg-end leading_140">
+                                    Pharetra odio mattis in mauris adipiscing velut consectetu.
+                                </p>
+                            </div>
+                            <div class="services_icon_background d-flex align-items-center justify-content-center">
+                                <img class="services_icon" src="./assets/icons/services/missCall.svg" alt="miss-call" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  SERVICES END -->
+
+    <!--  FUNCTIONS/ROLES SECTION START  -->
+    <section class="pt-5 position-relative">
+        <span class="bottom-0 start-0 w-100 roles_bottom_layer position-absolute z-0"></span>
+        <div class="functions_bg py-5">
+            <div class="custom_container container pt-5">
+                <h2 class="ff_outfit fw-bold fs_xl text-center text-white mb-4 mb-lg-5">
+                    Functions/ <span class="clr_primary">Roles</span>
+                </h2>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-7">
+                        <img class="w-100" src="./assets/images/roles/webp/appointment.png"
+                            alt="appointment_setting_img" />
+                    </div>
+                    <div class="col-sm-10 col-lg-5">
+                        <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
+                            <div
+                                class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
+                                <img src="./assets/icons/roles/appointmentSetting.svg" alt="appointmentSetting" />
+                            </div>
+                            <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
+                                Appointment setting
+                            </h3>
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                                Taking too long to reach out to leads? Need someone to follow
+                                up? Qualify them and schedule appointments? We have you
+                                covered.
+                            </p>
+                            <div class="d-flex gap-2 gap-lg-3 align-items-center waveformContainer">
+                                <span class="border-0 bg-transparent cursor_pointer toggle-btn">
+                                    <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
+                                </span>
+                                <div class="waveform"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row flex-column-reverse flex-lg-row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
+                    <div class="col-sm-10 col-lg-5">
+                        <div class="bg_secondary virtual_card_parent w-100 mt-lg-3">
+                            <div
+                                class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
+                                <img src="./assets/icons/roles/receptionist.svg" alt="appointmentSetting" />
+                            </div>
+                            <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
+                                Virtual Receptionist
+                            </h3>
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                                Tired of missing calls? Paying too much for your receptionist?
+                                Need 24/7 answering so you capture every lead? Easy.
+                            </p>
+                            <div class="d-flex gap-2 gap-lg-3 align-items-center waveformContainer">
+                                <span class="border-0 bg-transparent cursor_pointer toggle-btn">
+                                    <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
+                                </span>
+                                <div class="waveform"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <img class="w-100" src="./assets/images/roles/webp/virtual_receptionist.webp"
+                            alt="appointment_setting_img" />
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
+                    <div class="col-lg-7">
+                        <img class="w-100" src="./assets/images/roles/webp/recruiting.webp"
+                            alt="appointment_setting_img" />
+                    </div>
+                    <div class="col-sm-10 col-lg-5">
+                        <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
+                            <div
+                                class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
+                                <img src="./assets/icons/roles/appointmentSetting.svg" alt="appointmentSetting" />
+                            </div>
+                            <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
+                                Appointment setting
+                            </h3>
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                                Taking too long to reach out to leads? Need someone to follow
+                                up? Qualify them and schedule appointments? We have you
+                                covered.
+                            </p>
+                            <div class="d-flex gap-2 gap-lg-3 align-items-center waveformContainer">
+                                <span class="border-0 bg-transparent cursor_pointer toggle-btn">
+                                    <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
+                                </span>
+                                <div class="waveform"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row flex-column-reverse flex-lg-row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
+                    <div class="col-sm-10 col-lg-5">
+                        <div class="bg_secondary virtual_card_parent w-100 mt-lg-3">
+                            <div
+                                class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
+                                <img src="./assets/icons/roles/receptionist.svg" alt="appointmentSetting" />
+                            </div>
+                            <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
+                                Virtual Receptionist
+                            </h3>
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                                Tired of missing calls? Paying too much for your receptionist?
+                                Need 24/7 answering so you capture every lead? Easy.
+                            </p>
+                            <div class="d-flex gap-2 gap-lg-3 align-items-center waveformContainer">
+                                <span class="border-0 bg-transparent cursor_pointer toggle-btn">
+                                    <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
+                                </span>
+                                <div class="waveform"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <img class="w-100" src="./assets/images/roles/webp/aiBot.webp" alt="appointment_setting_img" />
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-5 pt-2 pt-md-4 position-relative z-2">
+                    <div class="col-lg-7">
+                        <img class="w-100" src="./assets/images/roles/webp/customer.webp"
+                            alt="appointment_setting_img" />
+                    </div>
+                    <div class="col-sm-10 col-lg-5">
+                        <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
+                            <div
+                                class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
+                                <img src="./assets/icons/roles/appointmentSetting.svg" alt="appointmentSetting" />
+                            </div>
+                            <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
+                                Appointment setting
+                            </h3>
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                                Taking too long to reach out to leads? Need someone to follow
+                                up? Qualify them and schedule appointments? We have you
+                                covered.
+                            </p>
+                            <div class="d-flex gap-2 gap-lg-3 align-items-center waveformContainer">
+                                <span class="border-0 bg-transparent cursor_pointer toggle-btn">
+                                    <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
+                                </span>
+                                <div class="waveform"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  FUNCTIONS/ROLES SECTION END  -->
+
     <!-- GET STARTED SECTION  -->
     <div class="started_bg py-lg-5 position-relative">
         <div class="container custom_container py-md-5">
-            <h2 class="text-center text-white fw-bold ff_outfit fs_xl leading_130 pt-5 mt-sm-2">Three Ways To <span
-                    class="clr_primary">Get Started</span></h2>
+            <h2 class="text-center text-white fw-bold ff_outfit fs_xl leading_130 pt-5 mt-sm-2">
+                Three Ways To <span class="clr_primary">Get Started</span>
+            </h2>
             <p class="text-center pt-md-3 pt-2 mb-0 text-white opacity_07 get_started_description ff_outfit fw-normal">
-                Aenean
-                masum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                Aenean masum sociis natoque penatibus et magnis dis parturient montes
+                nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                eu, pretium quis, sem.
+            </p>
             <div class="mb-lg-2 pb-lg-1">
                 <div class="row py-5 mb-md-4 justify-content-lg-between justify-content-center">
                     <div class="col-lg-4 col-md-6">
@@ -51,16 +436,18 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <p class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit">01</p>
+                                <p class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit">
+                                    01
+                                </p>
                             </div>
-                            <p class="text-white ff_outfit fs_md fw-semibold pt-3 mt-1 mb-0 leading_112">Use Our
-                                Software To Build Your Agents</p>
+                            <p class="text-white ff_outfit fs_md fw-semibold pt-3 mt-1 mb-0 leading_112">
+                                Use Our Software To Build Your Agents
+                            </p>
                             <p class="text-white fs_sm fw-normal started_card_description mb-0 ff_outfit opacity_07">
-                                Tortor
-                                tellus ultricies massa volutpat magna purus in eu facilisis. Orci egestas dui lacinia
-                                nec id
-                                vulputate. Massa
-                                adipiscing ultricies eu nec vel.</p>
+                                Tortor tellus ultricies massa volutpat magna purus in eu
+                                facilisis. Orci egestas dui lacinia nec id vulputate. Massa
+                                adipiscing ultricies eu nec vel.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
@@ -95,15 +482,17 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <p class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit">02</p>
+                                <p class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit">
+                                    02
+                                </p>
                             </div>
-                            <p class="text-white ff_outfit fs_md fw-semibold pt-3 mt-1 mb-0 leading_112">Have Us
-                                Build Your Agents For You</p>
+                            <p class="text-white ff_outfit fs_md fw-semibold pt-3 mt-1 mb-0 leading_112">
+                                Have Us Build Your Agents For You
+                            </p>
                             <p class="text-white fs_sm fw-normal started_card_description mb-0 ff_outfit opacity_07">
-                                Amet
-                                iaculis ullamcorper nunc arcu ornare auctor varius. Sed feugiat nisl integer est urna
-                                urna
-                                ornare viverra bibendum.</p>
+                                Amet iaculis ullamcorper nunc arcu ornare auctor varius. Sed
+                                feugiat nisl integer est urna urna ornare viverra bibendum.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
@@ -119,17 +508,18 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <p class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit">03</p>
+                                <p class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit">
+                                    03
+                                </p>
                             </div>
-                            <p class="text-white ff_outfit fs_md fw-semibold pt-3 mt-1 mb-0 leading_112">White
-                                Label
-                                Our Product</p>
+                            <p class="text-white ff_outfit fs_md fw-semibold pt-3 mt-1 mb-0 leading_112">
+                                White Label Our Product
+                            </p>
                             <p class="text-white fs_sm fw-normal started_card_description mb-0 ff_outfit opacity_07">
-                                Integer
-                                pharetra molestie gravida massa magna arcu semper morbi. Quis semper tortor semper
-                                nascetur
-                                accumsan. Volutpat
-                                duis phasellus nec tellus pharetra lacus at.</p>
+                                Integer pharetra molestie gravida massa magna arcu semper
+                                morbi. Quis semper tortor semper nascetur accumsan. Volutpat
+                                duis phasellus nec tellus pharetra lacus at.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -145,41 +535,53 @@
             <div class="row justify-content-lg-end justify-content-center">
                 <div class="col-lg-6 col-md-10 col-12">
                     <div class="featured_box">
-                        <h3 class="text-start text-white ff_outfit fs_xl fw-bold mb-0">Featured In</h3>
+                        <h3 class="text-start text-white ff_outfit fs_xl fw-bold mb-0">
+                            Featured In
+                        </h3>
                         <div class="d-flex align-items-start pt-4">
-                            <img class="featured_icons" src="./assets/icons/features/download.svg" alt="downlaod icon">
+                            <img class="featured_icons" src="./assets/icons/features/download.svg"
+                                alt="downlaod icon" />
                             <div class="ps-sm-4 ps-3">
-                                <p class="text-white ff_outfit fs_sm fw-bold leading_112 mb-0">Nisl sem quam sem sit
-                                    integer viverra eget.</p>
-                                <p class="text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 pt-1 mb-0">29
-                                    December 2023</p>
+                                <p class="text-white ff_outfit fs_sm fw-bold leading_112 mb-0">
+                                    Nisl sem quam sem sit integer viverra eget.
+                                </p>
+                                <p class="text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 pt-1 mb-0">
+                                    29 December 2023
+                                </p>
                             </div>
                         </div>
                         <div class="d-flex align-items-start pt-4">
-                            <img class="featured_icons" src="./assets/icons/features/loading.svg" alt="loading icon">
+                            <img class="featured_icons" src="./assets/icons/features/loading.svg" alt="loading icon" />
                             <div class="ps-sm-4 ps-3">
-                                <p class="text-white ff_outfit fs_sm fw-bold leading_112 mb-0">Nisl sem quam sem sit
-                                    integer viverra eget.</p>
-                                <p class="text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 pt-1 mb-0">29
-                                    December 2023</p>
+                                <p class="text-white ff_outfit fs_sm fw-bold leading_112 mb-0">
+                                    Nisl sem quam sem sit integer viverra eget.
+                                </p>
+                                <p class="text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 pt-1 mb-0">
+                                    29 December 2023
+                                </p>
                             </div>
                         </div>
                         <div class="d-flex align-items-start pt-4">
-                            <img class="featured_icons" src="./assets/icons/features/document.svg" alt="document icon">
+                            <img class="featured_icons" src="./assets/icons/features/document.svg"
+                                alt="document icon" />
                             <div class="ps-sm-4 ps-3">
-                                <p class="text-white ff_outfit fs_sm fw-bold leading_112 mb-0">Nisl sem quam sem sit
-                                    integer viverra eget.</p>
-                                <p class="text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 pt-1 mb-0">29
-                                    December 2023</p>
+                                <p class="text-white ff_outfit fs_sm fw-bold leading_112 mb-0">
+                                    Nisl sem quam sem sit integer viverra eget.
+                                </p>
+                                <p class="text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 pt-1 mb-0">
+                                    29 December 2023
+                                </p>
                             </div>
                         </div>
                         <div class="d-flex align-items-start pt-4">
-                            <img class="featured_icons" src="./assets/icons/features/file.svg" alt="file icon">
+                            <img class="featured_icons" src="./assets/icons/features/file.svg" alt="file icon" />
                             <div class="ps-sm-4 ps-3">
-                                <p class="text-white ff_outfit fs_sm fw-bold leading_112 mb-0">Nisl sem quam sem sit
-                                    integer viverra eget.</p>
-                                <p class="text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 pt-1 mb-0">29
-                                    December 2023</p>
+                                <p class="text-white ff_outfit fs_sm fw-bold leading_112 mb-0">
+                                    Nisl sem quam sem sit integer viverra eget.
+                                </p>
+                                <p class="text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 pt-1 mb-0">
+                                    29 December 2023
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -190,63 +592,156 @@
         <div class="featured_top_gradient_layer"></div>
         <div class="featured_bottom_gradient_layer"></div>
     </div>
-
-    <!-- NEXT STEP SECTION  -->
-    <div class="py-5 my-5">
-        <div class="container custom_container">
-            <div class="row flex-lg-row flex-column-reverse justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-lg-6">
-                    <div class="row dotted_lines pt-lg-0 pt-5">
-                        <div class="col-sm-6">
-                            <div class="next_steps_cards_box">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <img src="./assets/icons/next_steps/click_link.svg" alt=" click links icon">
-                                    <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">01</p>
-                                </div>
-                                <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Click Link</p>
-                                <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
-                                    Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll duisit.
-                                </p>
-                            </div>
-                            <div class="next_steps_cards_box mt-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <img src="./assets/icons/next_steps/use.svg" alt=" use icon">
-                                    <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">04</p>
-                                </div>
-                                <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">And Use</p>
-                                <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
-                                    Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll duisit.
-                                </p>
-                            </div>
+    <!-- Driving Growth, Amplifying Impact section -->
+    <div class="py-5 overflow-hidden">
+        <div class="container custom_container d-flex flex-lg-row flex-column align-items-center">
+            <div class="position-relative">
+                <img class="microphone_circle w-100" src="/assets/images/Amplifying-impact/png/circle-ball.png"
+                    alt="circle">
+                <img class="position-absolute top-50 start-50 microphone w-50"
+                    src="/assets/images/Amplifying-impact/png/microphone.png" alt="microphone">
+            </div>
+            <div class="ps-xl-5 ps-lg-4  width_lg_100 w_half">
+                <h2 class="ff_outfit fw-bold fs_xl text-white hero_heading pb-3 mb-0 pe-4 pt-4 pt-lg-0">
+                    Driving
+                    Growth, <span class="clr_primary">Amplifying</span> Impact</h2>
+                <h4 class="ff_outfit fw-bold text-white fs_sm pb-3">Modern Times Call For Modern Solutions</h4>
+                <p class="text-white ff_outfit fw-normal opacity_07 leading_150 pb-4 mb-3   ">Any business that has
+                    employees
+                    performing menial tasks over the phone can benefit from conversational AI automation.
+                    Whether it's a virtual receptionist, outbound lead follow up, recruiting or a number of other use
+                    cases not only do we
+                    outperform people but we do it for less.</p>
+                <div class="d-flex gap-4 align-items-center">
+                    <button
+                        class="blue_linear_gradient nav_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Get
+                        called now!</button>
+                    <div class="d-flex align-items-center gap_10 cursor_pointer" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <div
+                            class="video_play_button blue_linear_gradient rounded-pill ms-1 d-flex justify-content-center align-items-center">
+                            <img src="/assets/icons/amplifying-impact/video-play.svg" alt="video">
                         </div>
-                        <div class="col-sm-6 ">
-                            <div class="next_steps_cards_box custom_margin">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <img src="./assets/icons/next_steps/fill_out.svg" alt="fill out icon">
-                                    <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">02</p>
+                        <h3 class="ff_outfit fw-semibold text-white fs_sm mb-0">See Video</h3>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0 pb-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-                                <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Fill Out</p>
-                                <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
-                                    Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll duisit.
-                                </p>
-                            </div>
-                            <div class="next_steps_cards_box mt-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <img src="./assets/icons/next_steps/log_in.svg" alt="login icon">
-                                    <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">03</p>
+                                <div class="modal-body w-100 pt-0">
+                                    <video width="100%" height="306" controls>
+                                        <source src="./assets/video/sample_video.mp4" type="video/mp4">
+                                    </video>
                                 </div>
-                                <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Log In</p>
-                                <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
-                                    Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll duisit.
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div>
-                        <p class="text-white ff_outfit fs_xl fw-bold leading_130 mb-0 text-lg-start text-center">The Next Steps</p>
-                        <p class="pt-4 mb-0 text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 text-lg-start text-center">Four Steps To Hitting Your Earning Potential</p>
+            </div>
+        </div>
+    </div>
+    <!--  COMPANIES SECTION START  -->
+    <section>
+        <div class="container companies_logos_parent py-5">
+            <h2 class="fw-bold fs_xl text-white text-center ff_outfit mb-0">
+                Companies
+                <span class="text_primary_gradient">We've Worked </span> With
+            </h2>
+            <p
+                class="text-white opacity_07 companies_description mx-auto text-center mb-0 ff_outfit fw-normal fs_sm pt-3 mb-4">
+                Eectus ornare arcu massa dictum tincidunt non. Pellentesque pretium
+                viverra enim venenatis nunc. Metus pharetra consequat amet eget orci a
+                sollicitudin felis cras. Lacus interdum feugiat in mi nullam varius.
+            </p>
+            <div class="overflow-x-auto custom_scrollbar">
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                    <img class="w-100 common_company_image" src="./assets/images/companies/powur.png" alt="powur" />
+                    <img class="w-100 solar_bootcamp_company" src="./assets/images/companies/solar_bootcamp.png"
+                        alt="solar-bootcamp" />
+                    <img class="w-100 common_company_image" src="./assets/images/companies/energy.png" alt="energy" />
+                    <img class="w-100 common_company_image" src="./assets/images/companies/american.png"
+                        alt="american" />
+                    <img class="w-100 common_company_image" src="./assets/images/companies/guard.png"
+                        alt="guard-guru" />
+                    <img class="w-100 common_company_image" src="./assets/images/companies/solar_upgrade.png"
+                        alt="solar-upgrade" />
+                    <img class="w-100 common_company_image" src="./assets/images/companies/orange_solar.png"
+                        alt="orange-solar" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEXT STEP SECTION  -->
+    <div class="mt_lg_240">
+        <div class="py-5 bg_secondary">
+            <div class="container custom_container">
+                <div
+                    class="row flex-lg-row flex-column-reverse justify-content-lg-between justify-content-center align-items-center dotted_lines">
+                    <div class="col-lg-6 position-relative">
+                        <div class="row pt-lg-0 pt-5 position_lg_absolute top-50 translate_lg_middle_y">
+                            <div class="col-sm-6">
+                                <div class="next_steps_cards_box">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <img src="./assets/icons/next-steps/click_link.svg" alt=" click links icon">
+                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">01</p>
+                                    </div>
+                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Click Link
+                                    </p>
+                                    <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
+                                        Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll
+                                        duisit.
+                                    </p>
+                                </div>
+                                <div class="next_steps_cards_box mt-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <img src="./assets/icons/next-steps/use.svg" alt=" use icon">
+                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">04</p>
+                                    </div>
+                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">And Use</p>
+                                    <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
+                                        Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll
+                                        duisit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <div class="next_steps_cards_box custom_margin">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <img src="./assets/icons/next-steps/fill_out.svg" alt="fill out icon">
+                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">02</p>
+                                    </div>
+                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Fill Out</p>
+                                    <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
+                                        Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll
+                                        duisit.
+                                    </p>
+                                </div>
+                                <div class="next_steps_cards_box mt-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <img src="./assets/icons/next-steps/log_in.svg" alt="login icon">
+                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">03</p>
+                                    </div>
+                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Log In</p>
+                                    <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
+                                        Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll
+                                        duisit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div>
+                            <p class="text-white ff_outfit fs_xl fw-bold leading_130 mb-0 text-lg-start text-center">The
+                                Next Steps</p>
+                            <p
+                                class="pt-4 mb-0 text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 text-lg-start text-center">
+                                Four Steps To Hitting Your Earning Potential</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -254,31 +749,36 @@
     </div>
 
     <!-- OUR CLIENTS  -->
-    <div class="our_client_bg">
-        <div class="py-5 my-5">
-            <div class="container custom_container">
-                <h2 class="text-white ff_outfit fs_xl fw-bold leading_130 text-center mb-1">See What <span
+    <div class="our_client_bg pt_lg_160px">
+        <div class="py-lg-5 mt-lg-5">
+            <div class="container custom_container py-5">
+                <h2 class="text-white ff_outfit fs_xl fw-bold leading_130 text-center mb-1 pt-3">See What <span
                         class="clr_primary">Our Clients</span> Think About Us</h2>
-                <div class="row pt-5 justify-content-center mt-2">
+                <div class="row py-sm-5 pt-5 pb-4 justify-content-center mt-2">
                     <div class="col-lg-4 col-md-6 col-10">
                         <div class="our_client_card_box position-relative">
-                            <img src="./assets/images/clients/png/jeffrey_martin.png" alt="jeffrey martin boy image"
+                            <img src="./assets/images/clients/jeffrey_martin.png" alt="jeffrey martin boy image"
                                 class="our_client_card_img">
-                            <div class="bg_linear">
+                            <div class="position-absolute bottom-0 about_card_content">
                                 <div class="custom_padding_clients_cards">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="">
                                             <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">Jeffrey
                                                 Martin</p>
-                                            <p class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
+                                            <p
+                                                class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
                                                 Founder & CEO</p>
                                         </div>
-                                        <img src="./assets/icons/clients/stars.svg" alt="stars svg icon">
+                                        <img src="./assets/icons/clients/stars.svg" alt="stars svg icon"
+                                            class="stars">
                                     </div>
-                                    <p class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">I
-                                        can't believe this technology actually exists. I've been hesitant with anything AI
-                                        since it's all been a gimmick so
-                                        far. This actually works. It calls my leads right away and converts better than my
+                                    <p
+                                        class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
+                                        I can't believe this technology actually exists. I've been hesitant with
+                                        anything AI
+                                        since it's all been a gimmick so far. This actually works. It calls my leads
+                                        right away and converts better than
+                                        my
                                         old setters.</p>
                                 </div>
                             </div>
@@ -286,23 +786,28 @@
                     </div>
                     <div class="col-lg-4 col-md-6 mt-md-0 mt-4 col-10">
                         <div class="our_client_card_box position-relative">
-                            <img src="./assets/images/clients/png/drew_sugarman.png" alt="drew sugarman boy image"
+                            <img src="./assets/images/clients/drew_sugarman.png" alt="drew sugarman boy image"
                                 class="our_client_card_img">
-                            <div class="bg_linear">
+                            <div class="position-absolute bottom-0 about_card_content">
                                 <div class="custom_padding_clients_cards">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="">
-                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">Drew Sugarman
+                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">Drew
+                                                Sugarman
                                             </p>
-                                            <p class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
+                                            <p
+                                                class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
                                                 Founder & CEO</p>
                                         </div>
-                                        <img src="./assets/icons/clients/stars.svg" alt="stars svg icon">
+                                        <img class="stars" src="./assets/icons/clients/stars.svg" alt="stars svg icon">
                                     </div>
-                                    <p class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
-                                        I'm always looking for the next technological advance. When I found this I had my
+                                    <p
+                                        class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
+                                        I'm always looking for the next technological advance. When I found this I had
+                                        my
                                         concerns but had to at least try it
-                                        out. I'm pleasantly surprised and had an almost immediate ROI. Planning on shifting
+                                        out. I'm pleasantly surprised and had an almost immediate ROI. Planning on
+                                        shifting
                                         a lot of my operations over to this.</p>
                                 </div>
                             </div>
@@ -310,21 +815,24 @@
                     </div>
                     <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 col-10">
                         <div class="our_client_card_box position-relative">
-                            <img src="./assets/images/clients/png/jeffrey_martin_girl.png" alt="jeffrey martin girl image"
-                                class="our_client_card_img">
-                            <div class="bg_linear">
+                            <img src="./assets/images/clients/jeffrey_martin_girl.png"
+                                alt="jeffrey martin girl image" class="our_client_card_img">
+                            <div class="position-absolute bottom-0 about_card_content">
                                 <div class="custom_padding_clients_cards">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="">
                                             <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">Jeffrey
                                                 Martin</p>
-                                            <p class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
+                                            <p
+                                                class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
                                                 Founder & CEO</p>
                                         </div>
-                                        <img src="./assets/icons/clients/stars.svg" alt="stars svg icon">
+                                        <img class="stars" src="./assets/icons/clients/stars.svg" alt="stars svg icon">
                                     </div>
-                                    <p class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
-                                        This is going to change the insurance industry. The amount of time we are saving by
+                                    <p
+                                        class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
+                                        This is going to change the insurance industry. The amount of time we are saving
+                                        by
                                         not having to book these
                                         appointments is mind blowing. Now my guys are just sitting down for qualified
                                         appointments instead of having to book all
@@ -335,16 +843,17 @@
                     </div>
                 </div>
             </div>
-        
+
         </div>
     </div>
+    <!--  COMPANIES SECTION END  -->
 
     <!-- FOOTER SECTION  -->
     <div class="footer_bg pt-sm-5 pt-3">
         <div class="container custom_container py-4">
             <div class="row flex-wrap justify-content-between align-items-xl-center py-2">
                 <div class="col-lg-3">
-                    <a href="#"><img src="./assets/icons/common/clear-talk.svg" alt=" page logo"></a>
+                    <a href="#"><img src="./assets/icons/common/clear_talk.svg" alt=" page logo"></a>
                     <p class="text-white ff_outfit fs_sm fw-semibold leading_112 mb-0 pt-3">Innovative Solutions, Real
                         Results</p>
                     <p class="pt-4 mt-sm-3 mb-0 text-white fs_md fw-semibold ff_outfit leading_112">Follow us:</p>
