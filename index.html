@@ -46,9 +46,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="loading">
+    <!-- PRELAODER  -->
+    <div class="loader_bg" id="preLoader">
+        <div class="loader d-flex justify-content-center align-items-center h-100 ">
+            <div class="position-relative px-3" data-aos="zoom-in">
+                <img class="microphone_circle_preloader w-100" src="/assets/images/amplifying-impact/circle_ball.webp"
+                    alt="circle">
+            </div>
+        </div>
+    </div>
     <!-- BACK TO TOP -->
-    <button id="back-to-top" class="bg_secondary"><img src="./assets/icons/common/top_arrow.svg" alt="top arrow"></button>
+    <button id="back-to-top" class="bg-secondary"><img src="./assets/icons/common/top_arrow.svg"
+            alt="top arrow"></button>
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
@@ -115,7 +125,7 @@
     </header>
     <!--  SERVICES START  -->
     <section class="services_background pb-5 mb-5">
-        <div class="pt-5 mt-5">
+        <div class="py-5 lg:my-5">
             <div class="py-5 mt-md-5">
                 <div
                     class="custom_container container d-flex flex-wrap justify-content-between gap-4 gap-lg-0 align-items-lg-center justify-content-lg-center position-relative mt-5">
@@ -689,6 +699,84 @@
                 </div>
             </div>
         </div>
+        <!--  CONVERSATIONAL SECTION START  -->
+        <section>
+            <div class="container custom_container">
+                <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row">
+                    <div class="conversational_text_parent col-sm-11 col-lg-6 mt-4 mt-lg-0">
+                        <h2 class="ff_outfit text-white fs_xl fw-bold mb-2 pb-1 text-center text-lg-start">
+                            Conversational A.I. and Automation Equals
+                            <span class="clr_primary">Appointments On Autopilot</span>
+                        </h2>
+                        <div class="text-center text-lg-start">
+                            <img class="conversational_clear_logo w-100" src="./assets/icons/common/clear_talk.svg"
+                                alt="clear-talk" />
+                        </div>
+                        <p class="pt-2 mt-2 text-white opacity_07 mb-0 text-center text-lg-start">
+                            The partnership that created the solar industries first seamless
+                            system. We take your business from leads captured to appointments
+                            closed.
+                        </p>
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center mt-4 pt-3 gap-4">
+                            <button
+                                class="blue_linear_gradient hero_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">
+                                Get a Demo
+                            </button>
+                            <div class="d-flex align-items-center gap_10 cursor_pointer" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <div
+                                    class="video_play_button blue_linear_gradient rounded-pill ms-1 d-flex justify-content-center align-items-center">
+                                    <img src="/assets/icons/amplifying-impact/video_play.svg" alt="video" />
+                                </div>
+                                <h3 class="ff_outfit fw-semibold text-white fs_sm mb-0">
+                                    See Video
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 col-md-8 col-lg-6 position-relative">
+                        <span class="position-absolute outer_ring_client_review d-none d-sm-block"></span>
+                        <span class="position-absolute middle_ring_client_review z-1 d-none d-sm-block">
+                            <img class="position-absolute small_avatar_conversational first_small_avatar z-2"
+                                src="./assets/images/conversational/first_avatar.png" alt="avatar" />
+                            <img class="position-absolute small_avatar_conversational second_small_avatar z-2"
+                                src="./assets/images/conversational/second_avatar.png" alt="avatar" />
+                            <img class="position-absolute small_avatar_conversational third_small_avatar z-2"
+                                src="./assets/images/conversational/third_avatar.png" alt="avatar" />
+                            <img class="position-absolute small_avatar_conversational fourth_small_avatar z-2"
+                                src="./assets/images/conversational/fourth_avatar.png" alt="avatar" />
+                            <img class="position-absolute small_avatar_conversational fifth_small_avatar z-2"
+                                src="./assets/images/conversational/fifth_avatar.png" alt="avatar" />
+                        </span>
+                        <span class="position-absolute inner_ring_client_review d-none d-sm-block"></span>
+                        <div class="successful_client_parent text-center w-100 h-100 position-relative z-0">
+                            <img class="mb-3 client_review_avatar" src="./assets/images/conversational/first_avatar.png"
+                                alt="avatar" />
+                            <p class="text-white ff_outfit fs_sm mb-1 fw-bold">
+                                Drew Sugarman
+                            </p>
+                            <p class="text-white opacity_07 fw-normal ff_outfit fs_sm mb-0">
+                                Successful Client
+                            </p>
+                            <div class="successful_client_review mx-auto position-relative">
+                                <img class="position-absolute client_review_top_quote"
+                                    src="./assets/icons/common/white_quote.svg" alt="quote" />
+                                <img class="position-absolute client_review_bottom_quote"
+                                    src="./assets/icons/common/white_quote.svg" alt="quote" />
+                                <p class="text-white fw-normal fs_sm ff_outfit opacity_07 leading_150">
+                                    Aenean masum sociis natoque penatibus et magnis dis parturient
+                                    montes nascetur ridiculus mus. Donec quam felis, ultricies
+                                    nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                                    quis enim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  CONVERSATIONAL SECTION END  -->
         <!-- Driving Growth, Amplifying Impact section -->
         <div class="py-5 overflow-hidden">
             <div class="container custom_container d-flex flex-lg-row flex-column align-items-center">
@@ -744,84 +832,6 @@
                 </div>
             </div>
         </div>
-        <!--  CONVERSATIONAL SECTION START  -->
-        <section>
-            <div class="container custom_container">
-                <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row">
-                    <div class="conversational_text_parent col-sm-11 col-lg-6">
-                        <h2 class="ff_outfit text-white fs_xl fw-bold mb-2 pb-1 text-center text-lg-start">
-                            Conversational A.I. and Automation Equals
-                            <span class="clr_primary">Appointments On Autopilot</span>
-                        </h2>
-                        <div class="text-center text-lg-start">
-                            <img class="conversational_clear_logo w-100" src="./assets/icons/common/clear_talk.svg"
-                                alt="clear-talk" />
-                        </div>
-                        <p class="pt-2 mt-2 text-white opacity_07 mb-0 text-center text-lg-start">
-                            The partnership that created the solar industries first seamless
-                            system. We take your business from leads captured to appointments
-                            closed.
-                        </p>
-                        <div
-                            class="d-flex justify-content-center justify-content-lg-start align-items-center mt-4 pt-3 gap-4">
-                            <button
-                                class="blue_linear_gradient hero_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">
-                                Get a Demo
-                            </button>
-                            <div class="d-flex align-items-center gap_10 cursor_pointer" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                <div
-                                    class="video_play_button blue_linear_gradient rounded-pill ms-1 d-flex justify-content-center align-items-center">
-                                    <img src="/assets/icons/amplifying-impact/video_play.svg" alt="video" />
-                                </div>
-                                <h3 class="ff_outfit fw-semibold text-white fs_sm mb-0">
-                                    See Video
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-11 col-md-8 col-lg-6 position-relative">
-                        <span class="position-absolute outer_ring_client_review"></span>
-                        <span class="position-absolute middle_ring_client_review z-1">
-                            <img class="position-absolute small_avatar_conversational first_small_avatar z-2"
-                                src="./assets/images/conversational/first_avatar.png" alt="avatar" />
-                            <img class="position-absolute small_avatar_conversational second_small_avatar z-2"
-                                src="./assets/images/conversational/second_avatar.png" alt="avatar" />
-                            <img class="position-absolute small_avatar_conversational third_small_avatar z-2"
-                                src="./assets/images/conversational/third_avatar.png" alt="avatar" />
-                            <img class="position-absolute small_avatar_conversational fourth_small_avatar z-2"
-                                src="./assets/images/conversational/fourth_avatar.png" alt="avatar" />
-                            <img class="position-absolute small_avatar_conversational fifth_small_avatar z-2"
-                                src="./assets/images/conversational/fifth_avatar.png" alt="avatar" />
-                        </span>
-                        <span class="position-absolute inner_ring_client_review"></span>
-                        <div
-                            class="successful_client_parent rounded-circle text-center w-100 h-100 position-relative z-0">
-                            <img class="mb-3 client_review_avatar" src="./assets/images/conversational/first_avatar.png"
-                                alt="avatar" />
-                            <p class="text-white ff_outfit fs_sm mb-1 fw-bold">
-                                Drew Sugarman
-                            </p>
-                            <p class="text-white opacity_07 fw-normal ff_outfit fs_sm mb-0">
-                                Successful Client
-                            </p>
-                            <div class="successful_client_review mx-auto position-relative">
-                                <img class="position-absolute client_review_top_quote"
-                                    src="./assets/icons/common/white_quote.svg" alt="quote" />
-                                <img class="position-absolute client_review_bottom_quote"
-                                    src="./assets/icons/common/white_quote.svg" alt="quote" />
-                                <p class="text-white fw-normal fs_sm ff_outfit opacity_07 leading_150">
-                                    Aenean masum sociis natoque penatibus et magnis dis parturient
-                                    montes nascetur ridiculus mus. Donec quam felis, ultricies
-                                    nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                                    quis enim.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!--  COMPANIES SECTION START  -->
         <section>
             <div class="container companies_logos_parent py-5">
@@ -1289,6 +1299,13 @@
 
     <script>
         AOS.init({ once: true, duration: "1000", });
+    </script>
+    <!-- PRELAODER  -->
+    <script>
+        setTimeout(function () {
+            document.getElementById("preLoader").classList.add("removeloader");
+            document.body.classList.remove("loading");
+        }, 3000);
     </script>
 </body>
 

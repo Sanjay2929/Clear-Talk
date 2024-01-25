@@ -6,9 +6,10 @@
   max-width: 500px !important;
 }
 .successful_client_parent {
+  border-radius: 50%;
   margin: 80px;
   max-width: 418px;
-  padding: 68px 0px;
+  padding: 71px 0px;
   border: 0.894px solid rgba(255, 255, 255, 0.1);
   background: linear-gradient(222deg, #00bbfc 14.34%, #0075d6 85.52%);
   box-shadow: 0px 1.787px 14.299px 0px rgba(255, 255, 255, 0.12);
@@ -155,10 +156,10 @@
   max-width: 372px;
 }
 
-.waveform_line{
-height: 1.981px;
-background-color: white;
-left: -0.5%;
+.waveform_line {
+  height: 1.981px;
+  background-color: white;
+  left: -0.5%;
 }
 .roles_bottom_layer {
   background: linear-gradient(
@@ -235,7 +236,7 @@ wave {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-  
+
   .finctions_icon img {
     width: 27px;
     height: 27px;
@@ -252,7 +253,7 @@ wave {
     max-width: 362px;
   }
   .successful_client_parent {
-    padding: 50px 50px;
+    padding: 54px 50px;
   }
   .client_review_bottom_quote {
     bottom: -6%;
@@ -269,23 +270,27 @@ wave {
     transform: translateX(0) !important;
     margin-top: -15%;
   }
-
-  @keyframes sliderScroll {
-    0% {
-      transform: translateX(-950px);
-      -webkit-transform: translateX(-950px);
-      -moz-transform: translateX(-950px);
-      -ms-transform: translateX(-950px);
-      -o-transform: translateX(-950px);
-    }
-
-    100% {
-      transform: translateX(950px);
-    }
+}
+@media (max-width: 767.98px) {
+  .successful_client_parent {
+    margin: 65px;
   }
 }
 
 @media (max-width: 575.98px) {
+  .client_review_top_quote {
+    top: -23%;
+    left: -4%;
+  }
+  .client_review_bottom_quote {
+    right: -1%;
+  }
+  .successful_client_parent {
+    border-radius: 20px !important;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 15px;
+  }
   .functions_card_parent,
   .virtual_card_parent {
     min-width: auto;
@@ -298,7 +303,7 @@ wave {
   .solar_bootcamp_company {
     max-width: 150px;
   }
-  @keyframes sliderScroll { 
+  @keyframes sliderScroll {
     0% {
       transform: translateX(-950px);
       -webkit-transform: translateX(-950px);
@@ -306,7 +311,7 @@ wave {
       -ms-transform: translateX(-950px);
       -o-transform: translateX(-950px);
     }
-  
+
     100% {
       transform: translateX(950px);
     }

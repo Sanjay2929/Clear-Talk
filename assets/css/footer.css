@@ -183,7 +183,7 @@
 }
 .preloader {
   animation-name: preloader;
-  animation-duration: 4s;
+  animation-duration: 6s;
 }
 .removeloader {
   display: none;
@@ -224,6 +224,9 @@
   .bg_next {
     background-color: transparent;
   }
+}
+.bg_lines{
+  background-size: cover;
 }
 @media (max-width: 575.98px) {
   .custom_margin {
