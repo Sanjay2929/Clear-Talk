@@ -23,32 +23,12 @@
 .hover_footer_li:hover {
   opacity: 1;
 }
-#back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  z-index: 50;
-  border: none;
-  animation: backtotop 3s linear infinite;
-  box-shadow: 0px 0px 23.8px 0px #000;
+.footer_bg {
+  background-image: url("../images/background/footer_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-@keyframes backtotop {
-  0% {
-    transform: translateY(15px);
-  }
-  50% {
-    transform: translateY(2px);
-  }
-  100% {
-    transform: translateY(15px);
-  }
-}
-
 /* OUR CLIENT SECTION  */
 .our_client_bg {
   background-image: url("../images/clients/background.webp");

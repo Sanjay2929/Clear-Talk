@@ -10,12 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.footer_bg {
-  background-image: url("../images/background/footer_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .get_started_description {
   max-width: 512px;
   margin: 0 auto;
