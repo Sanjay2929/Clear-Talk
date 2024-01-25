@@ -1,0 +1,320 @@
+/* CONVERSATIONAL CSS START */
+.conversational_clear_logo {
+    max-width: 148px;
+  }
+  .conversational_text_parent {
+    max-width: 500px !important;
+  }
+  .successful_client_parent {
+    border-radius: 50%;
+    margin: 80px;
+    max-width: 418px;
+    padding: 71px 0px;
+    border: 0.894px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(222deg, #00bbfc 14.34%, #0075d6 85.52%);
+    box-shadow: 0px 1.787px 14.299px 0px rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(17.873563766479492px);
+  }
+  
+  .successful_client_review {
+    max-width: 322.618px;
+  }
+  .client_review_top_quote {
+    top: -13%;
+    left: -7%;
+  }
+  .client_review_bottom_quote {
+    bottom: 0;
+    right: 5%;
+    transform: rotate(180deg);
+  }
+  .client_review_avatar {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0.007)
+        )
+        padding-box,
+      linear-gradient(230deg, #00bbfc, #0075d6) border-box;
+    border-radius: 50%;
+    border: 1px solid transparent;
+  }
+  .outer_ring_client_review {
+    border-radius: 50%;
+    margin-left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: conversational_ai 1.5s infinite alternate-reverse ease-in-out;
+    width: 90%;
+    height: 90%;
+  }
+  .middle_ring_client_review {
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+  
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    animation: rotate_avatar_parent 10s infinite linear;
+  }
+  .inner_ring_client_review {
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 81%;
+    height: 81%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .small_avatar_conversational {
+    width: 40px;
+    height: 40px;
+    animation: rotate_avatar 10s infinite linear;
+  }
+  .first_small_avatar {
+    right: -3%;
+    bottom: 33%;
+  }
+  .second_small_avatar {
+    left: 25%;
+    top: 6%;
+  }
+  .third_small_avatar {
+    right: 15%;
+    top: 13.5%;
+  }
+  .fourth_small_avatar {
+    left: 35%;
+    bottom: 2.5%;
+  }
+  .fifth_small_avatar {
+    left: -3.5%;
+    top: 38%;
+  }
+  
+  @keyframes conversational_ai {
+    0% {
+      outline: 0px solid rgba(255, 255, 255, 0.06);
+    }
+    100% {
+      outline: 30px solid rgba(255, 255, 255, 0.06);
+    }
+  }
+  @keyframes rotate_avatar_parent {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  @keyframes rotate_avatar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  /* CONVERSATIONAL CSS END */
+  .functions_bg {
+    background-image: url("../images/roles/background.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -150px;
+  }
+  .functions_card_parent,
+  .virtual_card_parent {
+    padding: 30px;
+    border-radius: 7.92px;
+    transform: translateX(-28%);
+    z-index: 5;
+    min-width: 493px;
+  }
+  
+  .virtual_card_parent {
+    transform: translateX(0) !important;
+  }
+  
+  .finctions_icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .finctions_icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .audio_wave {
+    max-width: 372px;
+  }
+  
+  .waveform_line {
+    height: 1.981px;
+    background-color: white;
+    left: -0.5%;
+  }
+  .roles_bottom_layer {
+    background: linear-gradient(
+      0deg,
+      #00003c 3.82%,
+      rgba(0, 0, 60, 0.78) 44.47%,
+      rgba(0, 0, 60, 0) 100%
+    );
+    height: 248px;
+  }
+  /* COMPANIES CSS START  */
+  .companies_description {
+    max-width: 642px;
+  }
+  .companies_logos_parent {
+    width: 1270px;
+  }
+  .common_company_image {
+    /* max-width: 142px; */
+    width: 142px;
+  }
+  .solar_bootcamp_company {
+    width: 217px;
+  }
+  
+  /* COMPANIES CSS END  */
+  
+  /* WAVE SURFER */
+  .waveform {
+    max-width: 100%;
+    width: 100%;
+    height: 49px;
+  }
+  wave {
+    height: 49px !important;
+  }
+  
+  .companies_logo_parent {
+    height: 142px;
+  }
+  .company_slider_start {
+    gap: 30px;
+    animation-name: sliderScroll;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: -40s;
+  }
+  
+  @keyframes sliderScroll {
+    0% {
+      transform: translateX(-1280px);
+      -webkit-transform: translateX(-1280px);
+      -moz-transform: translateX(-1280px);
+      -ms-transform: translateX(-1280px);
+      -o-transform: translateX(-1280px);
+    }
+  
+    100% {
+      transform: translateX(1280px);
+    }
+  }
+  
+  @media (max-width: 1199.98px) {
+    .finctions_icon {
+      width: 40px;
+      height: 40px;
+    }
+    .company_slider_end {
+      gap: 30px;
+      animation-name: sliderScroll;
+      animation-delay: -20s;
+      animation-duration: 40s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  
+    .finctions_icon img {
+      width: 27px;
+      height: 27px;
+    }
+  
+    .functions_card_parent,
+    .virtual_card_parent {
+      min-width: 400px;
+      padding: 20px;
+    }
+    /* CONVERSATIONAL AI */
+    .successful_client_parent {
+      margin: 57px;
+      max-width: 362px;
+    }
+    .successful_client_parent {
+      padding: 54px 50px;
+    }
+    .client_review_bottom_quote {
+      bottom: -6%;
+      right: 0%;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .conversational_text_parent {
+      max-width: unset !important;
+    }
+    .functions_card_parent,
+    .virtual_card_parent {
+      transform: translateX(0) !important;
+      margin-top: -15%;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .successful_client_parent {
+      margin: 65px;
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .client_review_top_quote {
+      top: -23%;
+      left: -4%;
+    }
+    .client_review_bottom_quote {
+      right: -1%;
+    }
+    .successful_client_parent {
+      border-radius: 20px !important;
+      max-width: 390px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+    .functions_card_parent,
+    .virtual_card_parent {
+      min-width: auto;
+      transform: translateX(0) !important;
+      margin-top: 24px;
+    }
+    .common_company_image {
+      max-width: 100px;
+    }
+    .solar_bootcamp_company {
+      max-width: 150px;
+    }
+    @keyframes sliderScroll {
+      0% {
+        transform: translateX(-950px);
+        -webkit-transform: translateX(-950px);
+        -moz-transform: translateX(-950px);
+        -ms-transform: translateX(-950px);
+        -o-transform: translateX(-950px);
+      }
+  
+      100% {
+        transform: translateX(950px);
+      }
+    }
+  }
+  
