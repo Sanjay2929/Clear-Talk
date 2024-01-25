@@ -1,3 +1,7 @@
+html, body{
+  overflow-x: hidden;
+}
+
 .opacity_07 {
   opacity: 0.7;
 }
