@@ -1,8 +1,8 @@
 // SLIDER SOME OF OUR CALLS
 $(".Slider").slick({
-  // dots: false,
+  dots: false,
   infinite: true,
-  arrows: false,
+  // arrows: true,
   speed: 300,
   centerMode: true,
   slidesToShow: 2,
