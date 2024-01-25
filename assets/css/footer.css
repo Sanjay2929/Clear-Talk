@@ -126,11 +126,11 @@
 .dotted_lines::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: -200px;
   left: 144px;
   width: 295px;
   height: 508px;
-  background-image: url("../images/next_steps/png/dotted_lines.png");
+  background-image: url("../images/next-steps/dotted_lines.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,16 +143,8 @@
 
 @media (max-width: 1199.98px) {
   .dotted_lines::before {
-    content: "";
-    position: absolute;
-    top: 40px;
+    top: -200px;
     left: 94px;
-    width: 295px;
-    height: 508px;
-    background-image: url("../images/next_steps/png/dotted_lines.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .stars{
   width: 115px;
