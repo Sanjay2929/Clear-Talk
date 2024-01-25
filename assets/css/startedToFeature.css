@@ -4,13 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.featured_bg {
-  background-image: url("../images/featured/featured_bg.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .get_started_description {
   max-width: 512px;
   margin: 0 auto;
@@ -86,6 +79,12 @@
   fill: #019eed;
 }
 /* FEATURED CSS  */
+.featured_bg {
+  background-image: url("../images/featured/featured_bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .featured_box {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.4);

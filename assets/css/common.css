@@ -96,6 +96,51 @@ body {
   }
 }
 
+/* PRELOADER  */
+.loader_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: #03063E;
+  overflow: hidden;
+  height: 100vh;
+}
+.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+.preloader {
+  animation-name: preloader;
+  animation-duration: 6s;
+}
+.removeloader {
+  display: none;
+  overflow: auto;
+}
+.bg_lines {
+  background-image: url("../images/background/bg_lines.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@keyframes preloader {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
 .loader {
     position: relative;
     animation: rotate9 3s infinite ease;

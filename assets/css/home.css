@@ -51,7 +51,7 @@
 .gap_10 {
   gap: 10px;
 }
-.menuicon {
+.menu_icon {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -59,7 +59,7 @@
   height: 23px;
 }
 
-.menuicon > span {
+.menu_icon > span {
   width: 100%;
   height: 3px;
   background: white;

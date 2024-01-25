@@ -4,12 +4,12 @@
 @import url("/assets/css/home.css");
 /* SERVICES CSS IMPORT */
 @import url("/assets/css/services.css");
-/* STARTED CSS IMPORT  */
-@import url("/assets/css/started.css");
+/* startedToFeature CSS IMPORT  */
+@import url("/assets/css/startedToFeature.css");
 /* COMMON CSS IMPORT  */
 @import url("/assets/css/common.css");
-/* FOOTER CSS IMPORT  */
-@import url("/assets/css/footer.css");
+/* NEXT STEP TO FOOTER CSS IMPORT  */
+@import url("/assets/css/nextStepToFooter.css");
 /* Roles CSS IMPORT  */
 @import url("/assets/css/roles.css");
 /* UNIVERSAL  */
@@ -59,7 +59,7 @@ body {
   font-size: var(--fs-2xl);
 }
 /* COLORS  */
-.clr_primary {
+.text_primary {
   color: var(--primary);
 }
 /* BACKGROUND  */

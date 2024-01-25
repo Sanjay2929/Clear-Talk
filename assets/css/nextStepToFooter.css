@@ -1,82 +1,5 @@
-.footer_social_links {
-  width: 50px;
-  height: 50px;
-  box-shadow: 0px 0px 19.116050720214844px 0px #0189e14d;
-}
-.footer_icons {
-  width: 30px;
-  height: 30px;
-}
-.footer_social_links:hover {
-  transform: scale(1.1);
-}
-.nowrap {
-  white-space: nowrap;
-}
-.footer_li_custom_max_w {
-  max-width: 210px;
-}
-.hover_footer_li {
-  opacity: 0.7;
-  transition: all 0.3s linear;
-}
-.hover_footer_li:hover {
-  opacity: 1;
-}
-.footer_bg {
-  background-image: url("../images/background/footer_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* OUR CLIENT SECTION  */
-.our_client_bg {
-  background-image: url("../images/clients/background.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.our_client_card_box {
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 0px 6.9px 0px rgba(220, 226, 253, 0.8);
-  padding: 10px;
-  position: relative;
-}
-.our_client_card_box::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  transition: opacity 0.3s linear;
-  opacity: 0;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(225deg, #00bbfc 0%, #0075d6 100%);
-  backdrop-filter: blur(20px);
-}
-.our_client_card_box:hover::after {
-  opacity: 1;
-}
-.our_client_card_box:hover {
-  box-shadow: none !important;
-}
 
-.our_client_card_img {
-  width: 100%;
-  border-radius: 6px;
-  position: relative;
-}
 
-.custom_padding_clients_cards {
-  padding-left: 20px;
-  padding-right: 20px;
-  /* padding-top: 259px; */
-  padding-bottom: 20px;
-}
 /* NEXT STEP SECTION  */
 .next_steps_cards_box {
   border-radius: 7.924px;
@@ -147,51 +70,85 @@
 .next_steps_cards_box:hover .opacity_01 {
   opacity: 0.3;
 }
-/* PRELOADER  */
-.loader_bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99999;
-  background: #03063E;
-  overflow: hidden;
-  height: 100vh;
-}
-.loading {
-  overflow: hidden;
-  height: 100vh;
-}
-.preloader {
-  animation-name: preloader;
-  animation-duration: 6s;
-}
-.removeloader {
-  display: none;
-  overflow: auto;
-}
-.bg_lines {
-  background-image: url("../images/background/bg_lines.webp");
+/* OUR CLIENT SECTION  */
+.our_client_bg {
+  background-image: url("../images/clients/background.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+}
+.our_client_card_box {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 6.9px 0px rgba(220, 226, 253, 0.8);
+  padding: 10px;
+  position: relative;
+}
+.our_client_card_box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(225deg, #00bbfc 0%, #0075d6 100%);
+  backdrop-filter: blur(20px);
+}
+.our_client_card_box:hover::after {
+  opacity: 1;
+}
+.our_client_card_box:hover {
+  box-shadow: none !important;
 }
 
-@keyframes preloader {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(2);
-  }
-
-  100% {
-    transform: scale(0);
-  }
+.our_client_card_img {
+  width: 100%;
+  border-radius: 6px;
+  position: relative;
 }
 
+.custom_padding_clients_cards {
+  padding-left: 20px;
+  padding-right: 20px;
+  /* padding-top: 259px; */
+  padding-bottom: 20px;
+}
+.footer_social_links {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 19.116050720214844px 0px #0189e14d;
+}
+.footer_icons {
+  width: 30px;
+  height: 30px;
+}
+.footer_social_links:hover {
+  transform: scale(1.1);
+}
+.nowrap {
+  white-space: nowrap;
+}
+.footer_li_custom_max_w {
+  max-width: 210px;
+}
+.hover_footer_li {
+  opacity: 0.7;
+  transition: all 0.3s linear;
+}
+.hover_footer_li:hover {
+  opacity: 1;
+}
+.footer_bg {
+  background-image: url("../images/background/footer_bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media (max-width: 1199.98px) {
   .dotted_lines::before {
     top: -200px;
