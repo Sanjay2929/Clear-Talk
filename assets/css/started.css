@@ -209,8 +209,6 @@
     margin-top: 24px;
   }
 }
-
-
 @media (min-width:992px){
   .position_lg_absolute{
     position: absolute;

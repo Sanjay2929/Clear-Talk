@@ -231,7 +231,7 @@
     margin-top: 24px;
   }
   .about_card_content {
-    top: 57%;
+    top: 45%;
   }
   .footer_social_links {
     width: 30px;
@@ -250,7 +250,7 @@
 }
 @media (max-width: 374.98px) {
   .about_card_content {
-    top: 18%;
+    top: unset;
   }
 }
 
