@@ -25,10 +25,12 @@
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
+                <!-- CLEAR TALK LOGO  -->
                 <a class="nav_logo" href="/"><img class="w-100" src="./assets/icons/common/clear-talk.svg"
                         alt="clear-talk"></a>
                 <ul id="showul"
                     class="mb-0 d-flex align-items-center gap-xl-5 gap-4 mobile_nab flex-lg-row flex-column justify-content-center duration_300">
+                    <!-- NAVBAR LINKS  -->
                     <li class="d-flex gap-xl-5 gap-3 align-items-center flex-lg-row flex-column">
                         <a onclick="shownav()"
                             class="fw-normal fs_sm text-white opacity_07 ff_outfit nav_links duration_300"
@@ -37,6 +39,7 @@
                             class="fw-normal fs_sm text-white opacity_07 ff_outfit nav_links duration_300"
                             href="#">Industries</a>
                     </li>
+                    <!-- SOCIAL LINKS  -->
                     <li class="d-flex align-items-center gap_10">
                         <a target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center social_links duration_300 blue_linear_gradient rounded-pill"
@@ -50,12 +53,14 @@
                             href="https://twitter.com/?lang=en"><img src="/assets/icons/common/twitter.svg"
                                 alt="twitter"></a>
                     </li>
+                    <!-- BUTTON  -->
                     <li>
                         <button onclick="shownav()"
                             class="blue_linear_gradient nav_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Schedule
                             a call</button>
                     </li>
                 </ul>
+                <!-- MENUICON ON SMALL SCREEN  -->
                 <span class="menuicon d-lg-none cursor_pointer" id="shownav" onclick="shownav()">
                     <span></span>
                     <span></span>
@@ -63,6 +68,7 @@
                 </span>
             </div>
         </nav>
+        <!-- HERO SECTION  -->
         <div class="min-vh-100 hero_bg d-flex justify-content-between align-items-center">
             <div
                 class="container custom_container d-flex justify-content-center align-items-center align-items-sm-start flex-column">
@@ -87,11 +93,13 @@
                     class="clr_primary">Our Calls</span>
             </h2>
             <div class="position-relative">
+                <!-- LEFT RIGHT SHADOWS  -->
                 <div class="position-absolute left_slide_shodow start-0 top-50">
                 </div>
                 <div class="position-absolute right_slide_shodow end-0 top-50">
                 </div>
-                <div class="Slider">
+                <!-- SLICK SLIDER -->
+                <div class="Slider position-relative">
                     <div class="video_slide h-100">
                         <iframe class="w-100 rounded-2 d-block" width="560" height="445"
                             src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
@@ -118,6 +126,7 @@
                             title="YouTube video player" frameborder="0" allow="web-share" allowfullscreen></iframe>
                     </div>
                 </div>
+                <!-- SLICK SLIDER ARROWS BUTTONS  -->
                 <div class="d-flex justify-content-center align-items-center gap-5">
                     <button
                         class="position_sm_absolute top-50 blue_linear_gradient my-4 slider_arrow d-flex justify-content-center align-items-center rounded-pill cursor_pointer slider_arrow_left">
@@ -131,13 +140,15 @@
             </div>
         </div>
     </div>
+    <!-- DRIVING GROWTH AMPLIFYING IMPACT  -->
     <div class="py-5">
         <div class="container custom_container d-flex flex-lg-row flex-column align-items-center">
-            <div class="position-relative">
-                <img class="microphone_circle w-100" src="/assets/images/Amplifying-impact/png/circle-ball.png"
+            <!-- MICROPHONE WITH CRICLE -->
+            <div class="position-relative overflow-hidden">
+                <img class="microphone_circle w-100" src="/assets/images/amplifying-impact/circle-ball.png"
                     alt="circle">
                 <img class="position-absolute top-50 start-50 microphone w-50"
-                    src="/assets/images/Amplifying-impact/png/microphone.png" alt="microphone">
+                    src="/assets/images/amplifying-impact/microphone.png" alt="microphone">
             </div>
             <div class="ps-xl-5 ps-lg-4  width_lg_100 w_half">
                 <h2 class="ff_outfit fw-bold fs_xl text-white hero_heading pb-3 mb-0 pe-4 pt-4 pt-lg-0">
@@ -150,6 +161,7 @@
                     Whether it's a virtual receptionist, outbound lead follow up, recruiting or a number of other use
                     cases not only do we
                     outperform people but we do it for less.</p>
+                <!-- BUTTONS  -->
                 <div class="d-flex gap-4 align-items-center">
                     <button
                         class="blue_linear_gradient nav_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Get
@@ -178,7 +190,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- APP JAVASCRIPT  -->
     <script src="/assets/js/app.js"></script>
+    <!-- SLIDER JS  -->
+    <script src="/assets/js/slider.js"></script>
 </body>
 
 </html>
