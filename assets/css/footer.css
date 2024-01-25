@@ -152,7 +152,7 @@
 }
 .next_steps_cards_box::after {
   position: absolute;
-  border-radius: 7.924px;
+  border-radius: 7px;
   content: "";
   top: 0;
   right: 0;
@@ -160,7 +160,6 @@
   left: 0;
   z-index: -1;
   transition: opacity 0.3s linear;
-  border: 1px solid #017AD9;
   opacity: 0;
   background: var(--Liner, linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%));
 }
@@ -172,6 +171,9 @@
 }
 .next_steps_cards_box:hover .next_step_svg_bg svg path {
   fill: #019eed;
+}
+.next_steps_cards_box:hover .opacity_01 {
+  opacity: 0.3;
 }
 
 @media (max-width: 1199.98px) {
