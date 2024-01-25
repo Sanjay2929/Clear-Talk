@@ -14,7 +14,7 @@
 }
 
 .virtual_card_parent {
-  transform: translateX(28%) !important;
+  transform: translateX(0) !important;
 }
 
 .finctions_icon {

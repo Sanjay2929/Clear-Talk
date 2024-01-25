@@ -6,7 +6,6 @@
   background-size: contain;
   margin-top: -150px;
 }
-
 .services_c_image {
   max-width: 700px;
 }
@@ -95,9 +94,6 @@
 .miss_call_card_parent .services_text_parent {
   max-width: 290px;
 }
-
-/* SERVICES CSS END */
-
 /* MEDIA QUEYS */
 @media (max-width: 1199.98px) {
   .services_icon_background {
