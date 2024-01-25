@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     waveContainers.forEach(function (container) {
         var wavesurfer = WaveSurfer.create({
             container: container.querySelector('.waveform'),
-            waveColor: '#F5F5F5',
+            waveColor: '#ffffff79',
             progressColor: '#fff',
             cursorWidth: 0,
             barWidth: 2,
