@@ -51,7 +51,7 @@
 
 /* OUR CLIENT SECTION  */
 .our_client_bg {
-  background-image: url("../images/clients/background.png");
+  background-image: url("../images/clients/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,17 +88,7 @@
   border-radius: 6px;
   position: relative;
 }
-.bg_linear {
-  background-image: url("../images/clients/gradient_layer.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  /* height: 498px; */
-  width: 100%;
-}
+
 .custom_padding_clients_cards {
   padding-left: 20px;
   padding-right: 20px;

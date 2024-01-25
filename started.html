@@ -28,6 +28,8 @@
     <link rel="shortcut icon" href="/assets/icons/common/favicon.svg" type="image/x-icon" />
     <!-- CSS  -->
     <link rel="stylesheet" href="/assets/css/root.css" />
+    <!-- AOS LINK  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- wavesurfer.js styles CSS LINK -->
     <link rel="stylesheet" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css" />
     <!-- SLICK MIN JS -->
@@ -50,7 +52,7 @@
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
-                <a class="nav_logo" href="/"><img class="w-100" src="./assets/icons/common/clear-talk.svg"
+                <a class="nav_logo" href="/"><img class="w-100" src="./assets/icons/common/clear_talk.svg"
                         alt="clear-talk" /></a>
                 <ul id="showul"
                     class="mb-0 d-flex align-items-center gap-xl-5 gap-4 mobile_nab flex-lg-row flex-column justify-content-center duration_300">
@@ -118,7 +120,7 @@
                     <!-- services c image  -->
                     <img class="services_c_image w-100 d-none d-lg-block"
                         src="./assets/images/services/webp/c_image.webp" alt="c-logo" />
-                    <div class="position_lg_absolute services_card_parent following_up_card_parent">
+                    <div class="position_lg_absolute services_card_parent following_up_card_parent" data-aos="fade-down">
                         <div class="d-flex align-items-lg-center">
                             <!--  clock icon -->
                             <div>
@@ -136,7 +138,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="position_lg_absolute services_card_parent speed_lead_up_card_parent">
+                    <div class="position_lg_absolute services_card_parent speed_lead_up_card_parent" data-aos="fade-left">
                         <div class="d-flex align-items-lg-center">
                             <div class="services_icon_background d-flex align-items-center justify-content-center">
                                 <img class="services_icon" src="./assets/icons/services/speedLead.svg"
@@ -153,7 +155,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="position_lg_absolute services_card_parent communication_card_parent">
+                    <div class="position_lg_absolute services_card_parent communication_card_parent" data-aos="fade-left">
                         <div class="d-flex align-items-lg-center">
                             <div class="services_icon_background d-flex align-items-center justify-content-center">
                                 <img class="services_icon" src="./assets/icons/services/communicat.svg"
@@ -170,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="position_lg_absolute services_card_parent user_role_card_parent">
+                    <div class="position_lg_absolute services_card_parent user_role_card_parent" data-aos="fade-up">
                         <div class="d-flex align-items-lg-end">
                             <div class="services_icon_background d-flex align-items-center justify-content-center">
                                 <img class="services_icon" src="./assets/icons/services/userRoles.svg"
@@ -187,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="position_lg_absolute services_card_parent user_setting_card_parent">
+                    <div class="position_lg_absolute services_card_parent user_setting_card_parent" data-aos="fade-right">
                         <div class="d-flex align-items-lg-end flex-row-reverse flex-lg-row">
                             <div class="ms-3 ms-lg-0 me-lg-3 services_text_parent w-100">
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
@@ -205,7 +207,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="position_lg_absolute services_card_parent user_info_card_parent">
+                    <div class="position_lg_absolute services_card_parent user_info_card_parent" data-aos="fade-right">
                         <div class="d-flex align-items-lg-end flex-row-reverse flex-lg-row">
                             <div class="ms-3 ms-lg-0 me-lg-3 services_text_parent w-100">
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
@@ -222,7 +224,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="position_lg_absolute services_card_parent miss_call_card_parent">
+                    <div class="position_lg_absolute services_card_parent miss_call_card_parent" data-aos="fade-right">
                         <div class="d-flex align-items-lg-end flex-row-reverse flex-lg-row">
                             <div class="ms-3 ms-lg-0 me-lg-3 services_text_parent w-100">
                                 <p class="fw-semibold ff_outfit mb-0 clr_primary fs_md text-lg-end">
@@ -249,15 +251,15 @@
         <span class="bottom-0 start-0 w-100 roles_bottom_layer position-absolute z-0"></span>
         <div class="functions_bg py-5">
             <div class="custom_container container pt-5">
-                <h2 class="ff_outfit fw-bold fs_xl text-center text-white mb-4 mb-lg-5">
+                <h2 class="ff_outfit fw-bold fs_xl text-center text-white mb-4 mb-lg-5" data-aos="fade-down">
                     Functions/ <span class="clr_primary">Roles</span>
                 </h2>
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-8" data-aos="fade-right">
                         <img class="w-100" src="./assets/images/roles/webp/appointment.png"
                             alt="appointment_setting_img" />
                     </div>
-                    <div class="col-sm-10 col-lg-5">
+                    <div class="col-sm-10 col-lg-4" data-aos="fade-left">
                         <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
                             <div
                                 class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
@@ -266,7 +268,7 @@
                             <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
                                 Appointment setting
                             </h3>
-                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2 fs_sm">
                                 Taking too long to reach out to leads? Need someone to follow
                                 up? Qualify them and schedule appointments? We have you
                                 covered.
@@ -275,14 +277,18 @@
                                 <span class="border-0 bg-transparent cursor_pointer toggle-btn">
                                     <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
                                 </span>
-                                <div class="waveform"></div>
+                                <div class="waveform position-relative">
+                                    <div
+                                        class="waveform_line position-absolute top-50 translate-middle-y w-100 bg-white">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div
                     class="row flex-column-reverse flex-lg-row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
-                    <div class="col-sm-10 col-lg-5">
+                    <div class="col-sm-10 col-lg-4" data-aos="fade-right">
                         <div class="bg_secondary virtual_card_parent w-100 mt-lg-3">
                             <div
                                 class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
@@ -291,7 +297,7 @@
                             <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
                                 Virtual Receptionist
                             </h3>
-                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2 fs_sm">
                                 Tired of missing calls? Paying too much for your receptionist?
                                 Need 24/7 answering so you capture every lead? Easy.
                             </p>
@@ -299,21 +305,25 @@
                                 <span class="border-0 bg-transparent cursor_pointer toggle-btn">
                                     <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
                                 </span>
-                                <div class="waveform"></div>
+                                <div class="waveform position-relative">
+                                    <div
+                                        class="waveform_line position-absolute top-50 translate-middle-y w-100 bg-white">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-8" data-aos="fade-left">
                         <img class="w-100" src="./assets/images/roles/webp/virtual_receptionist.webp"
                             alt="appointment_setting_img" />
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
-                    <div class="col-lg-7">
+                    <div class="col-lg-8" data-aos="fade-right">
                         <img class="w-100" src="./assets/images/roles/webp/recruiting.webp"
                             alt="appointment_setting_img" />
                     </div>
-                    <div class="col-sm-10 col-lg-5">
+                    <div class="col-sm-10 col-lg-4" data-aos="fade-left">
                         <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
                             <div
                                 class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
@@ -322,7 +332,7 @@
                             <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
                                 Appointment setting
                             </h3>
-                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2 fs_sm">
                                 Taking too long to reach out to leads? Need someone to follow
                                 up? Qualify them and schedule appointments? We have you
                                 covered.
@@ -331,14 +341,18 @@
                                 <span class="border-0 bg-transparent cursor_pointer toggle-btn">
                                     <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
                                 </span>
-                                <div class="waveform"></div>
+                                <div class="waveform position-relative">
+                                    <div
+                                        class="waveform_line position-absolute top-50 translate-middle-y w-100 bg-white">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div
                     class="row flex-column-reverse flex-lg-row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
-                    <div class="col-sm-10 col-lg-5">
+                    <div class="col-sm-10 col-lg-4" data-aos="fade-right">
                         <div class="bg_secondary virtual_card_parent w-100 mt-lg-3">
                             <div
                                 class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
@@ -347,7 +361,7 @@
                             <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
                                 Virtual Receptionist
                             </h3>
-                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2 fs_sm">
                                 Tired of missing calls? Paying too much for your receptionist?
                                 Need 24/7 answering so you capture every lead? Easy.
                             </p>
@@ -355,20 +369,24 @@
                                 <span class="border-0 bg-transparent cursor_pointer toggle-btn">
                                     <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
                                 </span>
-                                <div class="waveform"></div>
+                                <div class="waveform position-relative">
+                                    <div
+                                        class="waveform_line position-absolute top-50 translate-middle-y w-100 bg-white">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-8" data-aos="fade-left">
                         <img class="w-100" src="./assets/images/roles/webp/aiBot.webp" alt="appointment_setting_img" />
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center mt-5 pt-2 pt-md-4 position-relative z-2">
-                    <div class="col-lg-7">
+                    <div class="col-lg-8" data-aos="fade-right">
                         <img class="w-100" src="./assets/images/roles/webp/customer.webp"
                             alt="appointment_setting_img" />
                     </div>
-                    <div class="col-sm-10 col-lg-5">
+                    <div class="col-sm-10 col-lg-4" data-aos="fade-left">
                         <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
                             <div
                                 class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
@@ -377,7 +395,7 @@
                             <h3 class="text-white fw-semibold ff_outfit fs_md mt-xl-3 pt-2 mb-0">
                                 Appointment setting
                             </h3>
-                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2">
+                            <p class="text-white opacity_07 fw-normal ff_outfit mt-2 mb-2 mb-xl-4 pb-2 fs_sm">
                                 Taking too long to reach out to leads? Need someone to follow
                                 up? Qualify them and schedule appointments? We have you
                                 covered.
@@ -386,7 +404,11 @@
                                 <span class="border-0 bg-transparent cursor_pointer toggle-btn">
                                     <img class="toggle-img" src="./assets/icons/roles/play.svg" alt="play" />
                                 </span>
-                                <div class="waveform"></div>
+                                <div class="waveform position-relative">
+                                    <div
+                                        class="waveform_line position-absolute top-50 translate-middle-y w-100 bg-white">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -399,17 +421,17 @@
     <!-- GET STARTED SECTION  -->
     <div class="started_bg py-lg-5 position-relative">
         <div class="container custom_container py-md-5">
-            <h2 class="text-center text-white fw-bold ff_outfit fs_xl leading_130 pt-5 mt-sm-2">
+            <h2 class="text-center text-white fw-bold ff_outfit fs_xl leading_130 pt-5 mt-sm-2" data-aos="fade-down">
                 Three Ways To <span class="clr_primary">Get Started</span>
             </h2>
-            <p class="text-center pt-md-3 pt-2 mb-0 text-white opacity_07 get_started_description ff_outfit fw-normal">
+            <p class="text-center pt-md-3 pt-2 mb-0 text-white opacity_07 get_started_description ff_outfit fw-normal" data-aos="fade-down">
                 Aenean masum sociis natoque penatibus et magnis dis parturient montes
                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
                 eu, pretium quis, sem.
             </p>
             <div class="mb-lg-2 pb-lg-1">
                 <div class="row py-5 mb-md-4 justify-content-lg-between justify-content-center">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
                         <div class="started_card_boxes h-100">
                             <div class="d-flex justify-content-between align-items-start">
                                 <div
@@ -450,7 +472,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                    <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="fade-down">
                         <div class="started_card_boxes h-100">
                             <div class="d-flex justify-content-between align-items-start">
                                 <div
@@ -495,7 +517,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                    <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="fade-up">
                         <div class="started_card_boxes h-100">
                             <div class="d-flex justify-content-between align-items-start">
                                 <div
@@ -533,7 +555,7 @@
     <div class="featured_bg py-lg-5 py-4 position-relative">
         <div class="container custom_container py-5 my-sm-2">
             <div class="row justify-content-lg-end justify-content-center">
-                <div class="col-lg-6 col-md-10 col-12">
+                <div class="col-lg-6 col-md-10 col-12" data-aos="fade-left">
                     <div class="featured_box">
                         <h3 class="text-start text-white ff_outfit fs_xl fw-bold mb-0">
                             Featured In
@@ -595,13 +617,13 @@
     <!-- Driving Growth, Amplifying Impact section -->
     <div class="py-5 overflow-hidden">
         <div class="container custom_container d-flex flex-lg-row flex-column align-items-center">
-            <div class="position-relative">
-                <img class="microphone_circle w-100" src="/assets/images/Amplifying-impact/png/circle-ball.png"
+            <div class="position-relative" data-aos="zoom-in">
+                <img class="microphone_circle w-100" src="/assets/images/amplifying-impact/circle-ball.png"
                     alt="circle">
                 <img class="position-absolute top-50 start-50 microphone w-50"
-                    src="/assets/images/Amplifying-impact/png/microphone.png" alt="microphone">
+                    src="/assets/images/amplifying-impact/microphone.png" alt="microphone">
             </div>
-            <div class="ps-xl-5 ps-lg-4  width_lg_100 w_half">
+            <div class="ps-xl-5 ps-lg-4  width_lg_100 w_half" data-aos="fade-left">
                 <h2 class="ff_outfit fw-bold fs_xl text-white hero_heading pb-3 mb-0 pe-4 pt-4 pt-lg-0">
                     Driving
                     Growth, <span class="clr_primary">Amplifying</span> Impact</h2>
@@ -620,7 +642,7 @@
                         data-bs-target="#exampleModal">
                         <div
                             class="video_play_button blue_linear_gradient rounded-pill ms-1 d-flex justify-content-center align-items-center">
-                            <img src="/assets/icons/amplifying-impact/video-play.svg" alt="video">
+                            <img src="/assets/icons/amplifying-impact/video_play.svg" alt="video">
                         </div>
                         <h3 class="ff_outfit fw-semibold text-white fs_sm mb-0">See Video</h3>
                     </div>
@@ -632,10 +654,11 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body w-100 pt-0">
-                                    <video width="100%" height="306" controls>
-                                        <source src="./assets/video/sample_video.mp4" type="video/mp4">
-                                    </video>
+                                <div class="modal-body w-100 pt-2">
+                                    <iframe class="w-100 rounded-2 d-block" width="560" height="445"
+                                        src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
+                                        title="YouTube video player" frameborder="0" allow="web-share"
+                                        allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -647,30 +670,70 @@
     <!--  COMPANIES SECTION START  -->
     <section>
         <div class="container companies_logos_parent py-5">
-            <h2 class="fw-bold fs_xl text-white text-center ff_outfit mb-0">
+            <h2 class="fw-bold fs_xl text-white text-center ff_outfit mb-0" data-aos="fade-down">
                 Companies
                 <span class="text_primary_gradient">We've Worked </span> With
             </h2>
             <p
-                class="text-white opacity_07 companies_description mx-auto text-center mb-0 ff_outfit fw-normal fs_sm pt-3 mb-4">
+                class="text-white opacity_07 companies_description mx-auto text-center mb-0 ff_outfit fw-normal fs_sm pt-3 mb-4" data-aos="fade-down">
                 Eectus ornare arcu massa dictum tincidunt non. Pellentesque pretium
                 viverra enim venenatis nunc. Metus pharetra consequat amet eget orci a
                 sollicitudin felis cras. Lacus interdum feugiat in mi nullam varius.
             </p>
-            <div class="overflow-x-auto custom_scrollbar">
-                <div class="d-flex align-items-center justify-content-between gap-3">
-                    <img class="w-100 common_company_image" src="./assets/images/companies/powur.png" alt="powur" />
-                    <img class="w-100 solar_bootcamp_company" src="./assets/images/companies/solar_bootcamp.png"
-                        alt="solar-bootcamp" />
-                    <img class="w-100 common_company_image" src="./assets/images/companies/energy.png" alt="energy" />
-                    <img class="w-100 common_company_image" src="./assets/images/companies/american.png"
-                        alt="american" />
-                    <img class="w-100 common_company_image" src="./assets/images/companies/guard.png"
-                        alt="guard-guru" />
-                    <img class="w-100 common_company_image" src="./assets/images/companies/solar_upgrade.png"
-                        alt="solar-upgrade" />
-                    <img class="w-100 common_company_image" src="./assets/images/companies/orange_solar.png"
-                        alt="orange-solar" />
+            <div class="overflow-hidden position-relative companies_logo_parent">
+                <div
+                    class="d-flex align-items-center justify-content-between company_slider_start position-absolute start-0 top-0 h-100">
+                    <div data-aos="fade-up">
+                        <img class="common_company_image" src="./assets/images/companies/powur.png" alt="powur" />
+                    </div>
+                    <div data-aos="fade-down">
+                        <img class="solar_bootcamp_company" src="./assets/images/companies/solar_bootcamp.png"
+                            alt="solar-bootcamp" />
+                    </div>
+                    <div data-aos="fade-up">
+                        <img class="common_company_image" src="./assets/images/companies/energy.png" alt="energy" />
+                    </div>
+                    <div data-aos="fade-down">
+                        <img class="common_company_image" src="./assets/images/companies/american.png" alt="american" />
+                    </div>
+                    <div data-aos="fade-up">
+                        <img class="common_company_image" src="./assets/images/companies/guard.png" alt="guard-guru" />
+                    </div>
+                    <div data-aos="fade-down">
+                        <img class="common_company_image" src="./assets/images/companies/solar_upgrade.png"
+                            alt="solar-upgrade" />
+                    </div>
+                    <div data-aos="fade-up">
+                        <img class="common_company_image" src="./assets/images/companies/orange_solar.png"
+                            alt="orange-solar" />
+                    </div>
+                </div>
+                <div
+                    class="d-flex align-items-center justify-content-between company_slider_end position-absolute start-0 top-0 h-100">
+                    <div data-aos="fade-down">
+                        <img class="common_company_image" src="./assets/images/companies/powur.png" alt="powur" />
+                    </div>
+                    <div data-aos="fade-up">
+                        <img class="solar_bootcamp_company" src="./assets/images/companies/solar_bootcamp.png"
+                            alt="solar-bootcamp" />
+                    </div>
+                    <div data-aos="fade-down">
+                        <img class="common_company_image" src="./assets/images/companies/energy.png" alt="energy" />
+                    </div>
+                    <div data-aos="fade-up">
+                        <img class="common_company_image" src="./assets/images/companies/american.png" alt="american" />
+                    </div>
+                    <div data-aos="fade-down">
+                        <img class="common_company_image" src="./assets/images/companies/guard.png" alt="guard-guru" />
+                    </div>
+                    <div data-aos="fade-up">
+                        <img class="common_company_image" src="./assets/images/companies/solar_upgrade.png"
+                            alt="solar-upgrade" />
+                    </div>
+                    <div data-aos="fade-down">
+                        <img class="common_company_image" src="./assets/images/companies/orange_solar.png"
+                            alt="orange-solar" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -681,10 +744,11 @@
             <div class="container custom_container">
                 <div
                     class="row flex-lg-row flex-column-reverse justify-content-lg-between justify-content-center align-items-center dotted_lines">
+                    <!--    NEXT STEP SECTION CARDS  -->
                     <div class="col-lg-6 position-relative">
                         <div class="row pt-lg-0 pt-5 position_lg_absolute top-50 translate_lg_middle_y">
                             <div class="col-sm-6">
-                                <div class="next_steps_cards_box">
+                                <div class="next_steps_cards_box" data-aos="fade-right">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <!-- CLICK LINK SVG  -->
                                         <div class="next_step_svg_bg d-flex justify-content-center align-items-center">
@@ -721,7 +785,7 @@
                                         duisit.
                                     </p>
                                 </div>
-                                <div class="next_steps_cards_box mt-4">
+                                <div class="next_steps_cards_box mt-4" data-aos="fade-right">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <!-- USE LINK SVG  -->
                                         <div class="next_step_svg_bg d-flex justify-content-center align-items-center">
@@ -759,31 +823,36 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 ">
-                                <div class="next_steps_cards_box custom_margin">
+                                <div class="next_steps_cards_box custom_margin" data-aos="fade-down">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <!-- FILL OUT SVG  -->
                                         <div class="next_step_svg_bg d-flex justify-content-center align-items-center">
-                                        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.56557 0.964682C0.977165 1.21685 0.486831 1.65115 0.22065 2.1695C-0.0735501 2.72988 -0.0735501 24.893 0.22065 25.5794C0.458812 26.1678 1.14528 26.7422 1.81774 26.9384C2.16798 27.0504 5.01191 27.0785 10.6858 27.0504L19.0215 27.0084L19.6099 26.6161C19.9321 26.406 20.3243 25.9857 20.4784 25.6775C20.7446 25.1451 20.7586 24.907 20.7306 20.0457L20.6886 14.9742L19.7499 15.8568L18.7973 16.7394V20.55C18.7973 23.7722 18.7693 24.4026 18.5731 24.6688L18.363 24.977H10.3215C2.5042 24.977 2.26604 24.963 2.12595 24.7108C1.92981 24.3326 1.92981 3.4864 2.12595 3.10814C2.26604 2.85597 2.5042 2.84196 10.3075 2.84196C17.6065 2.84196 18.363 2.86998 18.5311 3.06611C18.6712 3.23423 18.7553 3.89268 18.7973 5.20957L18.8673 7.10086L19.82 6.21826L20.7586 5.33566V4.00475C20.7586 2.19752 20.3804 1.45502 19.1756 0.950672C18.419 0.628452 2.30807 0.642462 1.56557 0.964682Z"
-                                                fill="white" />
-                                            <path
-                                                d="M19.7778 8.59983C16.4996 11.752 13.7957 14.3998 13.7677 14.4838C13.7397 14.5679 14.244 15.1703 14.8745 15.8007L16.0373 16.9775L16.3875 16.7114C16.6677 16.4732 20.7585 12.5365 26.5444 6.91869C27.371 6.10614 28.0434 5.37764 28.0434 5.29358C28.0434 5.20953 27.5251 4.63513 26.8947 4.00471L25.7319 2.85592L19.7778 8.59983Z"
-                                                fill="white" />
-                                            <path
-                                                d="M3.38672 7.53438V10.6865H9.28473H15.1828L16.2895 9.60779L17.4103 8.52905L17.3682 6.49767L17.3262 4.45228L10.3635 4.41025L3.38672 4.38223V7.53438ZM15.2948 7.53438V8.58509H10.3915H5.48815V7.53438V6.48366H10.3915H15.2948V7.53438Z"
-                                                fill="white" />
-                                            <path
-                                                d="M3.41459 13.9375L3.45662 14.9602L6.93098 15.0023L10.3913 15.0303V13.9796V12.9288H6.88895H3.37256L3.41459 13.9375Z"
-                                                fill="white" />
-                                            <path
-                                                d="M12.9554 15.3942C12.7032 15.8705 11.7505 18.8125 11.8066 18.8826C11.9046 18.9666 15.351 17.7478 15.393 17.6077C15.421 17.5377 14.9027 16.9493 14.2582 16.3048C13.2075 15.2681 13.0674 15.17 12.9554 15.3942Z"
-                                                fill="white" />
-                                            <path d="M3.38672 18.3223V19.373H6.8891H10.3915V18.3223V17.2716H6.8891H3.38672V18.3223Z" fill="white" />
-                                            <path d="M3.38672 22.3848V23.4355H10.3214H17.2562V22.3848V21.3341H10.3214H3.38672V22.3848Z" fill="white" />
-                                        </svg>
+                                            <svg width="29" height="28" viewBox="0 0 29 28" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.56557 0.964682C0.977165 1.21685 0.486831 1.65115 0.22065 2.1695C-0.0735501 2.72988 -0.0735501 24.893 0.22065 25.5794C0.458812 26.1678 1.14528 26.7422 1.81774 26.9384C2.16798 27.0504 5.01191 27.0785 10.6858 27.0504L19.0215 27.0084L19.6099 26.6161C19.9321 26.406 20.3243 25.9857 20.4784 25.6775C20.7446 25.1451 20.7586 24.907 20.7306 20.0457L20.6886 14.9742L19.7499 15.8568L18.7973 16.7394V20.55C18.7973 23.7722 18.7693 24.4026 18.5731 24.6688L18.363 24.977H10.3215C2.5042 24.977 2.26604 24.963 2.12595 24.7108C1.92981 24.3326 1.92981 3.4864 2.12595 3.10814C2.26604 2.85597 2.5042 2.84196 10.3075 2.84196C17.6065 2.84196 18.363 2.86998 18.5311 3.06611C18.6712 3.23423 18.7553 3.89268 18.7973 5.20957L18.8673 7.10086L19.82 6.21826L20.7586 5.33566V4.00475C20.7586 2.19752 20.3804 1.45502 19.1756 0.950672C18.419 0.628452 2.30807 0.642462 1.56557 0.964682Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M19.7778 8.59983C16.4996 11.752 13.7957 14.3998 13.7677 14.4838C13.7397 14.5679 14.244 15.1703 14.8745 15.8007L16.0373 16.9775L16.3875 16.7114C16.6677 16.4732 20.7585 12.5365 26.5444 6.91869C27.371 6.10614 28.0434 5.37764 28.0434 5.29358C28.0434 5.20953 27.5251 4.63513 26.8947 4.00471L25.7319 2.85592L19.7778 8.59983Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M3.38672 7.53438V10.6865H9.28473H15.1828L16.2895 9.60779L17.4103 8.52905L17.3682 6.49767L17.3262 4.45228L10.3635 4.41025L3.38672 4.38223V7.53438ZM15.2948 7.53438V8.58509H10.3915H5.48815V7.53438V6.48366H10.3915H15.2948V7.53438Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M3.41459 13.9375L3.45662 14.9602L6.93098 15.0023L10.3913 15.0303V13.9796V12.9288H6.88895H3.37256L3.41459 13.9375Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M12.9554 15.3942C12.7032 15.8705 11.7505 18.8125 11.8066 18.8826C11.9046 18.9666 15.351 17.7478 15.393 17.6077C15.421 17.5377 14.9027 16.9493 14.2582 16.3048C13.2075 15.2681 13.0674 15.17 12.9554 15.3942Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M3.38672 18.3223V19.373H6.8891H10.3915V18.3223V17.2716H6.8891H3.38672V18.3223Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M3.38672 22.3848V23.4355H10.3214H17.2562V22.3848V21.3341H10.3214H3.38672V22.3848Z"
+                                                    fill="white" />
+                                            </svg>
 
-                                        
+
                                         </div>
 
                                         <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">02</p>
@@ -794,24 +863,25 @@
                                         duisit.
                                     </p>
                                 </div>
-                                <div class="next_steps_cards_box mt-4">
+                                <div class="next_steps_cards_box mt-4" data-aos="fade-up">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <!-- LOG IN SVG  -->
                                         <div class="next_step_svg_bg d-flex justify-content-center align-items-center">
-                                        <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.7492 0.335182C9.76933 0.806389 7.41993 2.93678 6.61689 5.89675C6.46425 6.48078 6.44434 6.65334 6.44434 7.73512C6.45097 8.81027 6.46425 8.9961 6.62353 9.58013C6.962 10.8544 7.65886 12.0755 8.56145 12.9781C11.4949 15.9116 16.2202 15.9248 19.1404 13.0047C22.2795 9.86551 21.9942 4.68223 18.5298 1.88818C17.8263 1.32405 16.6251 0.726748 15.7291 0.494463C15.2048 0.361729 14.8663 0.321909 14.1031 0.301999C13.5722 0.288725 12.9616 0.301999 12.7492 0.335182Z"
-                                                fill="white" />
-                                            <path
-                                                d="M21.775 15.0423C20.8459 15.2481 19.7243 16.0179 19.5384 16.5754C19.3128 17.2723 19.7508 17.9691 20.4543 18.0355C20.8259 18.0753 21.191 17.9227 21.4697 17.624C21.5626 17.5245 21.7551 17.3785 21.9011 17.3055C22.1533 17.1661 22.2528 17.1595 23.9253 17.1595H25.684L26.0424 17.3586C26.4273 17.5709 26.726 17.9559 26.8454 18.3872C26.8853 18.5266 26.9118 20.4977 26.9118 23.471C26.9118 28.787 26.9185 28.7339 26.5136 29.2184C26.4074 29.3511 26.1619 29.5369 25.9694 29.6298C25.6243 29.8024 25.6177 29.8024 23.9917 29.8024C22.1798 29.8024 21.9077 29.7559 21.5626 29.3976C21.2241 29.0525 20.952 28.9197 20.587 28.9197C19.9499 28.9131 19.5451 29.2781 19.492 29.9086C19.4654 30.2006 19.492 30.3134 19.638 30.559C19.9565 31.1098 20.8193 31.6607 21.702 31.893C22.2595 32.0323 25.5579 32.039 26.1685 31.893C27.5755 31.5611 28.7037 30.3997 29.0024 28.9728C29.082 28.5879 29.1019 27.6521 29.1019 23.5307C29.1019 20.4446 29.0754 18.3939 29.0356 18.1351C28.8099 16.7679 27.7746 15.56 26.4672 15.1286C26.049 14.9892 25.8699 14.976 24.1244 14.9627C22.6179 14.9428 22.14 14.9627 21.775 15.0423Z"
-                                                fill="white" />
-                                            <path
-                                                d="M11.8797 18.2679C8.55473 18.4869 5.11691 19.4094 2.05075 20.9093C0.749949 21.5465 0.477844 21.7588 0.152645 22.4225L0 22.7344V26.0196V29.3048L0.212375 29.7428C0.471207 30.2671 0.88932 30.6719 1.41362 30.9175L1.79191 31.0967L9.70952 31.1166L17.6271 31.1299L17.5807 30.9839C17.4015 30.4264 17.3749 29.8224 17.501 29.2782L17.574 28.9464L17.2156 28.6212C16.7643 28.2031 16.4259 27.6522 16.2865 27.0881L16.1737 26.6501L14.926 26.6103C13.6385 26.5705 13.4725 26.5439 12.8686 26.232C12.4969 26.0395 11.966 25.5484 11.7138 25.1568C11.4085 24.6856 11.2426 24.095 11.2426 23.491C11.236 22.1106 12.0058 21.0222 13.3398 20.5111C13.6915 20.3718 13.884 20.3519 14.9525 20.3253C15.7888 20.3054 16.1737 20.2722 16.187 20.2191C16.3529 19.582 16.5387 19.1307 16.7909 18.7989L17.0763 18.4007L16.771 18.3608C15.5366 18.2016 13.4725 18.1617 11.8797 18.2679Z"
-                                                fill="white" />
-                                            <path
-                                                d="M18.8415 19.6486C18.6225 19.7349 18.2973 20.1596 18.2442 20.4118C18.1579 20.8963 18.2508 21.0954 18.9012 21.7524L19.5052 22.3697H16.8372C14.7135 22.3697 14.1228 22.3896 13.9502 22.4626C13.114 22.8209 13.0476 24.0288 13.8441 24.4337C14.083 24.5531 14.2555 24.5598 16.7974 24.5598H19.4985L18.8946 25.1836C18.357 25.7411 18.2907 25.834 18.2442 26.1194C18.1247 26.9423 18.8481 27.5795 19.6313 27.3472C19.8636 27.2808 20.1888 26.9954 21.463 25.7345C23.3014 23.9094 23.4341 23.7036 23.1554 23.0466C23.0492 22.7944 20.4808 20.1464 19.983 19.7747C19.7706 19.6154 19.6645 19.5822 19.3525 19.5889C19.1468 19.5889 18.9211 19.6154 18.8415 19.6486Z"
-                                                fill="white" />
-                                        </svg>
+                                            <svg width="30" height="32" viewBox="0 0 30 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.7492 0.335182C9.76933 0.806389 7.41993 2.93678 6.61689 5.89675C6.46425 6.48078 6.44434 6.65334 6.44434 7.73512C6.45097 8.81027 6.46425 8.9961 6.62353 9.58013C6.962 10.8544 7.65886 12.0755 8.56145 12.9781C11.4949 15.9116 16.2202 15.9248 19.1404 13.0047C22.2795 9.86551 21.9942 4.68223 18.5298 1.88818C17.8263 1.32405 16.6251 0.726748 15.7291 0.494463C15.2048 0.361729 14.8663 0.321909 14.1031 0.301999C13.5722 0.288725 12.9616 0.301999 12.7492 0.335182Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M21.775 15.0423C20.8459 15.2481 19.7243 16.0179 19.5384 16.5754C19.3128 17.2723 19.7508 17.9691 20.4543 18.0355C20.8259 18.0753 21.191 17.9227 21.4697 17.624C21.5626 17.5245 21.7551 17.3785 21.9011 17.3055C22.1533 17.1661 22.2528 17.1595 23.9253 17.1595H25.684L26.0424 17.3586C26.4273 17.5709 26.726 17.9559 26.8454 18.3872C26.8853 18.5266 26.9118 20.4977 26.9118 23.471C26.9118 28.787 26.9185 28.7339 26.5136 29.2184C26.4074 29.3511 26.1619 29.5369 25.9694 29.6298C25.6243 29.8024 25.6177 29.8024 23.9917 29.8024C22.1798 29.8024 21.9077 29.7559 21.5626 29.3976C21.2241 29.0525 20.952 28.9197 20.587 28.9197C19.9499 28.9131 19.5451 29.2781 19.492 29.9086C19.4654 30.2006 19.492 30.3134 19.638 30.559C19.9565 31.1098 20.8193 31.6607 21.702 31.893C22.2595 32.0323 25.5579 32.039 26.1685 31.893C27.5755 31.5611 28.7037 30.3997 29.0024 28.9728C29.082 28.5879 29.1019 27.6521 29.1019 23.5307C29.1019 20.4446 29.0754 18.3939 29.0356 18.1351C28.8099 16.7679 27.7746 15.56 26.4672 15.1286C26.049 14.9892 25.8699 14.976 24.1244 14.9627C22.6179 14.9428 22.14 14.9627 21.775 15.0423Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M11.8797 18.2679C8.55473 18.4869 5.11691 19.4094 2.05075 20.9093C0.749949 21.5465 0.477844 21.7588 0.152645 22.4225L0 22.7344V26.0196V29.3048L0.212375 29.7428C0.471207 30.2671 0.88932 30.6719 1.41362 30.9175L1.79191 31.0967L9.70952 31.1166L17.6271 31.1299L17.5807 30.9839C17.4015 30.4264 17.3749 29.8224 17.501 29.2782L17.574 28.9464L17.2156 28.6212C16.7643 28.2031 16.4259 27.6522 16.2865 27.0881L16.1737 26.6501L14.926 26.6103C13.6385 26.5705 13.4725 26.5439 12.8686 26.232C12.4969 26.0395 11.966 25.5484 11.7138 25.1568C11.4085 24.6856 11.2426 24.095 11.2426 23.491C11.236 22.1106 12.0058 21.0222 13.3398 20.5111C13.6915 20.3718 13.884 20.3519 14.9525 20.3253C15.7888 20.3054 16.1737 20.2722 16.187 20.2191C16.3529 19.582 16.5387 19.1307 16.7909 18.7989L17.0763 18.4007L16.771 18.3608C15.5366 18.2016 13.4725 18.1617 11.8797 18.2679Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M18.8415 19.6486C18.6225 19.7349 18.2973 20.1596 18.2442 20.4118C18.1579 20.8963 18.2508 21.0954 18.9012 21.7524L19.5052 22.3697H16.8372C14.7135 22.3697 14.1228 22.3896 13.9502 22.4626C13.114 22.8209 13.0476 24.0288 13.8441 24.4337C14.083 24.5531 14.2555 24.5598 16.7974 24.5598H19.4985L18.8946 25.1836C18.357 25.7411 18.2907 25.834 18.2442 26.1194C18.1247 26.9423 18.8481 27.5795 19.6313 27.3472C19.8636 27.2808 20.1888 26.9954 21.463 25.7345C23.3014 23.9094 23.4341 23.7036 23.1554 23.0466C23.0492 22.7944 20.4808 20.1464 19.983 19.7747C19.7706 19.6154 19.6645 19.5822 19.3525 19.5889C19.1468 19.5889 18.9211 19.6154 18.8415 19.6486Z"
+                                                    fill="white" />
+                                            </svg>
 
                                         </div>
 
@@ -826,7 +896,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="fade-left">
                         <div>
                             <p class="text-white ff_outfit fs_xl fw-bold leading_130 mb-0 text-lg-start text-center">The
                                 Next Steps</p>
@@ -839,15 +909,14 @@
             </div>
         </div>
     </div>
-
     <!-- OUR CLIENTS  -->
     <div class="our_client_bg pt_lg_160px">
         <div class="py-lg-5 mt-lg-5">
-            <div class="container custom_container py-5">
-                <h2 class="text-white ff_outfit fs_xl fw-bold leading_130 text-center mb-1 pt-3">See What <span
+            <div class="container custom_container py-5" >
+                <h2 class="text-white ff_outfit fs_xl fw-bold leading_130 text-center mb-1 pt-3" data-aos="fade-down">See What <span
                         class="clr_primary">Our Clients</span> Think About Us</h2>
                 <div class="row py-sm-5 pt-5 pb-4 justify-content-center mt-2">
-                    <div class="col-lg-4 col-md-6 col-10">
+                    <div class="col-lg-4 col-md-6 col-10" data-aos="fade-right">
                         <div class="our_client_card_box position-relative">
                             <img src="./assets/images/clients/jeffrey_martin.png" alt="jeffrey martin boy image"
                                 class="our_client_card_img">
@@ -875,7 +944,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4 col-10">
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4 col-10" data-aos="zoom-in">
                         <div class="our_client_card_box position-relative">
                             <img src="./assets/images/clients/drew_sugarman.png" alt="drew sugarman boy image"
                                 class="our_client_card_img">
@@ -904,7 +973,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 col-10">
+                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 col-10" data-aos="fade-left">
                         <div class="our_client_card_box position-relative">
                             <img src="./assets/images/clients/jeffrey_martin_girl.png" alt="jeffrey martin girl image"
                                 class="our_client_card_img">
@@ -938,17 +1007,16 @@
         </div>
     </div>
     <!--  COMPANIES SECTION END  -->
-
     <!-- FOOTER SECTION  -->
     <div class="footer_bg pt-sm-5 pt-3">
         <div class="container custom_container py-4">
             <div class="row flex-wrap justify-content-between align-items-xl-center py-2">
                 <div class="col-lg-3">
-                    <a href="#"><img src="./assets/icons/common/clear_talk.svg" alt=" page logo"></a>
-                    <p class="text-white ff_outfit fs_sm fw-semibold leading_112 mb-0 pt-3">Innovative Solutions, Real
+                    <a href="/"><img src="./assets/icons/common/clear_talk.svg" alt=" page logo" data-aos="fade-down"></a>
+                    <p class="text-white ff_outfit fs_sm fw-semibold leading_112 mb-0 pt-3" data-aos="fade-down">Innovative Solutions, Real
                         Results</p>
-                    <p class="pt-4 mt-sm-3 mb-0 text-white fs_md fw-semibold ff_outfit leading_112">Follow us:</p>
-                    <div class="d-flex align-items-center gap-3 pt-3 mt-1 mb-4">
+                    <p class="pt-4 mt-sm-3 mb-0 text-white fs_md fw-semibold ff_outfit leading_112" data-aos="fade-up">Follow us:</p>
+                    <div class="d-flex align-items-center gap-3 pt-3 mt-1 mb-4" data-aos="fade-up">
                         <a target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
                             href="https://www.instagram.com/"><img class="footer_icons"
@@ -966,13 +1034,14 @@
                 <div class="col-lg-8 mt-lg-0 mt-sm-5 mt-4">
                     <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start">
 
-                        <ul class="p-0">
+                        <ul class="p-0" data-aos="fade-down">
                             <li class="text-white fs_md ff_outfit fw-semibold leading_112">Quick Link</li>
                             <li class="pt-3">
                                 <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Home</a>
                             </li>
                             <li class="pt-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Services</a>
+                                <a href="#services"
+                                    class="text-white fs_sm fw-normal hover_footer_li leading_140">Services</a>
                             </li>
                             <li class="pt-3">
                                 <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Blogs</a>
@@ -983,7 +1052,7 @@
                                     consultation</a>
                             </li>
                         </ul>
-                        <ul class="p-0">
+                        <ul class="p-0" data-aos="fade-up">
                             <li class="text-white fs_md ff_outfit fw-semibold leading_112 nowrap">Legal Information</li>
                             <li class="pt-3">
                                 <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Terms &
@@ -994,15 +1063,14 @@
                                     Policy</a>
                             </li>
                         </ul>
-                        <ul class="p-0">
+                        <ul class="p-0" data-aos="fade-down">
                             <li class="text-white fs_md ff_outfit fw-semibold leading_112">Contact us</li>
                             <li class="pt-3 ">
                                 <a href="#" class="d-flex align-items-start"><img
                                         src="./assets/icons/footer/location.svg" alt="location icon">
                                     <p
                                         class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 footer_li_custom_max_w mb-0">
-                                        3891 Ranchview Dr. <span class="d-inline-block nowrap">Richardson, California
-                                            62639</span></p>
+                                        3891 Ranchview Dr. Richardson, California 62639</p>
                                 </a>
                             </li>
                             <li class="pt-3 ">
@@ -1014,11 +1082,11 @@
                                 </a>
                             </li>
                             <li class="pt-3 ">
-                                <a href="tel:(207) 555-0129" class="d-flex align-items-start"><img
+                                <a href="tel:(207)555-0129" class="d-flex align-items-start"><img
                                         src="./assets/icons/footer/telephone.svg" alt="telephone icon">
-                                    <p
+                                    <span
                                         class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
-                                        (207) 555-0129</p>
+                                        (207) 555-0129</span>
                                 </a>
                             </li>
 
@@ -1036,14 +1104,31 @@
         </div>
 
     </div>
-    <!-- BACK TO TOP BUTTON  -->
-    <button id="back-to-top" class=" bg-white"><img src="./assets/icons/common/top_arrow.svg" alt="top arrow"></button>
+    <!-- JS LINK -->
+    <script src="/assets/js/app.js"></script>
+    <!-- AOS LINK  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({once:true, duration:"1000",});
+    
+    </script>
+    <!-- AUDIO WAVE JS LINK -->
+    <script src="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.js"></script>
+    <script src="/assets/js/audioWave.js">
+    </script>
+    <!--L QUERRY MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!--SLICK MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>
