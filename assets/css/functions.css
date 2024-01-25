@@ -131,25 +131,6 @@ wave {
     transform: translateX(0) !important;
     margin-top: -15%;
   }
-  /* .common_company_image {
-    max-width: 120px;
-  }
-  .solar_bootcamp_company {
-    max-width: 170px;
-  } */
-  @keyframes sliderScroll {
-    0% {
-      transform: translateX(-950px);
-      -webkit-transform: translateX(-950px);
-      -moz-transform: translateX(-950px);
-      -ms-transform: translateX(-950px);
-      -o-transform: translateX(-950px);
-    }
-
-    100% {
-      transform: translateX(950px);
-    }
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -165,5 +146,18 @@ wave {
   }
   .solar_bootcamp_company {
     max-width: 150px;
+  }
+  @keyframes sliderScroll {
+    0% {
+      transform: translateX(-950px);
+      -webkit-transform: translateX(-950px);
+      -moz-transform: translateX(-950px);
+      -ms-transform: translateX(-950px);
+      -o-transform: translateX(-950px);
+    }
+  
+    100% {
+      transform: translateX(950px);
+    }
   }
 }
