@@ -29,9 +29,12 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="/assets/css/root.css" />
     <!-- AOS LINK  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- wavesurfer.js styles CSS LINK -->
     <link rel="stylesheet" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css" />
+    <!-- BOOTSTRAP LATEST  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- SLICK MIN JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
@@ -41,32 +44,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- BOOTSTRAP LATEST  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body class="loading">
     <!-- PRELAODER  -->
     <div class="loader_bg" id="preLoader">
         <div class="loader d-flex justify-content-center align-items-center h-100">
-            <div class="position-relative" data-aos="zoom-in">
-                <img class="microphone_circle w-100" src="/assets/images/amplifying-impact/circle_ball.webp"
-                    alt="circle">
-                <img class="position-absolute top-50 start-50 microphone w-50"
-                    src="/assets/images/amplifying-impact/microphone.png" alt="microphone">
+            <div class="position-relative px-3" data-aos="zoom-in">
+                <img class="microphone_circle_preloader w-100" src="/assets/images/amplifying-impact/circle_ball.webp"
+                    alt="circle" />
             </div>
         </div>
     </div>
     <!-- BACK TO TOP -->
-    <button id="back-to-top" class="bg-white"><img src="./assets/icons/common/top_arrow.svg" alt="top arrow"></button>
+    <button id="back-to-top" class="bg_secondary">
+        <img src="./assets/icons/common/top_arrow.svg" alt="top arrow" />
+    </button>
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
+                <!-- CLEAR TALK LOGO  -->
                 <a class="nav_logo" href="/"><img class="w-100" src="./assets/icons/common/clear_talk.svg"
                         alt="clear-talk" /></a>
                 <ul id="showul"
                     class="mb-0 d-flex align-items-center gap-xl-5 gap-4 mobile_nab flex-lg-row flex-column justify-content-center duration_300">
+                    <!-- NAVBAR LINKS  -->
                     <li class="d-flex gap-xl-5 gap-3 align-items-center flex-lg-row flex-column">
                         <a onclick="shownav()"
                             class="fw-normal fs_sm text-white opacity_07 ff_outfit nav_links duration_300"
@@ -75,6 +77,7 @@
                             class="fw-normal fs_sm text-white opacity_07 ff_outfit nav_links duration_300"
                             href="#">Industries</a>
                     </li>
+                    <!-- SOCIAL LINKS  -->
                     <li class="d-flex align-items-center gap_10">
                         <a target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center social_links duration_300 blue_linear_gradient rounded-pill"
@@ -88,6 +91,7 @@
                             href="https://twitter.com/?lang=en"><img src="/assets/icons/common/twitter.svg"
                                 alt="twitter" /></a>
                     </li>
+                    <!-- BUTTON  -->
                     <li>
                         <button onclick="shownav()"
                             class="blue_linear_gradient nav_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">
@@ -95,15 +99,18 @@
                         </button>
                     </li>
                 </ul>
+                <!-- MENUICON ON SMALL SCREEN  -->
                 <span class="menuicon d-lg-none cursor_pointer" id="shownav" onclick="shownav()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="bar1 duration_300"></span>
+                    <span class="bar2 duration_300"></span>
+                    <span class="bar3 duration_300"></span>
                 </span>
             </div>
         </nav>
+        <!-- HERO SECTION  -->
         <div class="min-vh-100 hero_bg d-flex justify-content-between align-items-center position-relative">
-            <span class="hero_bottom_blur position-absolute bottom-0 w-100 start-0"></span>
+            <span class="position-absolute hero_bottom_blur bottom-0 start-0 w-100"></span>
+
             <div
                 class="container custom_container d-flex justify-content-center align-items-center align-items-sm-start flex-column">
                 <h1 class="ff_outfit fw-bold fs_2xl text-white hero_heading pb-3 text-sm-start text-center">
@@ -116,15 +123,16 @@
                     automate communication for your business with A.I.
                 </p>
                 <button
-                    class="blue_linear_gradient hero_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">
+                    class="blue_linear_gradient hero_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm z-3">
                     Get a live call
                 </button>
             </div>
         </div>
     </header>
     <!--  SERVICES START  -->
-    <section class="services_background pb-5 mb-5">
-        <div class="pt-5 mt-5">
+    <section class="services_background pb-5 mb-5 position-relative">
+        <span class="position-absolute top_coomn_blur"></span>
+        <div class="py-5 lg:my-5">
             <div class="py-5 mt-md-5">
                 <div
                     class="custom_container container d-flex flex-wrap justify-content-between gap-4 gap-lg-0 align-items-lg-center justify-content-lg-center position-relative mt-5">
@@ -271,8 +279,7 @@
                 </h2>
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-8" data-aos="fade-right">
-                        <img class="w-100" src="./assets/images/roles/webp/appointment.png"
-                            alt="appointment_setting_img" />
+                        <img class="w-100" src="./assets/images/roles/appointment.png" alt="appointment_setting_img" />
                     </div>
                     <div class="col-sm-10 col-lg-4" data-aos="fade-left">
                         <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
@@ -303,8 +310,9 @@
                 </div>
                 <div
                     class="row flex-column-reverse flex-lg-row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
-                    <div class="col-sm-10 col-lg-4" data-aos="fade-right">
-                        <div class="bg_secondary virtual_card_parent w-100 mt-lg-3">
+                    <div class="col-sm-10 col-lg-4">
+                        <div class="bg_secondary virtual_card_parent w-100 mt-lg-3 position-relative"
+                            data-aos="fade-right">
                             <div
                                 class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
                                 <img src="./assets/icons/roles/receptionist.svg" alt="appointmentSetting" />
@@ -328,18 +336,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8" data-aos="fade-left">
-                        <img class="w-100" src="./assets/images/roles/webp/virtual_receptionist.webp"
+                    <div class="col-lg-8 position-relative z-0" data-aos="fade-left">
+                        <img class="w-100" src="./assets/images/roles/virtual_receptionist.webp"
                             alt="appointment_setting_img" />
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
                     <div class="col-lg-8" data-aos="fade-right">
-                        <img class="w-100" src="./assets/images/roles/webp/recruiting.webp"
-                            alt="appointment_setting_img" />
+                        <img class="w-100" src="./assets/images/roles/recruiting.webp" alt="appointment_setting_img" />
                     </div>
                     <div class="col-sm-10 col-lg-4" data-aos="fade-left">
-                        <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
+                        <div class="bg_secondary functions_card_parent w-100 mt-lg-0 position-relative">
                             <div
                                 class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
                                 <img src="./assets/icons/roles/appointmentSetting.svg" alt="appointmentSetting" />
@@ -367,8 +374,9 @@
                 </div>
                 <div
                     class="row flex-column-reverse flex-lg-row align-items-center justify-content-center mt-5 pt-2 pt-md-4">
-                    <div class="col-sm-10 col-lg-4" data-aos="fade-right">
-                        <div class="bg_secondary virtual_card_parent w-100 mt-lg-3">
+                    <div class="col-sm-10 col-lg-4">
+                        <div class="bg_secondary virtual_card_parent w-100 mt-lg-3 position-relative"
+                            data-aos="fade-right">
                             <div
                                 class="d-inline-block bg-white finctions_icon d-flex align-items-center justify-content-center rounded-5">
                                 <img src="./assets/icons/roles/receptionist.svg" alt="appointmentSetting" />
@@ -393,13 +401,12 @@
                         </div>
                     </div>
                     <div class="col-lg-8" data-aos="fade-left">
-                        <img class="w-100" src="./assets/images/roles/webp/aiBot.webp" alt="appointment_setting_img" />
+                        <img class="w-100" src="./assets/images/roles/aiBot.webp" alt="appointment_setting_img" />
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center mt-5 pt-2 pt-md-4 position-relative z-2">
                     <div class="col-lg-8" data-aos="fade-right">
-                        <img class="w-100" src="./assets/images/roles/webp/customer.webp"
-                            alt="appointment_setting_img" />
+                        <img class="w-100" src="./assets/images/roles/customer.webp" alt="appointment_setting_img" />
                     </div>
                     <div class="col-sm-10 col-lg-4" data-aos="fade-left">
                         <div class="bg_secondary functions_card_parent w-100 mt-lg-0">
@@ -436,7 +443,7 @@
     <!-- GET STARTED SECTION  -->
     <div class="started_bg py-lg-5 position-relative">
         <div class="container custom_container py-md-5">
-            <h2 class="text-center text-white fw-bold ff_outfit fs_xl leading_130 pt-5 mt-sm-2" data-aos="fade-down">
+            <h2 class="text-center text-white fw-bold ff_outfit fs_xl leading_130 pt-5 mt-sm-5" data-aos="fade-down">
                 Three Ways To <span class="clr_primary">Get Started</span>
             </h2>
             <p class="text-center pt-md-3 pt-2 mb-0 text-white opacity_07 get_started_description ff_outfit fw-normal"
@@ -446,7 +453,7 @@
                 eu, pretium quis, sem.
             </p>
             <div class="mb-lg-2 pb-lg-1">
-                <div class="row py-5 mb-md-4 justify-content-lg-between justify-content-center">
+                <div class="row pt-5 mb-md-4 justify-content-lg-between justify-content-center">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up">
                         <div class="started_card_boxes h-100">
                             <div class="d-flex justify-content-between align-items-start">
@@ -569,7 +576,7 @@
     </div>
     <!-- FEATURED SECTION  -->
     <div class="featured_bg py-lg-5 py-4 position-relative">
-        <div class="container custom_container py-5 my-sm-2">
+        <div class="container custom_container py-5 my-sm-4">
             <div class="row justify-content-lg-end justify-content-center">
                 <div class="col-lg-6 col-md-10 col-12" data-aos="fade-left">
                     <div class="featured_box">
@@ -630,52 +637,190 @@
         <div class="featured_top_gradient_layer"></div>
         <div class="featured_bottom_gradient_layer"></div>
     </div>
-    <!-- Driving Growth, Amplifying Impact section -->
-    <div class="py-5 overflow-hidden">
-        <div class="container custom_container d-flex flex-lg-row flex-column align-items-center">
-            <div class="position-relative" data-aos="zoom-in">
-                <img class="microphone_circle w-100" src="/assets/images/amplifying-impact/circle_ball.webp"
-                    alt="circle">
-                <img class="position-absolute top-50 start-50 microphone w-50"
-                    src="/assets/images/amplifying-impact/microphone.png" alt="microphone">
-            </div>
-            <div class="ps-xl-5 ps-lg-4  width_lg_100 w_half">
-                <h2 class="ff_outfit fw-bold fs_xl text-white hero_heading pb-3 mb-0 pe-4 pt-4 pt-lg-0"
-                    data-aos="fade-left">
-                    Driving
-                    Growth, <span class="clr_primary">Amplifying</span> Impact</h2>
-                <h4 class="ff_outfit fw-bold text-white fs_sm pb-3">Modern Times Call For Modern Solutions</h4>
-                <p class="text-white ff_outfit fw-normal opacity_07 leading_150 pb-4 mb-3">Any business that has
-                    employees
-                    performing menial tasks over the phone can benefit from conversational AI automation.
-                    Whether it's a virtual receptionist, outbound lead follow up, recruiting or a number of other use
-                    cases not only do we
-                    outperform people but we do it for less.</p>
-                <div class="d-flex gap-4 align-items-center">
-                    <button
-                        class="blue_linear_gradient nav_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">Get
-                        called now!</button>
-                    <div class="d-flex align-items-center gap_10 cursor_pointer" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        <div
-                            class="video_play_button blue_linear_gradient rounded-pill ms-1 d-flex justify-content-center align-items-center">
-                            <img src="/assets/icons/amplifying-impact/video_play.svg" alt="video">
+    <!-- BACKGROUND LINES  -->
+    <div class="bg_lines pb_lg_240 position-relative">
+        <span class="position-absolute top_coomn_blur top-0 start-0 w-100"></span>
+        <!--SOME OF OUR CALLS  -->
+        <div class="py-5">
+            <div class="py-5 mt-5">
+                <h2 class="text-center fw-bold fs_xl text-white ff_balsamiq pb-sm-5 pb-4 mb-0">
+                    Take A Listen To Some Of
+                    <span class="clr_primary">Our Calls</span>
+                </h2>
+                <div class="position-relative">
+                    <!-- LEFT RIGHT SHADOWS  -->
+                    <div class="position-absolute left_slide_shodow start-0 top-50"></div>
+                    <div class="position-absolute right_slide_shodow end-0 top-50"></div>
+                    <!-- SLICK SLIDER -->
+                    <div class="Slider position-relative">
+                        <div class="video_slide h-100">
+                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
+                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </div>
-                        <h3 class="ff_outfit fw-semibold text-white fs_sm mb-0">See Video</h3>
+                        <div class="video_slide h-100">
+                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
+                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video_slide h-100">
+                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
+                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header border-0 pb-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                    <!-- SLICK SLIDER ARROWS BUTTONS  -->
+                    <div class="d-flex justify-content-center align-items-center gap-5">
+                        <button
+                            class="position_sm_absolute top-50 blue_linear_gradient slider_arrow d-flex justify-content-center align-items-center rounded-pill cursor_pointer slider_arrow_left">
+                            <img src="/assets/icons/our-calls/slider_arrow.svg" alt="arrow" />
+                        </button>
+                        <button
+                            class="position_sm_absolute top-50 blue_linear_gradient my-4 slider_arrow d-flex justify-content-center align-items-center rounded-pill cursor_pointer slider_arrow_right">
+                            <img src="/assets/icons/our-calls/slider_arrow.svg" alt="arrow" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  CONVERSATIONAL SECTION START  -->
+        <section class="pt-lg-5">
+            <div class="container custom_container">
+                <div class="row align-items-center justify-content-between flex-column-reverse flex-lg-row">
+                    <div class="conversational_text_parent col-sm-11 col-lg-6 mt-4 mt-lg-0">
+                        <h2 class="ff_outfit text-white fs_xl fw-bold mb-2 pb-1 text-center text-lg-start">
+                            Conversational A.I. and Automation Equals
+                            <span class="clr_primary">Appointments On Autopilot</span>
+                        </h2>
+                        <div class="text-center text-lg-start">
+                            <img class="conversational_clear_logo w-100" src="./assets/icons/common/clear_talk.svg"
+                                alt="clear-talk" />
+                        </div>
+                        <p class="pt-2 mt-2 text-white opacity_07 mb-0 text-center text-lg-start">
+                            The partnership that created the solar industries first seamless
+                            system. We take your business from leads captured to
+                            appointments closed.
+                        </p>
+                        <div
+                            class="d-flex justify-content-center justify-content-lg-start align-items-center mt-4 pt-3 gap-4">
+                            <button
+                                class="blue_linear_gradient hero_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">
+                                Get a Demo
+                            </button>
+                            <div class="d-flex align-items-center gap_10 cursor_pointer" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <div
+                                    class="video_play_button blue_linear_gradient rounded-pill ms-1 d-flex justify-content-center align-items-center">
+                                    <img src="/assets/icons/amplifying-impact/video_play.svg" alt="video" />
                                 </div>
-                                <div class="modal-body w-100 pt-2">
-                                    <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                        src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                        title="YouTube video player" frameborder="0" allow="web-share"
-                                        allowfullscreen></iframe>
+                                <h3 class="ff_outfit fw-semibold text-white fs_sm mb-0">
+                                    See Video
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 col-md-8 col-lg-6 position-relative">
+                        <span class="position-absolute outer_ring_client_review d-none d-sm-block"></span>
+                        <span class="position-absolute middle_ring_client_review z-1 d-none d-sm-block">
+                            <img class="position-absolute small_avatar_conversational first_small_avatar z-2"
+                                src="./assets/images/conversational/first_avatar.png" alt="avatar" />
+                            <img class="position-absolute small_avatar_conversational second_small_avatar z-2"
+                                src="./assets/images/conversational/second_avatar.png" alt="avatar" />
+                            <img class="position-absolute small_avatar_conversational third_small_avatar z-2"
+                                src="./assets/images/conversational/third_avatar.png" alt="avatar" />
+                            <img class="position-absolute small_avatar_conversational fourth_small_avatar z-2"
+                                src="./assets/images/conversational/fourth_avatar.png" alt="avatar" />
+                            <img class="position-absolute small_avatar_conversational fifth_small_avatar z-2"
+                                src="./assets/images/conversational/fifth_avatar.png" alt="avatar" />
+                        </span>
+                        <span class="position-absolute inner_ring_client_review d-none d-sm-block"></span>
+                        <div class="successful_client_parent text-center w-100 h-100 position-relative z-0">
+                            <img class="mb-3 client_review_avatar" src="./assets/images/conversational/first_avatar.png"
+                                alt="avatar" />
+                            <p class="text-white ff_outfit fs_sm mb-1 fw-bold">
+                                Drew Sugarman
+                            </p>
+                            <p class="text-white opacity_07 fw-normal ff_outfit fs_sm mb-0">
+                                Successful Client
+                            </p>
+                            <div class="successful_client_review mx-auto position-relative">
+                                <img class="position-absolute client_review_top_quote"
+                                    src="./assets/icons/common/white_quote.svg" alt="quote" />
+                                <img class="position-absolute client_review_bottom_quote"
+                                    src="./assets/icons/common/white_quote.svg" alt="quote" />
+                                <p class="text-white fw-normal fs_sm ff_outfit opacity_07 leading_150">
+                                    Aenean masum sociis natoque penatibus et magnis dis
+                                    parturient montes nascetur ridiculus mus. Donec quam felis,
+                                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                                    consequat massa quis enim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  CONVERSATIONAL SECTION END  -->
+        <!-- Driving Growth, Amplifying Impact section -->
+        <div class="py-5 my-5 overflow-hidden">
+            <div class="container custom_container d-flex flex-lg-row flex-column align-items-center py-5">
+                <div class="position-relative" data-aos="zoom-in">
+                    <img class="microphone_circle w-100" src="/assets/images/amplifying-impact/circle_ball.webp"
+                        alt="circle" />
+                    <img class="position-absolute top-50 start-50 microphone w-50"
+                        src="/assets/images/amplifying-impact/microphone.png" alt="microphone" />
+                </div>
+                <div class="ps-xl-5 ps-lg-4 width_lg_100 w_half">
+                    <h2 class="ff_outfit fw-bold fs_xl text-white hero_heading pb-3 mb-0 pe-4 pt-4 pt-lg-0 text-lg-start text-center lg:ms-0 mx-auto"
+                        data-aos="fade-left">
+                        Driving Growth, <span class="clr_primary">Amplifying</span> Impact
+                    </h2>
+                    <h4 class="ff_outfit fw-bold text-white fs_sm pb-3 text-lg-start text-center">
+                        Modern Times Call For Modern Solutions
+                    </h4>
+                    <p
+                        class="text-white ff_outfit fw-normal opacity_07 leading_150 pb-4 mb-3 text-lg-start text-center">
+                        Any business that has employees performing menial tasks over the
+                        phone can benefit from conversational AI automation. Whether it's
+                        a virtual receptionist, outbound lead follow up, recruiting or a
+                        number of other use cases not only do we outperform people but we
+                        do it for less.
+                    </p>
+                    <div class="d-flex gap-4 align-items-center justify-content-lg-start justify-content-center">
+                        <button
+                            class="blue_linear_gradient nav_button position-relative common_button rounded-1 ff_outfit text-white fw-semibold fs_sm">
+                            Get called now!
+                        </button>
+                        <div class="d-flex align-items-center gap_10 cursor_pointer" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <div
+                                class="video_play_button blue_linear_gradient rounded-pill ms-1 d-flex justify-content-center align-items-center">
+                                <img src="/assets/icons/amplifying-impact/video_play.svg" alt="video" />
+                            </div>
+                            <h3 class="ff_outfit fw-semibold text-white fs_sm mb-0">
+                                See Video
+                            </h3>
+                        </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0 pb-0">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body w-100 pt-2">
+                                        <iframe class="w-100 rounded-2 d-block" width="560" height="445"
+                                            src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
+                                            title="YouTube video player" frameborder="0" allow="web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -683,80 +828,85 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--  COMPANIES SECTION START  -->
-    <section>
-        <div class="container companies_logos_parent py-5">
-            <h2 class="fw-bold fs_xl text-white text-center ff_outfit mb-0" data-aos="fade-down">
-                Companies
-                <span class="text_primary_gradient">We've Worked </span> With
-            </h2>
-            <p class="text-white opacity_07 companies_description mx-auto text-center mb-0 ff_outfit fw-normal fs_sm pt-3 mb-4"
-                data-aos="fade-down">
-                Eectus ornare arcu massa dictum tincidunt non. Pellentesque pretium
-                viverra enim venenatis nunc. Metus pharetra consequat amet eget orci a
-                sollicitudin felis cras. Lacus interdum feugiat in mi nullam varius.
-            </p>
-            <div class="overflow-hidden position-relative companies_logo_parent">
-                <div
-                    class="d-flex align-items-center justify-content-between company_slider_start position-absolute start-0 top-0 h-100 d-xl-none">
-                    <div data-aos="fade-up">
-                        <img class="common_company_image" src="./assets/images/companies/powur.png" alt="powur" />
+        <!--  COMPANIES SECTION START  -->
+        <section class="pb-lg-5">
+            <div class="container companies_logos_parent py-5">
+                <h2 class="fw-bold fs_xl text-white text-center ff_outfit mb-0" data-aos="fade-down">
+                    Companies
+                    <span class="text_primary_gradient">We've Worked </span> With
+                </h2>
+                <p class="text-white opacity_07 companies_description mx-auto text-center mb-0 ff_outfit fw-normal fs_sm pt-3 mb-4"
+                    data-aos="fade-down">
+                    Eectus ornare arcu massa dictum tincidunt non. Pellentesque pretium
+                    viverra enim venenatis nunc. Metus pharetra consequat amet eget orci
+                    a sollicitudin felis cras. Lacus interdum feugiat in mi nullam
+                    varius.
+                </p>
+                <div class="overflow-hidden position-relative companies_logo_parent">
+                    <div
+                        class="d-flex align-items-center justify-content-between company_slider_start position-absolute start-0 top-0 h-100 d-xl-none">
+                        <div data-aos="fade-up">
+                            <img class="common_company_image" src="./assets/images/companies/powur.png" alt="powur" />
+                        </div>
+                        <div data-aos="fade-down">
+                            <img class="solar_bootcamp_company" src="./assets/images/companies/solar_bootcamp.png"
+                                alt="solar-bootcamp" />
+                        </div>
+                        <div data-aos="fade-up">
+                            <img class="common_company_image" src="./assets/images/companies/energy.png" alt="energy" />
+                        </div>
+                        <div data-aos="fade-down">
+                            <img class="common_company_image" src="./assets/images/companies/american.png"
+                                alt="american" />
+                        </div>
+                        <div data-aos="fade-up">
+                            <img class="common_company_image" src="./assets/images/companies/guard.png"
+                                alt="guard-guru" />
+                        </div>
+                        <div data-aos="fade-down">
+                            <img class="common_company_image" src="./assets/images/companies/solar_upgrade.png"
+                                alt="solar-upgrade" />
+                        </div>
+                        <div data-aos="fade-up">
+                            <img class="common_company_image" src="./assets/images/companies/orange_solar.png"
+                                alt="orange-solar" />
+                        </div>
                     </div>
-                    <div data-aos="fade-down">
-                        <img class="solar_bootcamp_company" src="./assets/images/companies/solar_bootcamp.png"
-                            alt="solar-bootcamp" />
-                    </div>
-                    <div data-aos="fade-up">
-                        <img class="common_company_image" src="./assets/images/companies/energy.png" alt="energy" />
-                    </div>
-                    <div data-aos="fade-down">
-                        <img class="common_company_image" src="./assets/images/companies/american.png" alt="american" />
-                    </div>
-                    <div data-aos="fade-up">
-                        <img class="common_company_image" src="./assets/images/companies/guard.png" alt="guard-guru" />
-                    </div>
-                    <div data-aos="fade-down">
-                        <img class="common_company_image" src="./assets/images/companies/solar_upgrade.png"
-                            alt="solar-upgrade" />
-                    </div>
-                    <div data-aos="fade-up">
-                        <img class="common_company_image" src="./assets/images/companies/orange_solar.png"
-                            alt="orange-solar" />
-                    </div>
-                </div>
-                <div
-                    class="d-flex align-items-center justify-content-between company_slider_end w-100 position-absolute start-0 top-0 h-100">
-                    <div data-aos="fade-down">
-                        <img class="common_company_image" src="./assets/images/companies/powur.png" alt="powur" />
-                    </div>
-                    <div data-aos="fade-up">
-                        <img class="solar_bootcamp_company" src="./assets/images/companies/solar_bootcamp.png"
-                            alt="solar-bootcamp" />
-                    </div>
-                    <div data-aos="fade-down">
-                        <img class="common_company_image" src="./assets/images/companies/energy.png" alt="energy" />
-                    </div>
-                    <div data-aos="fade-up">
-                        <img class="common_company_image" src="./assets/images/companies/american.png" alt="american" />
-                    </div>
-                    <div data-aos="fade-down">
-                        <img class="common_company_image" src="./assets/images/companies/guard.png" alt="guard-guru" />
-                    </div>
-                    <div data-aos="fade-up">
-                        <img class="common_company_image" src="./assets/images/companies/solar_upgrade.png"
-                            alt="solar-upgrade" />
-                    </div>
-                    <div data-aos="fade-down">
-                        <img class="common_company_image" src="./assets/images/companies/orange_solar.png"
-                            alt="orange-solar" />
+                    <div
+                        class="d-flex align-items-center justify-content-between company_slider_end w-100 position-absolute start-0 top-0 h-100">
+                        <div data-aos="fade-down">
+                            <img class="common_company_image" src="./assets/images/companies/powur.png" alt="powur" />
+                        </div>
+                        <div data-aos="fade-up">
+                            <img class="solar_bootcamp_company" src="./assets/images/companies/solar_bootcamp.png"
+                                alt="solar-bootcamp" />
+                        </div>
+                        <div data-aos="fade-down">
+                            <img class="common_company_image" src="./assets/images/companies/energy.png" alt="energy" />
+                        </div>
+                        <div data-aos="fade-up">
+                            <img class="common_company_image" src="./assets/images/companies/american.png"
+                                alt="american" />
+                        </div>
+                        <div data-aos="fade-down">
+                            <img class="common_company_image" src="./assets/images/companies/guard.png"
+                                alt="guard-guru" />
+                        </div>
+                        <div data-aos="fade-up">
+                            <img class="common_company_image" src="./assets/images/companies/solar_upgrade.png"
+                                alt="solar-upgrade" />
+                        </div>
+                        <div data-aos="fade-down">
+                            <img class="common_company_image" src="./assets/images/companies/orange_solar.png"
+                                alt="orange-solar" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- NEXT STEP SECTION  -->
-    <div class="mt_lg_240">
+    <div>
         <div class="py-5 bg_next">
             <div class="container custom_container">
                 <div
@@ -790,16 +940,18 @@
                                                     d="M23.4976 12.0708C23.0808 12.3263 22.906 12.8507 23.0875 13.328C23.1816 13.5835 25.7364 16.145 26.0658 16.3198C26.8188 16.7097 27.713 15.9366 27.4642 15.1096C27.4037 14.9214 27.0339 14.5046 25.9179 13.3953L24.4523 11.9364H24.0825C23.8405 11.9364 23.6455 11.9834 23.4976 12.0708Z"
                                                     fill="#ECECEC" />
                                             </svg>
-
                                         </div>
 
-                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">01</p>
+                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">
+                                            01
+                                        </p>
                                     </div>
-                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Click Link
+                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">
+                                        Click Link
                                     </p>
                                     <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
-                                        Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll
-                                        duisit.
+                                        Consectetur egestas augue maecenas morbi faucibus turpis
+                                        euismod nec acll duisit.
                                     </p>
                                 </div>
                                 <div class="next_steps_cards_box mt-4" data-aos="fade-right">
@@ -827,19 +979,22 @@
                                                     d="M12.9369 10.7207C12.8693 11.015 12.8186 11.2585 12.8219 11.2653C12.8558 11.2957 17.0868 12.2495 17.1071 12.2292C17.1375 12.1954 17.3574 11.2112 17.3371 11.1909C17.3303 11.1841 16.3867 10.9609 15.2435 10.6971C14.1004 10.4333 13.1399 10.2134 13.1094 10.2033C13.0688 10.1931 13.035 10.2878 12.9369 10.7207Z"
                                                     fill="white" />
                                             </svg>
-
                                         </div>
 
-                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">04</p>
+                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">
+                                            04
+                                        </p>
                                     </div>
-                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">And Use</p>
+                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">
+                                        And Use
+                                    </p>
                                     <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
-                                        Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll
-                                        duisit.
+                                        Consectetur egestas augue maecenas morbi faucibus turpis
+                                        euismod nec acll duisit.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-sm-6 ">
+                            <div class="col-sm-6">
                                 <div class="next_steps_cards_box custom_margin" data-aos="fade-down">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <!-- FILL OUT SVG  -->
@@ -868,16 +1023,18 @@
                                                     d="M3.38672 22.3848V23.4355H10.3214H17.2562V22.3848V21.3341H10.3214H3.38672V22.3848Z"
                                                     fill="white" />
                                             </svg>
-
-
                                         </div>
 
-                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">02</p>
+                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">
+                                            02
+                                        </p>
                                     </div>
-                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Fill Out</p>
+                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">
+                                        Fill Out
+                                    </p>
                                     <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
-                                        Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll
-                                        duisit.
+                                        Consectetur egestas augue maecenas morbi faucibus turpis
+                                        euismod nec acll duisit.
                                     </p>
                                 </div>
                                 <div class="next_steps_cards_box mt-4" data-aos="fade-up">
@@ -899,15 +1056,18 @@
                                                     d="M18.8415 19.6486C18.6225 19.7349 18.2973 20.1596 18.2442 20.4118C18.1579 20.8963 18.2508 21.0954 18.9012 21.7524L19.5052 22.3697H16.8372C14.7135 22.3697 14.1228 22.3896 13.9502 22.4626C13.114 22.8209 13.0476 24.0288 13.8441 24.4337C14.083 24.5531 14.2555 24.5598 16.7974 24.5598H19.4985L18.8946 25.1836C18.357 25.7411 18.2907 25.834 18.2442 26.1194C18.1247 26.9423 18.8481 27.5795 19.6313 27.3472C19.8636 27.2808 20.1888 26.9954 21.463 25.7345C23.3014 23.9094 23.4341 23.7036 23.1554 23.0466C23.0492 22.7944 20.4808 20.1464 19.983 19.7747C19.7706 19.6154 19.6645 19.5822 19.3525 19.5889C19.1468 19.5889 18.9211 19.6154 18.8415 19.6486Z"
                                                     fill="white" />
                                             </svg>
-
                                         </div>
 
-                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">03</p>
+                                        <p class="text-white ff_outfit fs_lg fw-bold leading_112 opacity_01 mb-0">
+                                            03
+                                        </p>
                                     </div>
-                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">Log In</p>
+                                    <p class="pt-4 mb-0 text-white ff_outfit fs_md fw-semibold leading_112">
+                                        Log In
+                                    </p>
                                     <p class="pt_10 mb-0 text-white fs_sm ff_outfit fw-normal leading_150 opacity_08">
-                                        Consectetur egestas augue maecenas morbi faucibus turpis euismod nec acll
-                                        duisit.
+                                        Consectetur egestas augue maecenas morbi faucibus turpis
+                                        euismod nec acll duisit.
                                     </p>
                                 </div>
                             </div>
@@ -915,11 +1075,13 @@
                     </div>
                     <div class="col-lg-5" data-aos="fade-left">
                         <div>
-                            <p class="text-white ff_outfit fs_xl fw-bold leading_130 mb-0 text-lg-start text-center">The
-                                Next Steps</p>
+                            <p class="text-white ff_outfit fs_xl fw-bold leading_130 mb-0 text-lg-start text-center">
+                                The Next Steps
+                            </p>
                             <p
                                 class="pt-4 mb-0 text-white opacity_07 ff_outfit fs_sm fw-normal leading_150 text-lg-start text-center">
-                                Four Steps To Hitting Your Earning Potential</p>
+                                Four Steps To Hitting Your Earning Potential
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -931,32 +1093,35 @@
         <div class="py-lg-5 mt-lg-5">
             <div class="container custom_container py-5">
                 <h2 class="text-white ff_outfit fs_xl fw-bold leading_130 text-center mb-1 pt-3" data-aos="fade-down">
-                    See What <span class="clr_primary">Our Clients</span> Think About Us</h2>
+                    See What <span class="clr_primary">Our Clients</span> Think About Us
+                </h2>
                 <div class="row py-sm-5 pt-5 pb-4 justify-content-center mt-2">
                     <div class="col-lg-4 col-md-6 col-10" data-aos="fade-right">
                         <div class="our_client_card_box position-relative">
                             <img src="./assets/images/clients/jeffrey_martin.png" alt="jeffrey martin boy image"
-                                class="our_client_card_img">
+                                class="our_client_card_img" />
                             <div class="position-absolute bottom-0 about_card_content">
                                 <div class="custom_padding_clients_cards">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="">
-                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">Jeffrey
-                                                Martin</p>
+                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
+                                                Jeffrey Martin
+                                            </p>
                                             <p
                                                 class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
-                                                Founder & CEO</p>
+                                                Founder & CEO
+                                            </p>
                                         </div>
-                                        <img src="./assets/icons/clients/stars.svg" alt="stars svg icon" class="stars">
+                                        <img src="./assets/icons/clients/stars.svg" alt="stars svg icon"
+                                            class="stars" />
                                     </div>
                                     <p
                                         class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
-                                        I can't believe this technology actually exists. I've been hesitant with
-                                        anything AI
-                                        since it's all been a gimmick so far. This actually works. It calls my leads
-                                        right away and converts better than
-                                        my
-                                        old setters.</p>
+                                        I can't believe this technology actually exists. I've been
+                                        hesitant with anything AI since it's all been a gimmick so
+                                        far. This actually works. It calls my leads right away and
+                                        converts better than my old setters.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -964,28 +1129,30 @@
                     <div class="col-lg-4 col-md-6 mt-md-0 mt-4 col-10" data-aos="zoom-in">
                         <div class="our_client_card_box position-relative">
                             <img src="./assets/images/clients/drew_sugarman.png" alt="drew sugarman boy image"
-                                class="our_client_card_img">
+                                class="our_client_card_img" />
                             <div class="position-absolute bottom-0 about_card_content">
                                 <div class="custom_padding_clients_cards">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="">
-                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">Drew
-                                                Sugarman
+                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
+                                                Drew Sugarman
                                             </p>
                                             <p
                                                 class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
-                                                Founder & CEO</p>
+                                                Founder & CEO
+                                            </p>
                                         </div>
-                                        <img class="stars" src="./assets/icons/clients/stars.svg" alt="stars svg icon">
+                                        <img class="stars" src="./assets/icons/clients/stars.svg"
+                                            alt="stars svg icon" />
                                     </div>
                                     <p
                                         class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
-                                        I'm always looking for the next technological advance. When I found this I had
-                                        my
-                                        concerns but had to at least try it
-                                        out. I'm pleasantly surprised and had an almost immediate ROI. Planning on
-                                        shifting
-                                        a lot of my operations over to this.</p>
+                                        I'm always looking for the next technological advance.
+                                        When I found this I had my concerns but had to at least
+                                        try it out. I'm pleasantly surprised and had an almost
+                                        immediate ROI. Planning on shifting a lot of my operations
+                                        over to this.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -993,34 +1160,36 @@
                     <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 col-10" data-aos="fade-left">
                         <div class="our_client_card_box position-relative">
                             <img src="./assets/images/clients/jeffrey_martin_girl.png" alt="jeffrey martin girl image"
-                                class="our_client_card_img">
+                                class="our_client_card_img" />
                             <div class="position-absolute bottom-0 about_card_content">
                                 <div class="custom_padding_clients_cards">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="">
-                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">Jeffrey
-                                                Martin</p>
+                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
+                                                Jeffrey Martin
+                                            </p>
                                             <p
                                                 class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
-                                                Founder & CEO</p>
+                                                Founder & CEO
+                                            </p>
                                         </div>
-                                        <img class="stars" src="./assets/icons/clients/stars.svg" alt="stars svg icon">
+                                        <img class="stars" src="./assets/icons/clients/stars.svg"
+                                            alt="stars svg icon" />
                                     </div>
                                     <p
                                         class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
-                                        This is going to change the insurance industry. The amount of time we are saving
-                                        by
-                                        not having to book these
-                                        appointments is mind blowing. Now my guys are just sitting down for qualified
-                                        appointments instead of having to book all
-                                        of their own. Complete game changer.</p>
+                                        This is going to change the insurance industry. The amount
+                                        of time we are saving by not having to book these
+                                        appointments is mind blowing. Now my guys are just sitting
+                                        down for qualified appointments instead of having to book
+                                        all of their own. Complete game changer.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!--  COMPANIES SECTION END  -->
@@ -1029,91 +1198,97 @@
         <div class="container custom_container py-4">
             <div class="row flex-wrap justify-content-between align-items-xl-center py-2">
                 <div class="col-lg-3">
-                    <a href="/"><img src="./assets/icons/common/clear_talk.svg" alt=" page logo"></a>
+                    <a href="/"><img src="./assets/icons/common/clear_talk.svg" alt=" page logo" /></a>
                     <p class="text-white ff_outfit fs_sm fw-semibold leading_112 mb-0 pt-3">
-                        Innovative Solutions, Real
-                        Results</p>
+                        Innovative Solutions, Real Results
+                    </p>
                     <p class="pt-4 mt-sm-3 mb-0 text-white fs_md fw-semibold ff_outfit leading_112">
-                        Follow us:</p>
+                        Follow us:
+                    </p>
                     <div class="d-flex align-items-center gap-3 pt-3 mt-1 mb-4">
                         <a target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
                             href="https://www.instagram.com/"><img class="footer_icons"
-                                src="/assets/icons/common/instagram.svg" alt="instagram"></a>
+                                src="/assets/icons/common/instagram.svg" alt="instagram" /></a>
                         <a target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
                             href="https://discord.com/"><img class="footer_icons" src="/assets/icons/common/discord.svg"
-                                alt="discord"></a>
+                                alt="discord" /></a>
                         <a target="_blank" rel="noopener noreferrer"
                             class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
                             href="https://twitter.com/?lang=en"><img class="footer_icons"
-                                src="/assets/icons/common/twitter.svg" alt="twitter"></a>
+                                src="/assets/icons/common/twitter.svg" alt="twitter" /></a>
                     </div>
                 </div>
-                <div class="col-lg-8 mt-lg-0 mt-sm-5 mt-4">
-                    <div class="d-flex flex-wrap gap-3 justify-content-between align-items-start">
-
-                        <ul class="p-0">
-                            <li class="text-white fs_md ff_outfit fw-semibold leading_112">Quick Link</li>
-                            <li class="pt-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Home</a>
+                <div class="col-lg-8 mt-lg-0 mt-sm-3">
+                    <div class="row flex-wrap justify-content-between align-items-start px-2">
+                        <ul class="p-0 col-6 col-sm-4">
+                            <li class="text-white fs_md ff_outfit fw-semibold leading_112">
+                                Quick Link
                             </li>
-                            <li class="pt-3">
+                            <li class="pt-2 pt-sm-3">
+                                <a href="#home" class="text-white fs_sm fw-normal hover_footer_li leading_140">Home</a>
+                            </li>
+                            <li class="pt-2 pt-sm-3">
                                 <a href="#services"
                                     class="text-white fs_sm fw-normal hover_footer_li leading_140">Services</a>
                             </li>
-                            <li class="pt-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Blogs</a>
+                            <li class="pt-2 pt-sm-3">
+                                <a href="#blogs" class="text-white fs_sm fw-normal hover_footer_li leading_140">Blogs</a>
                             </li>
-                            <li class="pt-3">
-                                <a href="#"
+                            <li class="pt-2 pt-sm-3">
+                                <a href="#schedule"
                                     class="text-white fs_sm fw-normal hover_footer_li leading_140 nowrap">Schedule a
                                     consultation</a>
                             </li>
                         </ul>
-                        <ul class="p-0">
-                            <li class="text-white fs_md ff_outfit fw-semibold leading_112 nowrap">Legal Information</li>
-                            <li class="pt-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Terms &
+                        <ul class="p-0 col-6 col-sm-4">
+                            <li class="text-white fs_md ff_outfit fw-semibold leading_112 nowrap">
+                                Legal Information
+                            </li>
+                            <li class="pt-2 pt-sm-3">
+                                <a href="#conditions" class="text-white fs_sm fw-normal hover_footer_li leading_140">Terms &
                                     Conditions</a>
                             </li>
-                            <li class="pt-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Privacy
+                            <li class="pt-2 pt-sm-3">
+                                <a href="#policy" class="text-white fs_sm fw-normal hover_footer_li leading_140">Privacy
                                     Policy</a>
                             </li>
                         </ul>
-                        <ul class="p-0">
-                            <li class="text-white fs_md ff_outfit fw-semibold leading_112">Contact us</li>
-                            <li class="pt-3 ">
-                                <a href="#" class="d-flex align-items-start"><img
-                                        src="./assets/icons/footer/location.svg" alt="location icon">
-                                    <p
-                                        class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 footer_li_custom_max_w mb-0">
-                                        3891 Ranchview Dr. Richardson, California 62639</p>
-                                </a>
+                        <ul class="p-0 col-6 col-sm-4">
+                            <li class="text-white fs_md ff_outfit fw-semibold leading_112">
+                                Contact us
                             </li>
-                            <li class="pt-3 ">
-                                <a href="mailto:Example@email.com" class="d-flex align-items-start"><img
-                                        src="./assets/icons/footer/email.svg" alt="email icon">
+                            <li class="pt-2 pt-sm-3">
+                                <a href="#" class="d-flex align-items-start w-100">
+                                    <img src="./assets/icons/footer/location.svg" alt="location icon" />
                                     <p
                                         class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
-                                        Example@email.com</p>
+                                        3891 Ranchview Dr. Richardson, California 62639
+                                    </p>
                                 </a>
                             </li>
-                            <li class="pt-3 ">
+                            <li class="pt-2 pt-sm-3">
+                                <a href="mailto:Example@email.com" class="d-flex align-items-start"><img
+                                        src="./assets/icons/footer/email.svg" alt="email icon" />
+                                    <p
+                                        class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
+                                        Example@email.com
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="pt-2 pt-sm-3">
                                 <a href="tel:(207)555-0129" class="d-flex align-items-start"><img
-                                        src="./assets/icons/footer/telephone.svg" alt="telephone icon">
+                                        src="./assets/icons/footer/telephone.svg" alt="telephone icon" />
                                     <span
                                         class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
                                         (207) 555-0129</span>
                                 </a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="bg_secondary mt-sm-5">
             <p class="text-center text-white mb-0 px-3 opacity_07 ff_outfit fs_sm fw-normal leading_140 py-3">
@@ -1121,33 +1296,32 @@
                 ClearTalk.ai - All Rights Reserved
             </p>
         </div>
-
     </div>
-    <!-- JS LINK -->
-    <script src="/assets/js/app.js"></script>
-    <!-- AOS LINK  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ once: true, duration: "1000", });
-
-    </script>
     <!-- AUDIO WAVE JS LINK -->
     <script src="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.js"></script>
-    <script src="/assets/js/audioWave.js">
-    </script>
-    <!--L QUERRY MIN JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!--SLICK MIN JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/audioWave.js"></script>
     <!-- BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!--L QUERRY MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--SLICK MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- APP JAVASCRIPT -->
+    <script src="/assets/js/app.js"></script>
+    <!-- SLIDER JS  -->
+    <script src="/assets/js/slider.js"></script>
+    <!-- AOS LINK  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ once: true, duration: "1000" });
+    </script>
     <!-- PRELAODER  -->
     <script>
         setTimeout(function () {
