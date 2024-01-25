@@ -57,19 +57,11 @@
 /* COMPANIES CSS END  */
 
 /* WAVE SURFER */
-#waveformContainer {
+.waveform {
   max-width: 100%;
   width: 100%;
   height: 49px;
 }
-
-#audioControls {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 wave {
   height: 49px !important;
 }
