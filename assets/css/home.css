@@ -199,7 +199,7 @@
 }
 .microphone_circle_preloader {
   max-width: 229px;
-  animation: circle_rotate 4000s ease infinite;
+  animation: circle_rotate 1000s ease infinite;
 }
 @keyframes circle_rotate {
   100% {
