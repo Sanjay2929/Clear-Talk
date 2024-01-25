@@ -51,7 +51,7 @@
 
 /* OUR CLIENT SECTION  */
 .our_client_bg {
-  background-image: url("../images/clients/background.png");
+  background-image: url("../images/clients/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,17 +88,7 @@
   border-radius: 6px;
   position: relative;
 }
-.bg_linear {
-  background-image: url("../images/clients/gradient_layer.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  /* height: 498px; */
-  width: 100%;
-}
+
 .custom_padding_clients_cards {
   padding-left: 20px;
   padding-right: 20px;
@@ -112,6 +102,7 @@
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(29.399999618530273px);
   padding: 20px;
+  position: relative;
 }
 .pt_10 {
   padding-top: 10px;
@@ -139,6 +130,41 @@
   width: 135px;
   height: 20px;
 }
+.bg_next {
+  background-color: var(--secondary);
+}
+.next_step_svg_bg {
+  background-color: #019eed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+.next_steps_cards_box::after {
+  position: absolute;
+  border-radius: 7px;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  background: var(--Liner, linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%));
+}
+.next_steps_cards_box:hover::after {
+  opacity: 1;
+}
+.next_steps_cards_box:hover .next_step_svg_bg {
+  background-color: white;
+}
+.next_steps_cards_box:hover .next_step_svg_bg svg path {
+  fill: #019eed;
+}
+.next_steps_cards_box:hover .opacity_01 {
+  opacity: 0.3;
+}
 
 @media (max-width: 1199.98px) {
   .dotted_lines::before {
@@ -148,6 +174,11 @@
   .stars {
     width: 115px;
     height: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .bg_next {
+    background-color: transparent;
   }
 }
 @media (max-width: 575.98px) {
