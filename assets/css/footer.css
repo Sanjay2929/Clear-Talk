@@ -53,14 +53,16 @@
   z-index: -1;
   transition: opacity 0.3s linear;
   opacity: 0;
-border-radius: 8px;
-border: 1px solid rgba(255, 255, 255, 0.10);
-background: linear-gradient(225deg, #00BBFC 0%, #0075D6 100%);
-box-shadow: 0px 2px 16px 0px rgba(255, 255, 255, 0.12);
-backdrop-filter: blur(20px);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(225deg, #00bbfc 0%, #0075d6 100%);
+  backdrop-filter: blur(20px);
 }
 .our_client_card_box:hover::after {
   opacity: 1;
+}
+.our_client_card_box:hover {
+  box-shadow: none !important;
 }
 
 .our_client_card_img {
