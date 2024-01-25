@@ -1,3 +1,47 @@
+/* CONVERSATIONAL CSS START */
+.conversational_clear_logo {
+  max-width: 148px;
+}
+.conversational_text_parent {
+  max-width: 500px !important;
+}
+.successful_client_parent {
+  max-width: 418px;
+  padding: 68px 0px;
+  border: 0.894px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(222deg, #00bbfc 14.34%, #0075d6 85.52%);
+  box-shadow: 0px 1.787px 14.299px 0px rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(17.873563766479492px);
+}
+.successful_client_review {
+  max-width: 322.618px;
+}
+.client_review_top_quote {
+  top: -13%;
+  left: -7%;
+}
+.client_review_bottom_quote {
+  bottom: 0;
+  right: 5%;
+  transform: rotate(180deg);
+}
+.client_review_avatar {
+  background: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.007)
+      )
+      padding-box,
+    linear-gradient(230deg, #00bbfc, #0075d6) border-box;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+/* .outer_ring_client_review {
+  border-radius: 50%;
+  border: 30px solid rgba(255, 255, 255, 0.06);
+  width: 100%;
+  height: 100%;
+} */
+/* CONVERSATIONAL CSS END */
 .functions_bg {
   background-image: url("../images/roles/webp/background.webp");
   background-position: top center;
@@ -120,17 +164,14 @@ wave {
 }
 
 @media (max-width: 991.98px) {
+  .conversational_text_parent {
+    max-width: unset !important;
+  }
   .functions_card_parent,
   .virtual_card_parent {
     transform: translateX(0) !important;
     margin-top: -15%;
   }
-  /* .common_company_image {
-    max-width: 120px;
-  }
-  .solar_bootcamp_company {
-    max-width: 170px;
-  } */
   @keyframes sliderScroll {
     0% {
       transform: translateX(-950px);
@@ -152,7 +193,6 @@ wave {
     min-width: auto;
     transform: translateX(0) !important;
     margin-top: 24px;
-    /* transform: translateY(0) !important; */
   }
   .common_company_image {
     max-width: 100px;

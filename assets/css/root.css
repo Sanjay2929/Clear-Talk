@@ -71,6 +71,7 @@ body {
   :root {
     --fs-sm: 14px;
     --fs-md: 18px;
+    --fs-xl: 40px;
     --fs-2xl: 56px;
   }
 }
