@@ -240,6 +240,18 @@ wave {
     min-width: 400px;
     padding: 20px;
   }
+  /* CONVERSATIONAL AI */
+  .successful_client_parent {
+    margin: 57px;
+    max-width: 362px;
+  }
+  .successful_client_parent {
+    padding: 50px 50px;
+  }
+  .client_review_bottom_quote {
+    bottom: -6%;
+    right: 0%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -251,6 +263,7 @@ wave {
     transform: translateX(0) !important;
     margin-top: -15%;
   }
+
   @keyframes sliderScroll {
     0% {
       transform: translateX(-950px);
