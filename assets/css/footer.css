@@ -173,6 +173,9 @@
 .next_steps_cards_box:hover .next_step_svg_bg svg path {
   fill: #019eed;
 }
+.next_steps_cards_box:hover .opacity_01 {
+  opacity: 0.3;
+}
 
 @media (max-width: 1199.98px) {
   .dotted_lines::before {
