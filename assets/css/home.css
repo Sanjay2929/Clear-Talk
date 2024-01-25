@@ -88,7 +88,7 @@
 }
 /* HERO SECTION CSS  */
 .hero_bg {
-  background-image: url(/assets/images/home/hero-bg.webp);
+  background-image: url(/assets/images/home/hero_bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -103,7 +103,7 @@
   margin-bottom: 46px;
 }
 .hero_button::after {
-  background-image: url("/assets/icons/hero/hero-button-border.svg");
+  background-image: url("/assets/icons/hero/hero_button_border.svg");
 }
 
 /* SCROLL BAR MODIFY  */
@@ -157,21 +157,21 @@
   background: linear-gradient(90deg, #00003c 46.6%, rgba(0, 0, 60, 0) 100%);
   transform: translateY(-50%);
   z-index: 10;
-  height: 81%;
+  height: 80%;
   width: 25%;
 }
 .right_slide_shodow {
   background: linear-gradient(270deg, #00003c 46.6%, rgba(0, 0, 60, 0) 100%);
   transform: translateY(-50%);
   z-index: 10;
-  height: 81%;
+  height: 80%;
   width: 25%;
 }
-.slider_arrow_left{
+.slider_arrow_left {
   left: 70px;
   transform: translateY(-50%);
 }
-.slider_arrow_right{
+.slider_arrow_right {
   right: 70px;
   transform: rotate(-180deg) translateY(50%);
 }
@@ -179,11 +179,12 @@
 /* Driving Growth, Amplifying Impact  */
 .microphone {
   max-width: 230px;
+  width: 40%;
   transform: translate(-50%, -50%);
 }
 .microphone_circle {
   max-width: 529px;
-  animation: circle_rotate 3000s ease infinite;
+  animation: circle_rotate 4000s ease infinite;
 }
 @keyframes circle_rotate {
   100% {
@@ -233,6 +234,12 @@
   .width_lg_100 {
     width: 100% !important;
   }
+  .slider_arrow_left {
+    left: 30px;
+  }
+  .slider_arrow_right {
+    right: 30px;
+  }
 }
 @media (max-width: 640px) {
   .slick-track {
@@ -248,6 +255,12 @@
   .right_slide_shodow {
     height: 0;
     width: 0;
+  }
+  .slider_arrow_left {
+    transform: translateY(0);
+  }
+  .slider_arrow_right {
+    transform: rotate(-180deg) translateY(0);
   }
 }
 @media (max-width: 575.9px) {
