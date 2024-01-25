@@ -1,6 +1,7 @@
 // NAVBAR MOBILE
 function shownav() {
   document.getElementById("showul").classList.toggle("nav_visible");
+  document.getElementById("shownav").classList.toggle("crossmenu");
 }
 
 // YEAR SCRIPT

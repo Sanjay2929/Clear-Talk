@@ -50,8 +50,8 @@
 }
 
 /* OUR CLIENT SECTION  */
-.our_client_bg{
-  background-image: url("../images/clients/png/background.png");
+.our_client_bg {
+  background-image: url("../images/clients/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,34 +59,36 @@
 .our_client_card_box {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid transparent;
   box-shadow: 0px 0px 6.9px 0px rgba(220, 226, 253, 0.8);
   padding: 10px;
+  position: relative;
 }
-.our_client_card_box:hover {
+.our_client_card_box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: linear-gradient(225deg, #00bbfc 0%, #0075d6 100%);
   box-shadow: 0px 2px 16px 0px rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(20px);
-  padding: 10px;
 }
+.our_client_card_box:hover::after {
+  opacity: 1;
+}
+
 .our_client_card_img {
-  /* height: 498px; */
   width: 100%;
   border-radius: 6px;
   position: relative;
 }
-.bg_linear {
-  background-image: url("../images/clients/png/gradient_layer.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  /* height: 498px; */
-  width: 100%;
-}
+
 .custom_padding_clients_cards {
   padding-left: 20px;
   padding-right: 20px;
@@ -100,6 +102,7 @@
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(29.399999618530273px);
   padding: 20px;
+  position: relative;
 }
 .pt_10 {
   padding-top: 10px;
@@ -113,31 +116,69 @@
 .dotted_lines::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: -200px;
   left: 144px;
   width: 295px;
   height: 508px;
-  background-image: url("../images/next_steps/png/dotted_lines.png");
+  background-image: url("../images/next-steps/dotted_lines.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.stars {
+  width: 135px;
+  height: 20px;
+}
+.bg_next {
+  background-color: var(--secondary);
+}
+.next_step_svg_bg {
+  background-color: #019eed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+.next_steps_cards_box::after {
+  position: absolute;
+  border-radius: 7px;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+  background: var(--Liner, linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%));
+}
+.next_steps_cards_box:hover::after {
+  opacity: 1;
+}
+.next_steps_cards_box:hover .next_step_svg_bg {
+  background-color: white;
+}
+.next_steps_cards_box:hover .next_step_svg_bg svg path {
+  fill: #019eed;
+}
+.next_steps_cards_box:hover .opacity_01 {
+  opacity: 0.3;
+}
+
 @media (max-width: 1199.98px) {
-  /* .custom_padding_clients_cards {
-    padding-top: 159px;
-  } */
   .dotted_lines::before {
-    content: "";
-    position: absolute;
-    top: 40px;
+    top: -200px;
     left: 94px;
-    width: 295px;
-    height: 508px;
-    background-image: url("../images/next_steps/png/dotted_lines.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+  .stars {
+    width: 115px;
+    height: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .bg_next {
+    background-color: transparent;
   }
 }
 @media (max-width: 575.98px) {
@@ -145,22 +186,33 @@
     margin-top: 24px;
   }
   .about_card_content {
-    top: 53%;
+    top: 44%;
+  }
 }
+@media (max-width: 425.98px) {
+  .stars {
+    width: 95px;
+    height: 20px;
+  }
 }
-
-@media (min-width: 576px){
+@media (max-width: 374.98px) {
   .about_card_content {
-      top: 66%;
-  }}
-  @media (min-width: 768px){  
-    .about_card_content {
-        top: 46%;
-    }}
-@media (min-width: 1200px){
-.about_card_content {
+    top: 18%;
+  }
+}
+
+@media (min-width: 576px) {
+  .about_card_content {
+    top: 66%;
+  }
+}
+@media (min-width: 768px) {
+  .about_card_content {
+    top: 46%;
+  }
+}
+@media (min-width: 1200px) {
+  .about_card_content {
     top: 48%;
-}}
-
-
-
+  }
+}

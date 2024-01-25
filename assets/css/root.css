@@ -89,8 +89,6 @@ body {
 }
 @media (max-width: 575.9px) {
   :root {
-    --fs-lg: 32px;
-    --fs-xl: 32px;
     --fs-2xl: 36px;
   }
 }

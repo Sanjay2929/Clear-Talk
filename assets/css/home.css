@@ -71,6 +71,15 @@
   background: white;
   z-index: 1;
 }
+.crossmenu .bar1 {
+  transform: translate(0, 9px) rotate(-45deg);
+}
+
+.crossmenu .bar2 {opacity: 0;}
+
+.crossmenu .bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
 .nav_visible {
   left: 0 !important;
 }
@@ -88,7 +97,7 @@
 }
 /* HERO SECTION CSS  */
 .hero_bg {
-  background-image: url(/assets/images/home/webp/hero-bg.webp);
+  background-image: url(/assets/images/home/hero_bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -103,7 +112,7 @@
   margin-bottom: 46px;
 }
 .hero_button::after {
-  background-image: url("/assets/icons/hero/hero-button-border.svg");
+  background-image: url("/assets/icons/hero/hero_button_border.svg");
 }
 
 /* SCROLL BAR MODIFY  */
@@ -150,37 +159,41 @@
   z-index: 20;
   box-shadow: 0px 0px 23.799999237060547px 0px #0189e14d;
   border: 0;
+  z-index: 20;
 }
-.slider_arrow_right {
-  transform: rotate(180deg);
-  right: 70px;
-}
-.slider_arrow_left {
-  left: 70px;
-}
+
 .left_slide_shodow {
   background: linear-gradient(90deg, #00003c 46.6%, rgba(0, 0, 60, 0) 100%);
   transform: translateY(-50%);
   z-index: 10;
-  height: 81%;
+  height: 80%;
   width: 25%;
 }
 .right_slide_shodow {
   background: linear-gradient(270deg, #00003c 46.6%, rgba(0, 0, 60, 0) 100%);
   transform: translateY(-50%);
   z-index: 10;
-  height: 81%;
+  height: 80%;
   width: 25%;
+}
+.slider_arrow_left {
+  left: 70px;
+  transform: translateY(-50%);
+}
+.slider_arrow_right {
+  right: 70px;
+  transform: rotate(-180deg) translateY(50%);
 }
 
 /* Driving Growth, Amplifying Impact  */
 .microphone {
   max-width: 230px;
+  width: 40%;
   transform: translate(-50%, -50%);
 }
 .microphone_circle {
   max-width: 529px;
-  animation: circle_rotate 3000s ease infinite;
+  animation: circle_rotate 4000s ease infinite;
 }
 @keyframes circle_rotate {
   100% {
@@ -192,7 +205,7 @@
   height: 47px;
   box-shadow: 0px 0px 17px 0px #0189e14d;
 }
-.w_half{
+.w_half {
   width: 50%;
 }
 @media (max-width: 991.9px) {
@@ -227,8 +240,14 @@
     height: 90%;
     width: 10%;
   }
-  .width_lg_100{
+  .width_lg_100 {
     width: 100% !important;
+  }
+  .slider_arrow_left {
+    left: 30px;
+  }
+  .slider_arrow_right {
+    right: 30px;
   }
 }
 @media (max-width: 640px) {
@@ -245,6 +264,12 @@
   .right_slide_shodow {
     height: 0;
     width: 0;
+  }
+  .slider_arrow_left {
+    transform: translateY(0);
+  }
+  .slider_arrow_right {
+    transform: rotate(-180deg) translateY(0);
   }
 }
 @media (max-width: 575.9px) {

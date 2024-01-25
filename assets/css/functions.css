@@ -133,11 +133,12 @@
   padding: 30px;
   border-radius: 7.92px;
   transform: translateX(-28%);
+  z-index: 5;
   min-width: 493px;
 }
 
 .virtual_card_parent {
-  transform: translateX(28%) !important;
+  transform: translateX(0) !important;
 }
 
 .finctions_icon {
@@ -152,6 +153,12 @@
 
 .audio_wave {
   max-width: 372px;
+}
+
+.waveform_line{
+height: 1.981px;
+background-color: white;
+left: -0.5%;
 }
 .roles_bottom_layer {
   background: linear-gradient(
@@ -201,15 +208,6 @@ wave {
   animation-delay: -40s;
 }
 
-.company_slider_end {
-  gap: 30px;
-  animation-name: sliderScroll;
-  animation-delay: -20s;
-  animation-duration: 40s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
 @keyframes sliderScroll {
   0% {
     transform: translateX(-1280px);
@@ -229,7 +227,15 @@ wave {
     width: 40px;
     height: 40px;
   }
-
+  .company_slider_end {
+    gap: 30px;
+    animation-name: sliderScroll;
+    animation-delay: -20s;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
   .finctions_icon img {
     width: 27px;
     height: 27px;
@@ -291,5 +297,18 @@ wave {
   }
   .solar_bootcamp_company {
     max-width: 150px;
+  }
+  @keyframes sliderScroll {
+    0% {
+      transform: translateX(-950px);
+      -webkit-transform: translateX(-950px);
+      -moz-transform: translateX(-950px);
+      -ms-transform: translateX(-950px);
+      -o-transform: translateX(-950px);
+    }
+  
+    100% {
+      transform: translateX(950px);
+    }
   }
 }
