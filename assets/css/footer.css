@@ -250,7 +250,7 @@
 }
 @media (max-width: 374.98px) {
   .about_card_content {
-    top: 18%;
+    top: unset;
   }
 }
 

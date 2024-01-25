@@ -2,7 +2,7 @@
 function shownav() {
   document.getElementById("showul").classList.toggle("nav_visible");
   document.getElementById("shownav").classList.toggle("crossmenu");
-  document.body.classList.toggle("overflow_lg_hidden");
+  document.body.classList.toggle("custom_overflow_hidden");
 }
 
 // YEAR SCRIPT
@@ -11,7 +11,7 @@ document.getElementById("copyright").innerHTML =
   new Date().getFullYear() +
   " ClearTalk.ai - All Rights Reserved";
 
-  
+
 // BACK TO TOP
 var mybutton = document.getElementById("back-to-top");
 // When the user scrolls down 20px from the top of the document, show the button
