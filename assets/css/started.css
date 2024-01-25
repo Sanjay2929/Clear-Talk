@@ -5,13 +5,13 @@
   background-size: cover;
 }
 .featured_bg {
-  background-image: url("../images/featured/webp/featured_bg.webp");
+  background-image: url("../images/featured/featured_bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .footer_bg {
-  background-image: url("../images/footer/png/footer_bg.png");
+  background-image: url("../images/footer/footer_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
