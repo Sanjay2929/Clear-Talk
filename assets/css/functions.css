@@ -54,6 +54,7 @@
   padding: 30px;
   border-radius: 7.92px;
   transform: translateX(-28%);
+  z-index: 5;
   min-width: 493px;
 }
 
