@@ -197,6 +197,10 @@
   max-width: 529px;
   animation: circle_rotate 4000s ease infinite;
 }
+.microphone_circle_preloader {
+  max-width: 220px;
+  animation: circle_rotate 800s ease infinite;
+}
 @keyframes circle_rotate {
   100% {
     transform: rotate(360000deg);

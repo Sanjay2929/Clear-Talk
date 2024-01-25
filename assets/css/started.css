@@ -223,8 +223,8 @@
   .translate_lg_middle_y{
     transform: translateY(-50%);
   }
-  .mt_lg_240{
-    margin-top: 240px;
+  .pb_lg_240{
+    padding-bottom: 240px;
   }
   .pt_lg_160px{
     padding-top: 160px;

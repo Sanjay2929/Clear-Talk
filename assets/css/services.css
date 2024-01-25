@@ -3,7 +3,7 @@
   background-image: url("../images/services/background.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-top: -150px;
 }
 .services_c_image {
