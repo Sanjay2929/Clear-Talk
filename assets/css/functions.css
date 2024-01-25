@@ -298,7 +298,7 @@ wave {
   .solar_bootcamp_company {
     max-width: 150px;
   }
-  @keyframes sliderScroll {
+  @keyframes sliderScroll { 
     0% {
       transform: translateX(-950px);
       -webkit-transform: translateX(-950px);
