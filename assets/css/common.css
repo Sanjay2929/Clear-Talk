@@ -22,6 +22,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.modal-content{
+  background: linear-gradient(215deg, #00bbfc 15.2%, #0075d6 66.98%);
+}
+.modal-header .btn-close{
+  opacity: 100;
+}
 .custom_scrollbar::-webkit-scrollbar {
   height: 3px;
 }
