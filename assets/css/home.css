@@ -10,17 +10,21 @@
 .custom_overflow_hidden {
   overflow: hidden !important;
 }
+.z_50 {
+  z-index: 50;
+}
 .social_links {
   width: 30px;
   height: 30px;
   box-shadow: 0px 0px 19.116050720214844px 0px #0189e14d;
+  transition: all 0.3s ease-in-out;
 }
 .blue_linear_gradient {
   background: linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%);
   transition: all 300ms ease-in-out;
 }
 .blue_linear_gradient:hover {
-  box-shadow: inset 5px 0px 20px #2e43aa;
+  box-shadow: inset 5px 0px 10px #2e43aa;
   transition: all 300ms ease-in-out;
 }
 .nav_bg {
@@ -39,24 +43,11 @@
 .nav_button {
   padding: 11px 21px;
 }
-.hero_button {
-  padding: 8.5px 12.5px;
-}
 .common_button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scaley(1.3) scaleX(1.3);
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  z-index: -1;
+  position: relative;
+  border-radius: 4px;
 }
-.nav_button::after {
-  background-image: url("/assets/icons/common/button_border.svg");
-}
+
 .gap_10 {
   gap: 10px;
 }
@@ -95,6 +86,9 @@
 .duration_300 {
   transition: all ease-in-out 300ms;
 }
+.nav_links {
+  font-size: 16px;
+}
 .nav_links:hover {
   opacity: 100%;
 }
@@ -117,8 +111,33 @@
   line-height: 150%;
   margin-bottom: 46px;
 }
-.hero_button::after {
-  background-image: url("/assets/icons/hero/hero_button_border.svg");
+.hero_button {
+  padding: 8.5px 12.5px;
+}
+.common_button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  outline: 0.52px solid white;
+  outline-offset: 6px;
+  border-radius: 0.25px;
+}
+.common_button::after {
+  content: "";
+  position: absolute;
+  left: 26%;
+  bottom: -7.5px;
+  width: 20px;
+  border-radius: 0;
+  height: 2.5px;
+  background: #041052;
+  transition: all 0.3s ease-in-out;
+}
+.common_button:hover::after {
+  width: 0px;
 }
 
 /* SCROLL BAR MODIFY  */
@@ -230,7 +249,10 @@
     left: 0;
     min-height: 100vh;
     width: 100%;
-    background: #00003c;
+    background: #041052;
+  }
+  .nav_links {
+    font-size: 18px;
   }
   .microphone_circle {
     max-width: 400px;
