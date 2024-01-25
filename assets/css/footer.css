@@ -165,6 +165,44 @@
 .next_steps_cards_box:hover .opacity_01 {
   opacity: 0.3;
 }
+/* PRELOADER  */
+.loader_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 99999;
+  overflow: hidden;
+  height: 100vh;
+}
+.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+.preloader {
+  animation-name: preloader;
+  animation-duration: 4s;
+}
+.removeloader {
+  display: none;
+  overflow: auto;
+}
+
+@keyframes preloader {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
 
 @media (max-width: 1199.98px) {
   .dotted_lines::before {
@@ -205,6 +243,19 @@
   .about_card_content {
     top: 66%;
   }
+  @keyframes preloader {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
 }
 @media (min-width: 768px) {
   .about_card_content {
