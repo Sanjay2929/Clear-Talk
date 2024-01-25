@@ -46,9 +46,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="loading">
+    <!-- PRELAODER  -->
+    <div class="loader_bg" id="preLoader">
+        <div class="loader d-flex justify-content-center align-items-center h-100 ">
+            <div class="position-relative px-3" data-aos="zoom-in">
+                <img class="microphone_circle w-100" src="/assets/images/amplifying-impact/circle_ball.webp"
+                    alt="circle">
+                <img class="position-absolute top-50 start-50 microphone w-50"
+                    src="/assets/images/amplifying-impact/microphone.png" alt="microphone">
+            </div>
+        </div>
+    </div>
     <!-- BACK TO TOP -->
-    <button id="back-to-top" class="bg-white"><img src="./assets/icons/common/top_arrow.svg" alt="top arrow"></button>
+    <button id="back-to-top" class="bg-secondary"><img src="./assets/icons/common/top_arrow.svg" alt="top arrow"></button>
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
@@ -1289,6 +1300,13 @@
 
     <script>
         AOS.init({ once: true, duration: "1000", });
+    </script>
+    <!-- PRELAODER  -->
+    <script>
+        setTimeout(function () {
+            document.getElementById("preLoader").classList.add("removeloader");
+            document.body.classList.remove("loading");
+        }, 3000);
     </script>
 </body>
 

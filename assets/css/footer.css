@@ -225,6 +225,9 @@
     background-color: transparent;
   }
 }
+.bg_lines{
+  background-size: cover;
+}
 @media (max-width: 575.98px) {
   .custom_margin {
     margin-top: 24px;
