@@ -31,7 +31,9 @@
     <!-- AOS LINK  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- wavesurfer.js styles CSS LINK -->
-    <link rel="stylesheet" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css">
+    <!-- ===================================================== -->
+    <link rel="stylesheet" href="/assets/css/liteYtEmbed.css" />
     <!-- BOOTSTRAP LATEST  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -60,6 +62,7 @@
     <button id="back-to-top" class="bg_secondary">
         <img src="./assets/icons/common/top_arrow.svg" alt="top arrow" />
     </button>
+    <!-- HEADER -->
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
@@ -113,7 +116,7 @@
 
             <div
                 class="container custom_container d-flex justify-content-center align-items-center align-items-sm-start flex-column">
-                <h1 class="ff_outfit fw-bold fs_2xl text-white hero_heading pb-3 text-sm-start text-center">
+                <h1 class="ff_outfit fw-bold fs_2xl text-white hero_heading pb-3 text-sm-start text-center mb-0">
                     Leverage The Power Of
                     <span class="clr_primary">Conversational Voice A.I.</span> With
                     ClearTalk
@@ -654,25 +657,16 @@
                     <!-- SLICK SLIDER -->
                     <div class="Slider position-relative">
                         <div class="video_slide h-100">
-                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <lite-youtube videoid="ogfYd705cRs" class="w-100 rounded-2 d-block"
+                                params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
                         </div>
                         <div class="video_slide h-100">
-                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <lite-youtube videoid="ogfYd705cRs"
+                                params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
                         </div>
                         <div class="video_slide h-100">
-                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <lite-youtube videoid="ogfYd705cRs"
+                                params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
                         </div>
                     </div>
                     <!-- SLICK SLIDER ARROWS BUTTONS  -->
@@ -816,10 +810,8 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body w-100 pt-2">
-                                        <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                            src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                            title="YouTube video player" frameborder="0" allow="web-share"
-                                            allowfullscreen></iframe>
+                                        <lite-youtube videoid="ogfYd705cRs"
+                                            params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
                                     </div>
                                 </div>
                             </div>
@@ -1309,6 +1301,7 @@
     <!-- AUDIO WAVE JS LINK -->
     <script src="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.js"></script>
     <script src="/assets/js/audioWave.js"></script>
+    <script src="/assets/js/liteYtEmbed.js"></script>
     <!-- BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
