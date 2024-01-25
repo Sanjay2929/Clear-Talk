@@ -1,6 +1,6 @@
 // NAVBAR MOBILE
 function shownav() {
-  document.getElementById("showul").classList.toggle("nav_visible");
+  document.getElementById("showul").classList.toggle("navShow");
   document.getElementById("shownav").classList.toggle("crossmenu");
   document.body.classList.toggle("custom_overflow_hidden");
 }
@@ -10,7 +10,6 @@ document.getElementById("copyright").innerHTML =
   "copyright&copy;" +
   new Date().getFullYear() +
   " ClearTalk.ai - All Rights Reserved";
-
 
 // BACK TO TOP
 var mybutton = document.getElementById("back-to-top");
@@ -31,4 +30,3 @@ mybutton.addEventListener("click", function () {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 });
-
