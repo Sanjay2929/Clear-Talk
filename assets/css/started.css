@@ -1,5 +1,5 @@
 .started_bg {
-  background-image: url("../images/started/webp/background.webp");
+  background-image: url("../images/background/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +11,7 @@
   background-size: cover;
 }
 .footer_bg {
-  background-image: url("../images/footer/footer_bg.png");
+  background-image: url("../images/background/footer_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -51,7 +51,7 @@
 
 /* OUR CLIENT SECTION  */
 .our_client_bg {
-  background-image: url("../images/clients/png/background.png");
+  background-image: url("../images/clients/background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,10 +75,10 @@
   transition: opacity 0.3s linear;
   opacity: 0;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border: 1px solid #1A90E1; */
   background: linear-gradient(225deg, #00bbfc 0%, #0075d6 100%);
   box-shadow: 0px 2px 16px 0px rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
 }
 .our_client_card_box:hover::after {
   opacity: 1;
@@ -90,7 +90,7 @@
   position: relative;
 }
 .bg_linear {
-  background-image: url("../images/clients/png/gradient_layer.png");
+  background-image: url("../images/clients/gradient_layer.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
