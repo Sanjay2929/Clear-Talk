@@ -31,7 +31,9 @@
     <!-- AOS LINK  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- wavesurfer.js styles CSS LINK -->
-    <link rel="stylesheet" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.css">
+    <!-- ===================================================== -->
+    <link rel="stylesheet" href="/assets/css/lite-yt-embed.css" />
     <!-- BOOTSTRAP LATEST  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -60,6 +62,7 @@
     <button id="back-to-top" class="bg_secondary">
         <img src="./assets/icons/common/top_arrow.svg" alt="top arrow" />
     </button>
+    <!-- HEADER -->
     <header>
         <nav class="py-3 position-fixed top-0 start-0 w-100 nav_bg z_50">
             <div class="container custom_container mx-auto d-flex justify-content-between align-items-center py-1">
@@ -133,7 +136,7 @@
     <section class="services_background pb-5 mb-5 position-relative">
         <span class="position-absolute top_coomn_blur"></span>
         <div class="py-5 lg:my-5">
-            <div class="py-5 mt-md-5">
+            <div class="py-sm-5 mt-md-5">
                 <div
                     class="custom_container container d-flex flex-wrap justify-content-between gap-4 gap-lg-0 align-items-lg-center justify-content-lg-center position-relative mt-5">
                     <!-- services c image  -->
@@ -273,7 +276,7 @@
     <section class="pt-5 position-relative">
         <span class="bottom-0 start-0 w-100 roles_bottom_layer position-absolute z-0"></span>
         <div class="functions_bg py-5">
-            <div class="custom_container container pt-5">
+            <div class="custom_container container pt-md-5">
                 <h2 class="ff_outfit fw-bold fs_xl text-center text-white mb-4 mb-lg-5" data-aos="fade-down">
                     Functions/ <span class="clr_primary">Roles</span>
                 </h2>
@@ -452,7 +455,7 @@
                 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
                 eu, pretium quis, sem.
             </p>
-            <div class="mb-lg-2 pb-lg-1">
+            <div class="mb-lg-2 pb-lg-1 pb-5 mb-5">
                 <div class="row pt-5 mb-md-4 justify-content-lg-between justify-content-center">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up">
                         <div class="started_card_boxes h-100">
@@ -642,7 +645,7 @@
         <span class="position-absolute top_coomn_blur top-0 start-0 w-100"></span>
         <!--SOME OF OUR CALLS  -->
         <div class="py-5">
-            <div class="py-5 mt-5">
+            <div class="py-md-5 mt-md-5">
                 <h2 class="text-center fw-bold fs_xl text-white ff_balsamiq pb-sm-5 pb-4 mb-0">
                     Take A Listen To Some Of
                     <span class="clr_primary">Our Calls</span>
@@ -654,25 +657,16 @@
                     <!-- SLICK SLIDER -->
                     <div class="Slider position-relative">
                         <div class="video_slide h-100">
-                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <lite-youtube videoid="ogfYd705cRs" class="w-100 rounded-2 d-block"
+                                params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
                         </div>
                         <div class="video_slide h-100">
-                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <lite-youtube videoid="ogfYd705cRs"
+                                params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
                         </div>
                         <div class="video_slide h-100">
-                            <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <lite-youtube videoid="ogfYd705cRs"
+                                params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
                         </div>
                     </div>
                     <!-- SLICK SLIDER ARROWS BUTTONS  -->
@@ -768,7 +762,7 @@
         </section>
         <!--  CONVERSATIONAL SECTION END  -->
         <!-- Driving Growth, Amplifying Impact section -->
-        <div class="py-5 my-5 overflow-hidden">
+        <div class="py-5 my-md-5 overflow-hidden">
             <div class="container custom_container d-flex flex-lg-row flex-column align-items-center py-5">
                 <div class="position-relative" data-aos="zoom-in">
                     <img class="microphone_circle w-100" src="/assets/images/amplifying-impact/circle_ball.webp"
@@ -816,10 +810,8 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body w-100 pt-2">
-                                        <iframe class="w-100 rounded-2 d-block" width="560" height="445"
-                                            src="https://www.youtube.com/embed/MBjKbJ_-kxM?si=ra3jnAwjFMLk1Jmk"
-                                            title="YouTube video player" frameborder="0" allow="web-share"
-                                            allowfullscreen></iframe>
+                                        <lite-youtube videoid="ogfYd705cRs"
+                                            params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
                                     </div>
                                 </div>
                             </div>
@@ -830,7 +822,7 @@
         </div>
         <!--  COMPANIES SECTION START  -->
         <section class="pb-lg-5">
-            <div class="container companies_logos_parent py-5">
+            <div class="container companies_logos_parent pb-5">
                 <h2 class="fw-bold fs_xl text-white text-center ff_outfit mb-0" data-aos="fade-down">
                     Companies
                     <span class="text_primary_gradient">We've Worked </span> With
@@ -907,7 +899,7 @@
     </div>
     <!-- NEXT STEP SECTION  -->
     <div>
-        <div class="py-5 bg_next">
+        <div class="pt-md-5 pb-5 bg_next">
             <div class="container custom_container">
                 <div
                     class="row flex-lg-row flex-column-reverse justify-content-lg-between justify-content-center align-items-center dotted_lines">
@@ -1089,101 +1081,104 @@
         </div>
     </div>
     <!-- OUR CLIENTS  -->
-    <div class="our_client_bg pt_lg_160px">
-        <div class="py-lg-5 mt-lg-5">
-            <div class="container custom_container py-5">
-                <h2 class="text-white ff_outfit fs_xl fw-bold leading_130 text-center mb-1 pt-3" data-aos="fade-down">
-                    See What <span class="clr_primary">Our Clients</span> Think About Us
-                </h2>
-                <div class="row py-sm-5 pt-5 pb-4 justify-content-center mt-2">
-                    <div class="col-lg-4 col-md-6 col-10" data-aos="fade-right">
-                        <div class="our_client_card_box position-relative">
-                            <img src="./assets/images/clients/jeffrey_martin.png" alt="jeffrey martin boy image"
-                                class="our_client_card_img" />
-                            <div class="position-absolute bottom-0 about_card_content">
-                                <div class="custom_padding_clients_cards">
-                                    <div class="d-flex justify-content-between align-items-start">
-                                        <div class="">
-                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
-                                                Jeffrey Martin
-                                            </p>
-                                            <p
-                                                class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
-                                                Founder & CEO
-                                            </p>
+    <section>
+        <div class="our_client_bg pt_lg_160px">
+            <div class="py-lg-5 mt-lg-5">
+                <div class="container custom_container py-5">
+                    <h2 class="text-white ff_outfit fs_xl fw-bold leading_130 text-center mb-1 pt-3"
+                        data-aos="fade-down">
+                        See What <span class="clr_primary">Our Clients</span> Think About Us
+                    </h2>
+                    <div class="row py-sm-5 pt-5 pb-4 justify-content-center mt-2">
+                        <div class="col-lg-4 col-md-6 col-10" data-aos="fade-right">
+                            <div class="our_client_card_box position-relative">
+                                <img src="./assets/images/clients/jeffrey_martin.png" alt="jeffrey martin boy image"
+                                    class="our_client_card_img" />
+                                <div class="position-absolute bottom-0 about_card_content">
+                                    <div class="custom_padding_clients_cards">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="">
+                                                <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
+                                                    Jeffrey Martin
+                                                </p>
+                                                <p
+                                                    class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
+                                                    Founder & CEO
+                                                </p>
+                                            </div>
+                                            <img src="./assets/icons/clients/stars.svg" alt="stars svg icon"
+                                                class="stars" />
                                         </div>
-                                        <img src="./assets/icons/clients/stars.svg" alt="stars svg icon"
-                                            class="stars" />
+                                        <p
+                                            class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
+                                            I can't believe this technology actually exists. I've been
+                                            hesitant with anything AI since it's all been a gimmick so
+                                            far. This actually works. It calls my leads right away and
+                                            converts better than my old setters.
+                                        </p>
                                     </div>
-                                    <p
-                                        class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
-                                        I can't believe this technology actually exists. I've been
-                                        hesitant with anything AI since it's all been a gimmick so
-                                        far. This actually works. It calls my leads right away and
-                                        converts better than my old setters.
-                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mt-md-0 mt-4 col-10" data-aos="zoom-in">
-                        <div class="our_client_card_box position-relative">
-                            <img src="./assets/images/clients/drew_sugarman.png" alt="drew sugarman boy image"
-                                class="our_client_card_img" />
-                            <div class="position-absolute bottom-0 about_card_content">
-                                <div class="custom_padding_clients_cards">
-                                    <div class="d-flex justify-content-between align-items-start">
-                                        <div class="">
-                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
-                                                Drew Sugarman
-                                            </p>
-                                            <p
-                                                class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
-                                                Founder & CEO
-                                            </p>
+                        <div class="col-lg-4 col-md-6 mt-md-0 mt-4 col-10" data-aos="zoom-in">
+                            <div class="our_client_card_box position-relative">
+                                <img src="./assets/images/clients/drew_sugarman.png" alt="drew sugarman boy image"
+                                    class="our_client_card_img" />
+                                <div class="position-absolute bottom-0 about_card_content">
+                                    <div class="custom_padding_clients_cards">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="">
+                                                <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
+                                                    Drew Sugarman
+                                                </p>
+                                                <p
+                                                    class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
+                                                    Founder & CEO
+                                                </p>
+                                            </div>
+                                            <img class="stars" src="./assets/icons/clients/stars.svg"
+                                                alt="stars svg icon" />
                                         </div>
-                                        <img class="stars" src="./assets/icons/clients/stars.svg"
-                                            alt="stars svg icon" />
+                                        <p
+                                            class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
+                                            I'm always looking for the next technological advance.
+                                            When I found this I had my concerns but had to at least
+                                            try it out. I'm pleasantly surprised and had an almost
+                                            immediate ROI. Planning on shifting a lot of my operations
+                                            over to this.
+                                        </p>
                                     </div>
-                                    <p
-                                        class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
-                                        I'm always looking for the next technological advance.
-                                        When I found this I had my concerns but had to at least
-                                        try it out. I'm pleasantly surprised and had an almost
-                                        immediate ROI. Planning on shifting a lot of my operations
-                                        over to this.
-                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 col-10" data-aos="fade-left">
-                        <div class="our_client_card_box position-relative">
-                            <img src="./assets/images/clients/jeffrey_martin_girl.png" alt="jeffrey martin girl image"
-                                class="our_client_card_img" />
-                            <div class="position-absolute bottom-0 about_card_content">
-                                <div class="custom_padding_clients_cards">
-                                    <div class="d-flex justify-content-between align-items-start">
-                                        <div class="">
-                                            <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
-                                                Jeffrey Martin
-                                            </p>
-                                            <p
-                                                class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
-                                                Founder & CEO
-                                            </p>
+                        <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 col-10" data-aos="fade-left">
+                            <div class="our_client_card_box position-relative">
+                                <img src="./assets/images/clients/jeffrey_martin_girl.png"
+                                    alt="jeffrey martin girl image" class="our_client_card_img" />
+                                <div class="position-absolute bottom-0 about_card_content">
+                                    <div class="custom_padding_clients_cards">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="">
+                                                <p class="text-white fs_md fw-semibold leading_112 ff_outfit mb-0">
+                                                    Jeffrey Martin
+                                                </p>
+                                                <p
+                                                    class="text-white fs_sm fw-normal leading_140 opacity_07 pt-2 ff_outfit mb-0">
+                                                    Founder & CEO
+                                                </p>
+                                            </div>
+                                            <img class="stars" src="./assets/icons/clients/stars.svg"
+                                                alt="stars svg icon" />
                                         </div>
-                                        <img class="stars" src="./assets/icons/clients/stars.svg"
-                                            alt="stars svg icon" />
+                                        <p
+                                            class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
+                                            This is going to change the insurance industry. The amount
+                                            of time we are saving by not having to book these
+                                            appointments is mind blowing. Now my guys are just sitting
+                                            down for qualified appointments instead of having to book
+                                            all of their own. Complete game changer.
+                                        </p>
                                     </div>
-                                    <p
-                                        class="text-white ff_outfit fw-normal fs_sm leading_140 opacity_07 pt-2 mt-1 mb-0">
-                                        This is going to change the insurance industry. The amount
-                                        of time we are saving by not having to book these
-                                        appointments is mind blowing. Now my guys are just sitting
-                                        down for qualified appointments instead of having to book
-                                        all of their own. Complete game changer.
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1191,115 +1186,122 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--  COMPANIES SECTION END  -->
     <!-- FOOTER SECTION  -->
-    <div class="footer_bg pt-sm-5 pt-3">
-        <div class="container custom_container py-4">
-            <div class="row flex-wrap justify-content-between align-items-xl-center py-2">
-                <div class="col-lg-3">
-                    <a href="/"><img src="./assets/icons/common/clear_talk.svg" alt=" page logo" /></a>
-                    <p class="text-white ff_outfit fs_sm fw-semibold leading_112 mb-0 pt-3">
-                        Innovative Solutions, Real Results
-                    </p>
-                    <p class="pt-4 mt-sm-3 mb-0 text-white fs_md fw-semibold ff_outfit leading_112">
-                        Follow us:
-                    </p>
-                    <div class="d-flex align-items-center gap-3 pt-3 mt-1 mb-4">
-                        <a target="_blank" rel="noopener noreferrer"
-                            class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
-                            href="https://www.instagram.com/"><img class="footer_icons"
-                                src="/assets/icons/common/instagram.svg" alt="instagram" /></a>
-                        <a target="_blank" rel="noopener noreferrer"
-                            class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
-                            href="https://discord.com/"><img class="footer_icons" src="/assets/icons/common/discord.svg"
-                                alt="discord" /></a>
-                        <a target="_blank" rel="noopener noreferrer"
-                            class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
-                            href="https://twitter.com/?lang=en"><img class="footer_icons"
-                                src="/assets/icons/common/twitter.svg" alt="twitter" /></a>
+    <footer>
+        <div class="footer_bg pt-sm-5 pt-3">
+            <div class="container custom_container py-4">
+                <div class="row flex-wrap justify-content-between align-items-xl-center py-2">
+                    <div class="col-lg-3">
+                        <a href="/"><img src="./assets/icons/common/clear_talk.svg" alt=" page logo" /></a>
+                        <p class="text-white ff_outfit fs_sm fw-semibold leading_112 mb-0 pt-3">
+                            Innovative Solutions, Real Results
+                        </p>
+                        <p class="pt-4 mt-sm-3 mb-0 text-white fs_md fw-semibold ff_outfit leading_112">
+                            Follow us:
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3 mt-1 mb-4">
+                            <a target="_blank" rel="noopener noreferrer"
+                                class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
+                                href="https://www.instagram.com/"><img class="footer_icons"
+                                    src="/assets/icons/common/instagram.svg" alt="instagram" /></a>
+                            <a target="_blank" rel="noopener noreferrer"
+                                class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
+                                href="https://discord.com/"><img class="footer_icons"
+                                    src="/assets/icons/common/discord.svg" alt="discord" /></a>
+                            <a target="_blank" rel="noopener noreferrer"
+                                class="d-flex justify-content-center align-items-center footer_social_links duration_300 blue_linear_gradient rounded-pill"
+                                href="https://twitter.com/?lang=en"><img class="footer_icons"
+                                    src="/assets/icons/common/twitter.svg" alt="twitter" /></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-8 mt-lg-0 mt-sm-3">
-                    <div class="row flex-wrap justify-content-between align-items-start px-2">
-                        <ul class="p-0 col-6 col-sm-4">
-                            <li class="text-white fs_md ff_outfit fw-semibold leading_112">
-                                Quick Link
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Home</a>
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="#services"
-                                    class="text-white fs_sm fw-normal hover_footer_li leading_140">Services</a>
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Blogs</a>
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="#"
-                                    class="text-white fs_sm fw-normal hover_footer_li leading_140 nowrap">Schedule a
-                                    consultation</a>
-                            </li>
-                        </ul>
-                        <ul class="p-0 col-6 col-sm-4">
-                            <li class="text-white fs_md ff_outfit fw-semibold leading_112 nowrap">
-                                Legal Information
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Terms &
-                                    Conditions</a>
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="#" class="text-white fs_sm fw-normal hover_footer_li leading_140">Privacy
-                                    Policy</a>
-                            </li>
-                        </ul>
-                        <ul class="p-0 col-6 col-sm-4">
-                            <li class="text-white fs_md ff_outfit fw-semibold leading_112">
-                                Contact us
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="#" class="d-flex align-items-start w-100">
-                                    <img src="./assets/icons/footer/location.svg" alt="location icon" />
-                                    <p
-                                        class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
-                                        3891 Ranchview Dr. Richardson, California 62639
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="mailto:Example@email.com" class="d-flex align-items-start"><img
-                                        src="./assets/icons/footer/email.svg" alt="email icon" />
-                                    <p
-                                        class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
-                                        Example@email.com
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="pt-2 pt-sm-3">
-                                <a href="tel:(207)555-0129" class="d-flex align-items-start"><img
-                                        src="./assets/icons/footer/telephone.svg" alt="telephone icon" />
-                                    <span
-                                        class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
-                                        (207) 555-0129</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="col-lg-8 mt-lg-0 mt-sm-3">
+                        <div class="row flex-wrap justify-content-between align-items-start px-2">
+                            <ul class="p-0 col-6 col-sm-4">
+                                <li class="text-white fs_md ff_outfit fw-semibold leading_112">
+                                    Quick Link
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="#home"
+                                        class="text-white fs_sm fw-normal hover_footer_li leading_140">Home</a>
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="#services"
+                                        class="text-white fs_sm fw-normal hover_footer_li leading_140">Services</a>
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="#blogs"
+                                        class="text-white fs_sm fw-normal hover_footer_li leading_140">Blogs</a>
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="#schedule"
+                                        class="text-white fs_sm fw-normal hover_footer_li leading_140 nowrap">Schedule a
+                                        consultation</a>
+                                </li>
+                            </ul>
+                            <ul class="p-0 col-6 col-sm-4">
+                                <li class="text-white fs_md ff_outfit fw-semibold leading_112 nowrap">
+                                    Legal Information
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="#conditions"
+                                        class="text-white fs_sm fw-normal hover_footer_li leading_140">Terms &
+                                        Conditions</a>
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="#policy"
+                                        class="text-white fs_sm fw-normal hover_footer_li leading_140">Privacy
+                                        Policy</a>
+                                </li>
+                            </ul>
+                            <ul class="p-0 col-7 col-sm-4">
+                                <li class="text-white fs_md ff_outfit fw-semibold leading_112">
+                                    Contact us
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="#" class="d-flex align-items-start w-100">
+                                        <img src="./assets/icons/footer/location.svg" alt="location icon" />
+                                        <p
+                                            class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
+                                            3891 Ranchview Dr. Richardson, California 62639
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="mailto:Example@email.com" class="d-flex align-items-start"><img
+                                            src="./assets/icons/footer/email.svg" alt="email icon" />
+                                        <p
+                                            class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
+                                            Example@email.com
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="pt-2 pt-sm-3">
+                                    <a href="tel:(207)555-0129" class="d-flex align-items-start"><img
+                                            src="./assets/icons/footer/telephone.svg" alt="telephone icon" />
+                                        <span
+                                            class="ps-2 ms-1 text-white hover_footer_li fs_sm ff_outfit fw-normal leading_140 mb-0">
+                                            (207) 555-0129</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="bg_secondary mt-sm-5">
+                <p class="text-center text-white mb-0 px-3 opacity_07 ff_outfit fs_sm fw-normal leading_140 py-3">
+                    <span id="copyright">copyright©2024</span>
+                    ClearTalk.ai - All Rights Reserved
+                </p>
+            </div>
         </div>
-        <div class="bg_secondary mt-sm-5">
-            <p class="text-center text-white mb-0 px-3 opacity_07 ff_outfit fs_sm fw-normal leading_140 py-3">
-                <span id="copyright">copyright©2024</span>
-                ClearTalk.ai - All Rights Reserved
-            </p>
-        </div>
-    </div>
+    </footer>
     <!-- AUDIO WAVE JS LINK -->
     <script src="https://unpkg.com/wavesurfer.js@4.3.0/dist/wavesurfer.min.js"></script>
     <script src="/assets/js/audioWave.js"></script>
+    <script src="/assets/js/lite-yt-embed.js"></script>
     <!-- BOOTSTRAP  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
