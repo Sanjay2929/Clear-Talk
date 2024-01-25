@@ -186,7 +186,7 @@
     margin-top: 24px;
   }
   .about_card_content {
-    top: 44%;
+    top: 57%;
   }
 }
 @media (max-width: 425.98px) {
@@ -207,6 +207,11 @@
   }
 }
 @media (min-width: 768px) {
+  .about_card_content {
+    top: 56%;
+  }
+}
+@media (min-width: 992px) {
   .about_card_content {
     top: 46%;
   }
