@@ -154,8 +154,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000;
   z-index: 99999;
+  background: #03063E;
   overflow: hidden;
   height: 100vh;
 }

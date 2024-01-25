@@ -95,3 +95,28 @@ body {
     padding: 0 12px;
   }
 }
+
+.loader {
+    position: relative;
+    animation: rotate9 3s infinite ease;
+}
+
+@keyframes rotate9 {
+
+    0%,
+    100% {
+      transform: rotateY(0deg);
+    }
+
+    25% {
+      transform: rotateY(180deg);
+    }
+
+    50% {
+      transform: rotateY(360deg);
+    }
+
+    75% {
+      transform: rotateY(0deg);
+    }
+}
