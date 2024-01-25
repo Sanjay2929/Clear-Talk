@@ -47,10 +47,11 @@
   width: 1270px;
 }
 .common_company_image {
-  max-width: 142px;
+  /* max-width: 142px; */
+  width: 142px;
 }
 .solar_bootcamp_company {
-  max-width: 217px;
+  width: 217px;
 }
 
 /* COMPANIES CSS END  */
@@ -63,6 +64,41 @@
 }
 wave {
   height: 49px !important;
+}
+
+.companies_logo_parent {
+  height: 142px;
+}
+.company_slider_start {
+  gap: 30px;
+  animation-name: sliderScroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: -40s;
+}
+
+.company_slider_end {
+  gap: 30px;
+  animation-name: sliderScroll;
+  animation-delay: -20s;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sliderScroll {
+  0% {
+    transform: translateX(-1280px);
+    -webkit-transform: translateX(-1280px);
+    -moz-transform: translateX(-1280px);
+    -ms-transform: translateX(-1280px);
+    -o-transform: translateX(-1280px);
+  }
+
+  100% {
+    transform: translateX(1280px);
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -89,11 +125,24 @@ wave {
     transform: translateX(0) !important;
     margin-top: -15%;
   }
-  .common_company_image {
+  /* .common_company_image {
     max-width: 120px;
   }
   .solar_bootcamp_company {
     max-width: 170px;
+  } */
+  @keyframes sliderScroll {
+    0% {
+      transform: translateX(-950px);
+      -webkit-transform: translateX(-950px);
+      -moz-transform: translateX(-950px);
+      -ms-transform: translateX(-950px);
+      -o-transform: translateX(-950px);
+    }
+
+    100% {
+      transform: translateX(950px);
+    }
   }
 }
 
