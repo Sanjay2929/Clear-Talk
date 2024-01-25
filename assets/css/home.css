@@ -240,6 +240,7 @@
 @media (max-width: 1199.9px) {
   .common_button::after {
     transform: translate(-50%, -50%) scaley(1.3) scaleX(1.2);
+    bottom: -8.5px;
   }
 }
 @media (max-width: 991.9px) {
