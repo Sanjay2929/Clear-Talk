@@ -7,16 +7,12 @@
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(29.399999618530273px);
   padding: 20px;
-  position: relative;
 }
 .pt_10 {
   padding-top: 10px;
 }
 .custom_margin {
   margin-top: 80px;
-}
-.dotted_lines {
-  position: relative;
 }
 .dotted_lines::before {
   content: "";
@@ -82,7 +78,6 @@
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 0px 6.9px 0px rgba(220, 226, 253, 0.8);
   padding: 10px;
-  position: relative;
 }
 .our_client_card_box::after {
   content: "";
@@ -109,7 +104,6 @@
 .our_client_card_img {
   width: 100%;
   border-radius: 6px;
-  position: relative;
 }
 
 .custom_padding_clients_cards {
