@@ -84,7 +84,7 @@ body {
 }
 .back_to_top_arrow {
   padding: 2px;
-}
+} 
 
 @keyframes backtotop {
   0% {
@@ -163,7 +163,7 @@ body {
   100% {
     transform: scale(0);
   }
-  
+
 }
 
 .loader {
