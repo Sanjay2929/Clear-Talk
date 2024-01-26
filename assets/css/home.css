@@ -10,9 +10,6 @@
 .custom_overflow_hidden {
   overflow: hidden !important;
 }
-.z_50 {
-  z-index: 50;
-}
 .social_links {
   width: 30px;
   height: 30px;
