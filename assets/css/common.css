@@ -161,10 +161,10 @@ body {
 
 .loader {
     position: relative;
-    animation: rotate9 3s infinite ease;
+    animation: preloader 3s infinite ease;
 }
 
-@keyframes rotate9 {
+@keyframes preloader {
 
     0%,
     100% {
