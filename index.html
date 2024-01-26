@@ -145,7 +145,7 @@
         </div>
     </header>
     <!--  SERVICES START  -->
-    <section class="services_background pb-5 mb-5 position-relative">
+    <section class="services_background pb-5 mb-5 position-relative" id="services">
         <div class="py-5 lg:my-5">
             <div class="py-sm-5 mt-md-5">
                 <div
@@ -828,13 +828,15 @@
                     Companies
                     <span class="text_primary_gradient">We've Worked </span> With
                 </h2>
-                <p class="text-white opacity_07 companies_description mx-auto text-center mb-0 ff_outfit fw-normal fs_sm pt-3 mb-4"
-                    data-aos="fade-down">
-                    Eectus ornare arcu massa dictum tincidunt non. Pellentesque pretium
-                    viverra enim venenatis nunc. Metus pharetra consequat amet eget orci
-                    a sollicitudin felis cras. Lacus interdum feugiat in mi nullam
-                    varius.
-                </p>
+                <div data-aos="fade-down">
+                    <p
+                        class="text-white opacity_07 companies_description mx-auto text-center mb-0 ff_outfit fw-normal fs_sm pt-3 mb-4">
+                        Eectus ornare arcu massa dictum tincidunt non. Pellentesque pretium
+                        viverra enim venenatis nunc. Metus pharetra consequat amet eget orci
+                        a sollicitudin felis cras. Lacus interdum feugiat in mi nullam
+                        varius.
+                    </p>
+                </div>
                 <div class="overflow-hidden position-relative companies_logo_parent">
                     <div
                         class="d-flex align-items-center justify-content-between company_slider_start position-absolute start-0 top-0 h-100 d-xl-none">
@@ -1088,14 +1090,14 @@
     <!-- OUR CLIENTS  -->
     <section>
         <div class="our_client_bg pt_lg_160px">
-            <div class="py-lg-5 mt-lg-5">
+            <div class="py-lg-5 mt-lg-5" id="blogs">
                 <div class="container custom_container py-5">
                     <h2 class="text-white ff_outfit fs_xl fw-bold leading_130 text-center mb-1 pt-3" data-aos="fade-up">
                         See What <span class="text_primary">Our Clients</span> Think About
                         Us
                     </h2>
                     <div class="row py-sm-5 pt-5 pb-4 justify-content-center mt-2">
-                        <div class="col-lg-4 col-md-6 col-10" data-aos="fade-up">
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up">
                             <div class="our_client_card_box position-relative">
                                 <img src="./assets/images/clients/jeffrey_martin.png" alt="jeffrey martin boy image"
                                     class="our_client_card_img" />
@@ -1125,7 +1127,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 mt-md-0 mt-4 col-10" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-4 col-md-6 mt-md-0 mt-4" data-aos="fade-up" data-aos-delay="100">
                             <div class="our_client_card_box position-relative">
                                 <img src="./assets/images/clients/drew_sugarman.png" alt="drew sugarman boy image"
                                     class="our_client_card_img" />
@@ -1156,7 +1158,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 mt-lg-0 mt-4 col-10" data-aos="fade-up" data-aos-delay="200">
+                        <div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-up" data-aos-delay="200">
                             <div class="our_client_card_box position-relative">
                                 <img src="./assets/images/clients/jeffrey_martin_girl.png"
                                     alt="jeffrey martin girl image" class="our_client_card_img" />
@@ -1228,8 +1230,7 @@
                                     Quick Link
                                 </li>
                                 <li class="pt-2 pt-sm-3">
-                                    <a href="#home"
-                                        class="text-white fs_sm fw-normal hover_footer_li leading_140">Home</a>
+                                    <a href="" class="text-white fs_sm fw-normal hover_footer_li leading_140">Home</a>
                                 </li>
                                 <li class="pt-2 pt-sm-3">
                                     <a href="#services"
