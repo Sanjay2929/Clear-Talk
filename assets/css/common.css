@@ -193,13 +193,6 @@ body {
     transform: rotateY(0deg);
   }
 }
-.common_button .left,
-.common_button .right,
-.common_button .top,
-.common_button .bottom_1,
-.common_button .bottom_2 {
-  transition: all 0.3s ease-in-out;
-}
 .common_button .border_left,
 .common_button .border_right,
 .common_button .border_top,
