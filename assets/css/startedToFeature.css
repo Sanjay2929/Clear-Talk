@@ -83,7 +83,7 @@
   background-image: url("../images/featured/featured_bg.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .featured_box {
   border-radius: 10px;
@@ -163,6 +163,9 @@
   .featured_box {
     padding: 30px;
   }
+  .featured_bg {
+    background-size: cover;
+  }
   .dotted_lines::before {
     content: "";
     display: none;
@@ -208,17 +211,17 @@
     margin-top: 24px;
   }
 }
-@media (min-width:992px){
-  .position_lg_absolute{
+@media (min-width: 992px) {
+  .position_lg_absolute {
     position: absolute;
   }
-  .translate_lg_middle_y{
+  .translate_lg_middle_y {
     transform: translateY(-50%);
   }
-  .pb_lg_240{
+  .pb_lg_240 {
     padding-bottom: 240px;
   }
-  .pt_lg_160px{
+  .pt_lg_160px {
     padding-top: 160px;
   }
 }
