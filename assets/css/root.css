@@ -5,15 +5,14 @@
 /* SERVICES CSS IMPORT */
 @import url("/assets/css/services.css");
 /* startedToFeature CSS IMPORT  */
-@import url("/assets/css/startedToFeature.css");
+@import url("/assets/css/started_to_feature.css");
 /* COMMON CSS IMPORT  */
 @import url("/assets/css/common.css");
 /* NEXT STEP TO FOOTER CSS IMPORT  */
-@import url("/assets/css/nextStepToFooter.css");
+@import url("/assets/css/next_step_to_footer.css");
 /* Roles CSS IMPORT  */
 @import url("/assets/css/roles.css");
-/* SOME OF OUR CALLS  */
-/* @import url("/assets/css/videoSlider.css"); */
+
 /* UNIVERSAL  */
 * {
   margin: 0;
