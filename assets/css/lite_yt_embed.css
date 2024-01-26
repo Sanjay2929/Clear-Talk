@@ -54,7 +54,6 @@ lite-youtube > .lty-playbtn {
     position: absolute;
     cursor: pointer;
     z-index: 1;
-    filter: grayscale(100%);
     transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
     border: 0;
 }
