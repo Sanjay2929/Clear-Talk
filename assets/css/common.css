@@ -2,6 +2,9 @@ html,
 body {
   overflow-x: hidden;
 }
+.transition_03 {
+  transition: all 0.3s linear;
+}
 /* SCROLL BAR MODIFY  */
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -21,9 +24,6 @@ body {
   background-color: #f1f1f1; /* Set color of the track */
 }
 
-.transition_03{
-  transition: all 0.3s linear;
-}
 .opacity_07 {
   opacity: 0.7;
 }
@@ -71,7 +71,7 @@ body {
 
 #back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
   display: none;
   width: 40px;
@@ -81,6 +81,9 @@ body {
   border: none;
   animation: backtotop 3s linear infinite;
   box-shadow: 0px 0px 23.8px 0px #000;
+}
+.back_to_top_arrow {
+  padding: 2px;
 }
 
 @keyframes backtotop {
@@ -125,7 +128,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: 99999;
-  background: #03063E;
+  background: #03063e;
   overflow: hidden;
   height: 100vh;
 }
@@ -160,6 +163,7 @@ body {
   100% {
     transform: scale(0);
   }
+  
 }
 
 .loader {
@@ -169,20 +173,15 @@ body {
 
 @keyframes loaderFlip {
 
-    0%,
-    100% {
-      transform: rotateY(0deg);
-    }
+  25% {
+    transform: rotateY(180deg);
+  }
 
-    25% {
-      transform: rotateY(180deg);
-    }
+  50% {
+    transform: rotateY(360deg);
+  }
 
-    50% {
-      transform: rotateY(360deg);
-    }
-
-    75% {
-      transform: rotateY(0deg);
-    }
+  75% {
+    transform: rotateY(0deg);
+  }
 }
