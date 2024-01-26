@@ -71,6 +71,9 @@
                 <div class="modal-body w-100 pt-2">
                     <lite-youtube videoid="BqFSHbzSs7U"
                         params="controls=1&start=10&end=30&modestbranding=2&rel=0&enablejsapi=1"></lite-youtube>
+
+                    <!-- Add a button to pause the video -->
+                    <button type="button" class="btn btn-primary" onclick="pauseVideo()">Pause Video</button>
                 </div>
             </div>
         </div>
@@ -677,7 +680,7 @@
                     Take A Listen To Some Of
                     <span class="text_primary">Our Calls</span>
                 </h2>
-                <div class="position-relative">
+                <div class="position-relative px-3 px-md-0">
                     <!-- LEFT RIGHT SHADOWS  -->
                     <div class="position-absolute left_slide_shodow start-0 top-50"></div>
                     <div class="position-absolute right_slide_shodow end-0 top-50"></div>
@@ -1360,6 +1363,19 @@
             document.getElementById("preLoader").classList.add("removeloader");
             document.body.classList.remove("loading");
         }, 3000);
+    </script>
+    <script>
+        // Function to pause the video inside the lite-youtube element
+        function pauseVideo() {
+            // Find the lite-youtube element
+            var liteYoutubeElement = document.querySelector('lite-youtube');
+
+            // Check if the lite-youtube element exists
+            if (liteYoutubeElement) {
+                // Call the lite-youtube API to pause the video
+                liteYoutubeElement.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+            }
+        }
     </script>
 </body>
 

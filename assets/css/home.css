@@ -284,7 +284,7 @@
     height: 40px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 767.9px) {
   .slider_arrow {
     margin-top: 24px;
   }
@@ -292,7 +292,7 @@
     margin-left: 0 !important;
   }
   .slick-slide {
-    transform: scale(1);
+    transform: scale(.8) !important;
   }
   .microphone_circle {
     max-width: 350px;
@@ -316,8 +316,11 @@
   .nav_logo {
     max-width: 170px;
   }
+  .slick-slide {
+    transform: scale(1) !important;
+  }
 }
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .position_sm_absolute {
     position: absolute;
   }
