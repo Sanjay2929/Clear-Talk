@@ -63,11 +63,8 @@
   }
   .inner_ring_client_review {
     margin-left: 10px;
-    border-radius: 50%;
     width: 81%;
     height: 81%;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid rgba(255, 255, 255, 0.4);
   }

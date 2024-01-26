@@ -87,8 +87,10 @@
 
   <body class="loading">
     <!-- PRELAODER  -->
-    <div class="loader_bg" id="preLoader">
-      <div class="d-flex justify-content-center align-items-center w-100 h-100">
+    <div
+      class="loader_bg top-0 start-0 overflow-hidden min-vh-100 position-fixed w-100 d-flex justify-content-center align-items-center w-100 h-100"
+      id="preLoader"
+    >
         <div class="position-relative px-3" data-aos="zoom-in">
           <img
             src="/assets/icons/common/logo.svg"
@@ -96,10 +98,12 @@
             class="loader position-relative"
           />
         </div>
-      </div>
     </div>
     <!-- BACK TO TOP -->
-    <button id="back-to-top" class="bg_secondary">
+    <button
+      id="back-to-top"
+      class="bg_secondary rounded-circle border-0 position-fixed"
+    >
       <img
         class="back_to_top_arrow"
         src="./assets/icons/common/top_arrow.svg"
@@ -119,7 +123,7 @@
           <div class="modal-header border-0 pb-0">
             <button
               type="button"
-              class="btn-close"
+              class="btn-close opacity-100"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
@@ -197,7 +201,7 @@
               <div class="position-relative d-inline-block">
                 <button
                   aria-label="Schedule a call"
-                  class="common_button fs_sm"
+                  class="common_button border-0 fs_sm"
                 >
                   <span class="border_left"></span>
                   <span class="border_bottom_1"></span>
@@ -246,7 +250,10 @@
             automate communication for your business with A.I.
           </p>
           <div class="position-relative d-inline-block">
-            <button aria-label="Get a live call" class="common_button fs_sm">
+            <button
+              aria-label="Get a live call"
+              class="common_button border-0 fs_sm"
+            >
               <span class="border_left"></span>
               <span class="border_bottom_1"></span>
               <span class="border_bottom_2"></span>
@@ -837,7 +844,7 @@
                     </svg>
                   </div>
                   <p
-                    class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit"
+                    class="text-white mb-0 fs_lg fw-bold started_cards_number opacity_01 ff_outfit"
                   >
                     01
                   </p>
@@ -906,7 +913,7 @@
                     </svg>
                   </div>
                   <p
-                    class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit"
+                    class="text-white mb-0 fs_lg fw-bold started_cards_number opacity_01 ff_outfit"
                   >
                     02
                   </p>
@@ -951,7 +958,7 @@
                     </svg>
                   </div>
                   <p
-                    class="text-white mb-0 fs_lg fw-bold started_cards_number ff_outfit"
+                    class="text-white mb-0 fs_lg fw-bold started_cards_number opacity_01 ff_outfit"
                   >
                     03
                   </p>
@@ -1117,7 +1124,7 @@
             <!-- SLICK SLIDER ARROWS BUTTONS  -->
             <div class="d-flex justify-content-center align-items-center gap-4">
               <button
-                class="position_sm_absolute top-50 blue_linear_gradient transition_03 slider_arrow d-flex justify-content-center align-items-center rounded-pill cursor_pointer slider_arrow_left"
+                class="position_sm_absolute top-50 blue_linear_gradient transition_03 slider_arrow border-0 d-flex justify-content-center align-items-center rounded-pill cursor_pointer slider_arrow_left"
               >
                 <img
                   src="/assets/icons/our-calls/slider_arrow.svg"
@@ -1125,7 +1132,7 @@
                 />
               </button>
               <button
-                class="position_sm_absolute top-50 blue_linear_gradient transition_03 slider_arrow d-flex justify-content-center align-items-center rounded-pill cursor_pointer slider_arrow_right"
+                class="position_sm_absolute top-50 blue_linear_gradient transition_03 slider_arrow border-0 d-flex justify-content-center align-items-center rounded-pill cursor_pointer slider_arrow_right"
               >
                 <img
                   src="/assets/icons/our-calls/slider_arrow.svg"
@@ -1170,7 +1177,10 @@
                 class="d-flex justify-content-center justify-content-lg-start align-items-center mt-4 pt-3 gap-4"
               >
                 <div class="position-relative d-inline-block">
-                  <button aria-label="Get a Demo" class="common_button fs_sm">
+                  <button
+                    aria-label="Get a Demo"
+                    class="common_button border-0 fs_sm"
+                  >
                     <span class="border_left"></span>
                     <span class="border_bottom_1"></span>
                     <span class="border_bottom_2"></span>
@@ -1235,7 +1245,7 @@
                 />
               </span>
               <span
-                class="position-absolute inner_ring_client_review d-none d-sm-block"
+                class="position-absolute inner_ring_client_review top-50 start-50 rounded-circle d-none d-sm-block"
               ></span>
               <div
                 class="successful_client_parent text-center w-100 h-100 position-relative z-0"
@@ -1294,7 +1304,10 @@
               alt="microphone"
             />
           </div>
-          <div class="ps-xl-5 ps-lg-4 width_lg_100 w_half" data-aos="fade-left">
+          <div
+            class="ps-xl-5 ps-lg-4 width_lg_100 w_half w-50"
+            data-aos="fade-left"
+          >
             <h2
               class="ff_outfit fw-bold fs_xl text-white hero_heading pb-3 mb-0 pe-4 pt-4 pt-lg-0 text-lg-start text-center lg:ms-0 mx-auto"
             >
@@ -1321,7 +1334,7 @@
               <div class="position-relative d-inline-block">
                 <button
                   aria-label=" Get called now!l"
-                  class="common_button fs_sm"
+                  class="common_button border-0 fs_sm"
                 >
                   <span class="border_left"></span>
                   <span class="border_bottom_1"></span>
@@ -1999,28 +2012,28 @@
                   <li class="pt-2 pt-sm-3">
                     <a
                       href=""
-                      class="text-white fs_sm fw-normal hover_footer_li transition_03 leading_140"
+                      class="text-white fs_sm fw-normal hover_footer_li opacity_07 transition_03 leading_140"
                       >Home</a
                     >
                   </li>
                   <li class="pt-2 pt-sm-3">
                     <a
                       href="#services"
-                      class="text-white fs_sm fw-normal hover_footer_li transition_03 leading_140"
+                      class="text-white fs_sm fw-normal hover_footer_li opacity_07 transition_03 leading_140"
                       >Services</a
                     >
                   </li>
                   <li class="pt-2 pt-sm-3">
                     <a
                       href="#blogs"
-                      class="text-white fs_sm fw-normal hover_footer_li transition_03 leading_140"
+                      class="text-white fs_sm fw-normal hover_footer_li opacity_07 transition_03 leading_140"
                       >Blogs</a
                     >
                   </li>
                   <li class="pt-2 pt-sm-3">
                     <a
                       href="#schedule"
-                      class="text-white fs_sm fw-normal hover_footer_li transition_03 leading_140 nowrap"
+                      class="text-white fs_sm fw-normal hover_footer_li opacity_07 transition_03 leading_140 nowrap"
                       >Schedule a consultation</a
                     >
                   </li>
@@ -2034,14 +2047,14 @@
                   <li class="pt-2 pt-sm-3">
                     <a
                       href="#conditions"
-                      class="text-white fs_sm fw-normal hover_footer_li transition_03 leading_140"
+                      class="text-white fs_sm fw-normal hover_footer_li opacity_07 transition_03 leading_140"
                       >Terms & Conditions</a
                     >
                   </li>
                   <li class="pt-2 pt-sm-3">
                     <a
                       href="#policy"
-                      class="text-white fs_sm fw-normal hover_footer_li transition_03 leading_140"
+                      class="text-white fs_sm fw-normal hover_footer_li opacity_07 transition_03 leading_140"
                       >Privacy Policy</a
                     >
                   </li>
@@ -2059,7 +2072,7 @@
                         alt="location icon"
                       />
                       <p
-                        class="ps-2 ms-1 text-white hover_footer_li transition_03 fs_sm ff_outfit fw-normal leading_140 mb-0"
+                        class="ps-2 ms-1 text-white hover_footer_li opacity_07 transition_03 fs_sm ff_outfit fw-normal leading_140 mb-0"
                       >
                         3891 Ranchview Dr. Richardson, California 62639
                       </p>
@@ -2074,7 +2087,7 @@
                         alt="email icon"
                       />
                       <p
-                        class="ps-2 ms-1 text-white hover_footer_li transition_03 fs_sm ff_outfit fw-normal leading_140 mb-0"
+                        class="ps-2 ms-1 text-white hover_footer_li opacity_07 transition_03 fs_sm ff_outfit fw-normal leading_140 mb-0"
                       >
                         Example@email.com
                       </p>
@@ -2087,7 +2100,7 @@
                         alt="telephone icon"
                       />
                       <span
-                        class="ps-2 ms-1 text-white hover_footer_li transition_03 fs_sm ff_outfit fw-normal leading_140 mb-0"
+                        class="ps-2 ms-1 text-white hover_footer_li opacity_07 transition_03 fs_sm ff_outfit fw-normal leading_140 mb-0"
                       >
                         (207) 555-0129</span
                       >

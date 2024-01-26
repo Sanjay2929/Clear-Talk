@@ -44,7 +44,6 @@
 }
 .started_cards_number {
   line-height: 112.5%;
-  opacity: 0.1;
 }
 
 /* HOVER  */
@@ -163,7 +162,6 @@
   .featured_bg {
     background-size: cover;
   }
- 
 }
 @media (max-width: 767.98px) {
   .started_top_gradient_layer {
@@ -223,8 +221,8 @@
     padding-top: 160px;
   }
 }
-@media(min-width:1600px){
-  .featured_bg{
+@media (min-width: 1600px) {
+  .featured_bg {
     background-size: cover;
   }
 }
