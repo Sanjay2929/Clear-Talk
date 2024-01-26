@@ -224,3 +224,8 @@
     padding-top: 160px;
   }
 }
+@media(min-width:1600px){
+  .featured_bg{
+    background-size: cover;
+  }
+}
