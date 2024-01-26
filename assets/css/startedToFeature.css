@@ -48,6 +48,7 @@
 .started_cards_number {
   line-height: 112.5%;
   opacity: 0.1;
+  transition: all 0.3s linear;
 }
 
 /* HOVER  */

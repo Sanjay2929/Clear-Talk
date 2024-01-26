@@ -2,7 +2,9 @@ html,
 body {
   overflow-x: hidden;
 }
-
+.transition_03{
+  transition: all 03s linear;
+}
 .opacity_07 {
   opacity: 0.7;
 }
