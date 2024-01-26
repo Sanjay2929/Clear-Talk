@@ -20,7 +20,6 @@
 }
 .services_card_parent:hover .services_icon_background::after {
  opacity: 1;
-  border: 1px solid transparent;
   backdrop-filter: blur(5.5px);
 }
 
