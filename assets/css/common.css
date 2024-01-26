@@ -110,9 +110,6 @@ body {
   .position_lg_absolute {
     position: absolute;
   }
-  .overflow_lg_hidden {
-    overflow-y: hidden;
-  }
 }
 .leading_112 {
   line-height: 112.5%;

@@ -7,9 +7,6 @@
   );
   height: 5%;
 }
-.custom_overflow_hidden {
-  overflow: hidden !important;
-}
 .social_links {
   width: 30px;
   height: 30px;
@@ -258,9 +255,6 @@
   .slider_arrow_right {
     right: 30px;
   }
-  .overflow_lg_hidden {
-    overflow-y: hidden;
-  }
   .clipPathCircle {
     clip-path: circle(0px at calc(100% - 45px) 45px);
     transition: all 0.5s ease-out;
@@ -274,6 +268,9 @@
     pointer-events: all !important;
     z-index: 1;
     opacity: 1;
+  }
+  .custom_overflow_lg_hidden{
+    overflow: hidden;
   }
 }
 @media (max-width: 767.98px) {
