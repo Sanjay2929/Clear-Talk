@@ -163,6 +163,13 @@
   .bg_next {
     background-color: transparent;
   }
+  .dotted_lines::before {
+    top: 205px;
+    left: 214px;
+    background-size: 100% 100%;
+    width: 295px;
+    height: 378px;
+}
   .footer_social_links {
     width: 40px;
     height: 40px;
@@ -188,6 +195,13 @@
     max-width: 400px;
     margin: 0 auto;
   }
+  .dotted_lines::before {
+    top: 185px;
+    left: 124px;
+    background-size: 100% 100%;
+    width: 295px;
+    height: 428px;
+}
 }
 @media (max-width: 575.98px) {
   .custom_margin {
@@ -207,6 +221,9 @@
     width: 15px;
     height: 15px;
   }
+  .dotted_lines::before {
+display: none;
+}
 }
 @media (max-width: 425.98px) {
   .stars {

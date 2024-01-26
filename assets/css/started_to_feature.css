@@ -166,10 +166,7 @@
   .featured_bg {
     background-size: cover;
   }
-  .dotted_lines::before {
-    content: "";
-    display: none;
-  }
+ 
 }
 @media (max-width: 767.98px) {
   .started_top_gradient_layer {
@@ -209,6 +206,10 @@
   }
   .custom_margin {
     margin-top: 24px;
+  }
+  .dotted_lines::before {
+    content: "";
+    display: none;
   }
 }
 @media (min-width: 992px) {
