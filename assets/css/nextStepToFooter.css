@@ -200,6 +200,10 @@
     width: 15px;
     height: 15px;
   }
+  .loader{
+    width: 150px;
+    height: 150px;
+  }
 }
 @media (max-width: 425.98px) {
   .stars {
