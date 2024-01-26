@@ -163,14 +163,15 @@ body {
   100% {
     transform: scale(0);
   }
+  
 }
 
 .loader {
     position: relative;
-    animation: preloader 3s infinite ease;
+    animation: loaderFlip 3s infinite ease;
 }
 
-@keyframes preloader {
+@keyframes loaderFlip {
 
   25% {
     transform: rotateY(180deg);
