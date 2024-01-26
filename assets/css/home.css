@@ -218,7 +218,7 @@
 }
 .microphone_circle {
   max-width: 529px;
-  animation: circle_rotate 4000s ease infinite;
+  animation: circle_rotate 4500s ease infinite;
 }
 .microphone_circle_preloader {
   max-width: 220px;

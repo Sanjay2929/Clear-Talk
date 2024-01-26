@@ -93,6 +93,12 @@
 .miss_call_card_parent .services_text_parent {
   max-width: 290px;
 }
+@media(max-width:1600px){
+  
+.services_background {
+  background-size: contain;
+}
+}
 /* MEDIA QUEYS */
 @media (max-width: 1199.98px) {
   .services_icon_background {

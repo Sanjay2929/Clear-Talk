@@ -59,7 +59,7 @@
     left: 50%;
   
     border: 1px solid rgba(255, 255, 255, 0.4);
-    animation: rotate_avatar_parent 10s infinite linear;
+    animation: rotate_avatar_parent 14s infinite linear;
   }
   .inner_ring_client_review {
     margin-left: 10px;
@@ -74,7 +74,7 @@
   .small_avatar_conversational {
     width: 40px;
     height: 40px;
-    animation: rotate_avatar 10s infinite linear;
+    animation: rotate_avatar 14s infinite linear;
   }
   .first_small_avatar {
     right: -3%;

@@ -21,6 +21,7 @@
   list-style-type: none !important;
   text-decoration: none !important;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #00003c !important;
