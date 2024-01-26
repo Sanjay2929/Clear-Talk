@@ -70,7 +70,7 @@
   background: var(--Liner, linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%));
 }
 .started_card_boxes:hover .started_cards_number {
-  opacity: 0.2;
+  opacity: 1;
 }
 .started_card_boxes:hover .started_icons_bg_circle {
   background: #fff !important;
