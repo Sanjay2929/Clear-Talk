@@ -1,0 +1,50 @@
+/* SOME OF OUR CALL SECTION  */
+.slick-track {
+  margin-left: -25% !important;
+}
+.slick-slide {
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+}
+.slick-current {
+  transform: scale(1) !important;
+}
+.video_slide {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(0, 117, 214, 0.05);
+  -webkit-backdrop-filter: blur(7.131249904632568px);
+  backdrop-filter: blur(7.131249904632568px);
+}
+.slider_arrow {
+  width: 50px;
+  height: 50px;
+  z-index: 20;
+  box-shadow: 0px 0px 23.799999237060547px 0px #0189e14d;
+  border: 0;
+  z-index: 20;
+}
+
+.left_slide_shodow {
+  background: linear-gradient(90deg, #00003c 46.6%, rgba(0, 0, 60, 0) 100%);
+  transform: translateY(-50%);
+  z-index: 10;
+  height: 80%;
+  width: 25%;
+}
+.right_slide_shodow {
+  background: linear-gradient(270deg, #00003c 46.6%, rgba(0, 0, 60, 0) 100%);
+  transform: translateY(-50%);
+  z-index: 10;
+  height: 80%;
+  width: 25%;
+}
+.slider_arrow_left {
+  left: 70px;
+  transform: translateY(-50%);
+}
+.slider_arrow_right {
+  right: 70px;
+  transform: rotate(-180deg) translateY(50%);
+}
