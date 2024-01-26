@@ -192,7 +192,7 @@ body {
 .common_button .border_top,
 .common_button .border_bottom_1,
 .common_button .border_bottom_2 {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .common_button {
   background: linear-gradient(225deg, #00bbfc 0%, #0075d6 89.48%);
