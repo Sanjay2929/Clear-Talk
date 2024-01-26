@@ -30,8 +30,8 @@
 .nav_bg {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-background: rgba(255, 255, 255, 0.02);
-backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(25px);
 }
 .nav_logo {
   max-width: 239px;
@@ -158,8 +158,6 @@ backdrop-filter: blur(25px);
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1; /* Set color of the track */
 }
-
-
 
 /* Driving Growth, Amplifying Impact  */
 .microphone {
