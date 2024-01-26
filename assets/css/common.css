@@ -104,9 +104,6 @@ body {
   .loader {
     max-width: 120px;
   }
-  #back-to-top {
-    bottom: 80px;
-  }
 }
 @media (min-width: 992px) {
   /* CUSTOM ABSOLUTE */
