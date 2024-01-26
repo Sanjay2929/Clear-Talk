@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
 }
 .transition_03{
-  transition: all 03s linear;
+  transition: all 0.3s linear;
 }
 .opacity_07 {
   opacity: 0.7;
