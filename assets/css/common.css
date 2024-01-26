@@ -57,7 +57,7 @@ body {
 .custom_scrollbar::-webkit-scrollbar {
   height: 3px;
 }
-.top_coomn_blur {
+.top_common_blur {
   background: linear-gradient(
     180deg,
     #00003c 3.82%,
