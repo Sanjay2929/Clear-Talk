@@ -6,6 +6,7 @@
     max-width: 500px !important;
   }
   .successful_client_parent {
+    border-radius: 50%;
     margin: 80px;
     max-width: 418px;
     padding: 71px 0px;

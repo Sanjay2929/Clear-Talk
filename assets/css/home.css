@@ -167,6 +167,9 @@
   max-width: 220px;
   animation: circle_rotate 800s ease infinite;
 }
+.w_50{
+  width: 50%;
+}
 @keyframes circle_rotate {
   100% {
     transform: rotate(360000deg);
