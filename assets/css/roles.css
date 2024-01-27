@@ -6,7 +6,6 @@
     max-width: 500px !important;
   }
   .successful_client_parent {
-    border-radius: 50%;
     margin: 80px;
     max-width: 418px;
     padding: 71px 0px;
@@ -37,11 +36,11 @@
         )
         padding-box,
       linear-gradient(230deg, #00bbfc, #0075d6) border-box;
-    border-radius: 50%;
+    
     border: 1px solid transparent;
   }
   .outer_ring_client_review {
-    border-radius: 50%;
+   
     margin-left: 10px;
     top: 50%;
     left: 50%;
@@ -52,7 +51,7 @@
   }
   .middle_ring_client_review {
     margin-left: 10px;
-    border-radius: 50%;
+    
     width: 90%;
     height: 90%;
     top: 50%;
